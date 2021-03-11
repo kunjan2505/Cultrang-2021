@@ -109,8 +109,8 @@ const ContactUs = () => {
                         <div className="box-2" style={{flex:'1',height:'100vh',justifyContent:'center', alignItems:'center'}}>
 
                         <div onMouseOver={() => setFlipped(state => !state)}>
-                              <a.img className="c back" src={designHead} style={{display: card.designHead? '':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
-                              <a.img className="c front" src={khushboo} style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
+                              <a.img className="c back" src={designHead} onMouseOver={() => setContacts({khushboo: true}) } style={{display: card.designHead? 'block':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
+                              <a.img className="c front" src={khushboo} style={{display: contacts.khushboo? 'block': 'none', opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
                         </div>
 
                               
