@@ -1,8 +1,8 @@
 .contactUs{
       background-color: #AA0407;
       width: 100vw;
-      height: 100vh;
-      overflow: hidden;
+      /* height: 100vh; */
+      /* overflow: hidden; */
 }
 
 .individualDesignation{
@@ -29,7 +29,7 @@
 }
 
 .box-3{
-      transform: translateY(25%)
+      transform: translateY(20%)
 }
 
 .individualDesignation:hover{
@@ -37,14 +37,6 @@
       opacity: 1;
 }
 
-.ant-carousel .slick-slide {
-      text-align: center;
-      height: 160px;
-      line-height: 160px;
-      background: #364d79;
-      overflow: hidden;
-}
-    
-.ant-carousel .slick-slide h3 {
-      color: #fff;
+.container-1{
+      margin-top: -50vw;
 }

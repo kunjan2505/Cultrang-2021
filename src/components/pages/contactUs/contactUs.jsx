@@ -20,6 +20,13 @@ import photographyHead from '../../vectors/contact_headings/vivid_snaps.svg';
 import artHead from '../../vectors/contact_headings/brush_hour.svg';
 import managementHead from '../../vectors/contact_headings/management_head.svg';
 import {Carousel} from 'antd';
+import aastha from '../../vectors/boarding_passes/aastha.svg';
+import adwait from '../../vectors/boarding_passes/adwait.svg';
+import akshay from '../../vectors/boarding_passes/akshay.svg';
+import khushboo from '../../vectors/boarding_passes/khushboo.svg';
+import saksham from '../../vectors/boarding_passes/saksham.svg';
+import sejal from '../../vectors/boarding_passes/sejal.svg';
+import surya from '../../vectors/boarding_passes/surya.svg';
 
 const ContactUs = () => {
 
@@ -72,20 +79,21 @@ const ContactUs = () => {
 
       return(
             <div className="contactUs">
+                  <img src={clouds} />
                   <div className="container-1" style={{display:'flex', zIndex:'2'}}>
                         <div className="box-1" style={{flex:'1',height:'100vh', justifyContent:'center', alignItems:'center'}}>
                               <div className="designation" style={{display:'flex',flexDirection:'column', justifyContent:'center', alignItems:'center', alignContent:'center'}}>
                                     <span className="individualDesignation" 
-                                                style={{opacity: card.ifcard? '1' : '0.5'}}
+                                                style={{opacity: card.ifcard? '1' : ''}}
                                                 onClick={() => {setCard({ifcard: true})}}> Overall Coordinator</span>
                                     <span className="individualDesignation" 
-                                                style={{opacity: card.studentAdvCard? '1' : '0.5'}}
+                                                style={{opacity: card.studentAdvCard? '1' : ''}}
                                                 onClick={() => {setCard({studentAdvCard: true})}}>Student Adviser</span>
                                     <span className="individualDesignation"
-                                          style={{opacity: card.managementHead? '1' : '0.5'}}
+                                          style={{opacity: card.managementHead? '1' : ''}}
                                           onClick={() => {setCard({managementHead: true})}}>Management Head</span>
                                     <span className="individualDesignation"
-                                          style={{opacity: card.sponsorshipHead? '1' : '0.5'}}
+                                          style={{opacity: card.sponsorshipHead? '1' : ''}}
                                           onClick={() => {setCard({sponsorshipHead: true})}}>Sponsorship Head</span>
                               </div>
                         </div>
@@ -109,35 +117,36 @@ const ContactUs = () => {
                               <img src={artHead} style={{display: card.brushHead? '':'none'}}/>
                               <img src={managementHead} style={{display: card.managementHead? '':'none'}}/>
 
-                              {/* <Carousel vertical style={{display: card.eventHeads? 'flex':'none'}}>
+                              <Carousel vertical style={{display: card.eventHeads? 'block':'none'}}>
                                     <div><img src={filmHead} /></div>
                                     <div><img src={filmHead} /></div>
                                     <div><img src={filmHead} /></div>
                                     <div><img src={filmHead} /></div>
-                              </Carousel> */}
+                              </Carousel>
 
 
                         </div>
                         <div className="box-3" style={{flex:'1', height:'100vh', alignItems:'center'}}>
                               <div className="designation" style={{display:'flex',flexDirection:'column', alignItems:'center'}}>
                                     <span className="individualDesignation" 
-                                          style={{opacity: card.prHead? '1' : '0.5'}}
+                                          style={{opacity: card.prHead? '1' : ''}}
                                           onClick={() => {setCard({prHead: true})}}>Public Relations Head</span>
                                     <span className="individualDesignation" 
-                                          style={{opacity: card.designHead? '1' : '0.5'}}
+                                          style={{opacity: card.designHead? '1' : ''}}
                                           onClick={() => {setCard({designHead: true})}}>Design Head</span>
                                     <span className="individualDesignation"
-                                          style={{opacity: card.financeHead? '1' : '0.5'}}
+                                          style={{opacity: card.financeHead? '1' : ''}}
                                           onClick={() => {setCard({financeHead: true})}}>Finance Head</span>
                                     <span className="individualDesignation"
-                                          style={{opacity: card.contentHead? '1' : '0.5'}}
+                                          style={{opacity: card.contentHead? '1' : ''}}
                                           onClick={() => {setCard({contentHead : true})}}>Social Media and Content Head</span>
                                     <span className="individualDesignation"
-                                          style={{opacity: card.eventHeads? '1' : '0.5'}}
+                                          style={{opacity: card.eventHeads? '1' : ''}}
                                           onClick={() => {setCard({eventHeads: true})}}>Event Heads</span>
                               </div>
                         </div>
                   </div>
+                  <img src={bottom} style={{marginTop: '-50vw'}}/>
             </div>
       )
 };
