@@ -73,7 +73,8 @@
 	object-fit: cover;
 }
 .ant-image {
-	border-radius: 10px;
+	border-radius: 15px;
+	overflow: hidden;
 }
 .slick-dots {
 	margin-bottom: -1rem;
