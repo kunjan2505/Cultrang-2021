@@ -1,9 +1,11 @@
 import './App.css';
-import ContactUs from './components/pages/contactUs/contactUs.jsx'
+import AboutUs from './pages/about-us/aboutUs';
+import ContactUs from './components/pages/contactUs/contactUs';
 
 function App() {
   return (
-    <div>
+    <div className="App">
+      <AboutUs />
       <ContactUs />
     </div>
   );
