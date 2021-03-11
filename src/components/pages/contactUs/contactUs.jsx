@@ -19,6 +19,7 @@ import sponsorshipHead from '../../vectors/contact_headings/sponsorship_head.svg
 import photographyHead from '../../vectors/contact_headings/vivid_snaps.svg';
 import artHead from '../../vectors/contact_headings/brush_hour.svg';
 import managementHead from '../../vectors/contact_headings/management_head.svg';
+import treasureHead from '../../vectors/contact_headings/treasure_hunt.svg';
 import {Carousel} from 'antd';
 import aastha from '../../vectors/boarding_passes/aastha.svg';
 import adwait from '../../vectors/boarding_passes/adwait.svg';
@@ -27,15 +28,29 @@ import khushboo from '../../vectors/boarding_passes/khushboo.svg';
 import saksham from '../../vectors/boarding_passes/saksham.svg';
 import sejal from '../../vectors/boarding_passes/sejal.svg';
 import surya from '../../vectors/boarding_passes/surya.svg';
+import aadil from '../../vectors/boarding_passes/aadil.svg';
+import arpit from '../../vectors/boarding_passes/arpit.svg';
+import darshay from '../../vectors/boarding_passes/darshay.svg';
+import deep from '../../vectors/boarding_passes/deep.svg';
+import gunjan from '../../vectors/boarding_passes/gunjan.svg';
+import harshil from '../../vectors/boarding_passes/harshil.svg';
+import kartik from '../../vectors/boarding_passes/kartik.svg';
+import mansi from '../../vectors/boarding_passes/mansi.svg';
+import namami from '../../vectors/boarding_passes/namami.svg';
+import naveen from '../../vectors/boarding_passes/naveen.svg';
+import sanya from '../../vectors/boarding_passes/sanya.svg';
+import satvik from '../../vectors/boarding_passes/satvik.svg';
+import sourabh from '../../vectors/boarding_passes/sourabh.svg';
+import svara from '../../vectors/boarding_passes/svara.svg';
 import { useSpring, animated as a } from 'react-spring'
 
 const ContactUs = () => {
 
-      const [card, setCard] = useState({
-            ifcard: false,
-            studentAdvCard: false,
-            managementHead:false,
-            prHead:false,
+	const [card, setCard] = useState({
+		ifcard: false,
+		studentAdvCard: false,
+		managementHead:false,
+		prHead:false,
             sponsHead:false,
             financeHead:false,
             designHead:false,
@@ -109,27 +124,49 @@ const ContactUs = () => {
                         <div className="box-2" style={{flex:'1',height:'100vh',justifyContent:'center', alignItems:'center'}}>
 
                         <div onMouseOver={() => setFlipped(state => !state)}>
-                              <a.img className="c back" src={designHead} style={{display: card.designHead? '':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
-                              <a.img className="c front" src={khushboo} style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
+                              <a.img className="c back" src={designHead} style={{display: card.designHead? 'block':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
+                              <a.img className="c front" src={khushboo} style={{display: contacts.khushboo? 'block':'none', opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
+                        </div>
+
+                        <div onMouseOver={() => setFlipped(state => !state)}>
+                              <a.img className="c back" src={studentAdvisor} style={{display: card.studentAdvCard? '':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
+                              <a.img className="c front" src={harshil} style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
+                        </div>
+
+			<div onMouseOver={() => setFlipped(state => !state)}>
+				<a.img className="c back" src={overallCoordinator} style={{display: card.ifcard? '':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
+				<a.img className="c front" src={saksham} style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
+			</div>
+
+                        <div onMouseOver={() => setFlipped(state => !state)}>
+                              <a.img className="c back" src={financeHead} style={{display: card.financeHead? '':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
+                              <a.img className="c front" src={darshay} style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
+                        </div>
+
+                        <div onMouseOver={() => setFlipped(state => !state)}>
+                              <a.img className="c back" src={contentHead} style={{display: card.contentHead? '':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
+                              <a.img className="c front" src={sanya} style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
+                        </div>
+
+                        <div onMouseOver={() => setFlipped(state => !state)}>
+                              <a.img className="c back" src={managementHead} style={{display: card.managementHead? '':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
+                              <a.img className="c front" src={aadil} style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
                         </div>
 
                               
-                              <img src={studentAdvisor} style={{display: card.studentAdvCard? '':'none'}}/>
+                              
                               <img src={publicrelations} style={{display: card.prHead? '':'none'}}/>
-                              <img src={overallCoordinator} style={{display: card.ifcard? '':'none'}} />
                               <img src={ikraarHead} style={{display: card.ikraarHead? '':'none'}}/>
-                              <img src={contentHead} style={{display: card.contentHead? '':'none'}}/>
                               <img src={debateHead } style={{display: card.debateHead? '':'none'}}/>
                               <img src={sketchHead} style={{display: card.sketchHead? '':'none'}}/>
                               <img src={filmHead} style={{display: card.filmwarsHead? '':'none'}}/>
-                              <img src={financeHead} style={{display: card.financeHead? '':'none'}}/>
                               <img src={harmonyHead} style={{display: card.harmonyHead? '':'none'}}/>
                               <img src={quizHead} style={{display: card.quizHead? '':'none'}}/>
                               <img src={danceHead} style={{display: card.danceHead? '':'none'}}/>
-                              {/* <img src={sponsorshipHead} style={{display: card.sponsHead? '':'none'}}/> */}
+                              <img src={sponsorshipHead} style={{display: card.sponsHead? '':'none'}}/>
                               <img src={photographyHead } style={{display: card.vividHead? '':'none'}}/>
                               <img src={artHead} style={{display: card.brushHead? '':'none'}}/>
-                              <img src={managementHead} style={{display: card.managementHead? '':'none'}}/>
+                              <img src={treasureHead} style={{display: card.treasureHead? '':'none'}} />
 
                               <Carousel vertical style={{display: card.eventHeads? 'block':'none'}}>
                                     <div><img src={filmHead} /></div>
