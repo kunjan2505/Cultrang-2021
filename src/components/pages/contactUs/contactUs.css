@@ -40,3 +40,8 @@
 .container-1{
       margin-top: -50vw;
 }
+
+.c{
+      position: absolute;
+      will-change: opacity,transform;
+}

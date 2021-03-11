@@ -27,6 +27,7 @@ import khushboo from '../../vectors/boarding_passes/khushboo.svg';
 import saksham from '../../vectors/boarding_passes/saksham.svg';
 import sejal from '../../vectors/boarding_passes/sejal.svg';
 import surya from '../../vectors/boarding_passes/surya.svg';
+import { useSpring, animated as a } from 'react-spring'
 
 const ContactUs = () => {
 
@@ -77,6 +78,14 @@ const ContactUs = () => {
             naveen:false
       })
 
+      const [flipped, setFlipped] = useState(false);
+
+      const { transform, opacity } = useSpring({
+            opacity: flipped ? 1 : 0,
+            transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
+            config: { mass: 5, tension: 500, friction: 80 }
+      })
+
       return(
             <div className="contactUs">
                   <img src={clouds} />
@@ -99,7 +108,12 @@ const ContactUs = () => {
                         </div>
                         <div className="box-2" style={{flex:'1',height:'100vh',justifyContent:'center', alignItems:'center'}}>
 
-                              <img src={designHead} style={{display: card.designHead? '':'none'}}/>
+                        <div onMouseOver={() => setFlipped(state => !state)}>
+                              <a.img className="c back" src={designHead} style={{display: card.designHead? '':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
+                              <a.img className="c front" src={khushboo} style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
+                        </div>
+
+                              
                               <img src={studentAdvisor} style={{display: card.studentAdvCard? '':'none'}}/>
                               <img src={publicrelations} style={{display: card.prHead? '':'none'}}/>
                               <img src={overallCoordinator} style={{display: card.ifcard? '':'none'}} />
