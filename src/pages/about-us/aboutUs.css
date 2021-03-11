@@ -1,0 +1,137 @@
+.about-us-container {
+	background: radial-gradient(farthest-side, #5cb6d9, #308ec0);
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.about-us {
+	display: flex;
+	justify-content: center;
+	margin-top: -41vw;
+}
+.content-div {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content {
+	background-color: white;
+	width: 42vw;
+	height: 400px;
+	border-radius: 10px;
+	margin-left: 5rem;
+	z-index: 1;
+	position: absolute;
+	overflow-y: auto;
+}
+.content-dark {
+	background-color: black;
+	width: 42vw;
+	height: 402px;
+	border-radius: 10px;
+	margin-left: 5rem;
+	transform-origin: top right;
+	opacity: 0.3;
+	transform: rotate(-1.3deg);
+}
+.slider-div {
+	width: 340px;
+	margin-left: 5rem;
+}
+.slick-prev:before {
+	font-size: 25px;
+}
+.slick-next:before {
+	font-size: 25px;
+}
+.regrets {
+	font-size: large;
+	padding: 2rem;
+	font-family: 'Roboto', sans-serif;
+	text-align: left;
+}
+.content::-webkit-scrollbar {
+	display: none;
+}
+.buildings {
+	margin-top: -53vw;
+}
+.heading-container1 {
+	margin-top: 3rem;
+}
+.heading-container2 {
+	display: none;
+}
+.heading {
+	font-size: 72px;
+	color: white;
+	display: block;
+}
+.ant-image-img {
+	object-fit: cover;
+}
+.ant-image {
+	border-radius: 10px;
+}
+.slick-dots {
+	margin-bottom: -1rem;
+}
+.images {
+	width: 150px;
+	height: 150px;
+}
+@media only screen and (max-width: 1100px) {
+	.images {
+		width: 100px;
+		height: 100px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.content-div {
+		flex-direction: column;
+	}
+	.content {
+		width: 80vw;
+		margin-left: 0;
+	}
+	.content-dark {
+		width: 80vw;
+		margin-left: 0;
+	}
+	.slider-div {
+		margin-left: 0;
+		margin-top: 3rem;
+	}
+	.regrets {
+		font-size: 14px;
+		padding: 1rem;
+	}
+	.heading-container2 {
+		/* transform: translateY(-9rem); */
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		display: inline-block;
+	}
+	.heading {
+		font-size: 36px;
+		color: white;
+	}
+	.slider-div {
+		width: 400px;
+	}
+	.heading-container1 {
+		display: none;
+	}
+	.buildings {
+		margin-top: -30vw;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.slider-div {
+		width: 250px;
+	}
+}
