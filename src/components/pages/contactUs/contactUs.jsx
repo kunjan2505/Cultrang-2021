@@ -47,7 +47,7 @@ import { useSpring, animated as a } from 'react-spring'
 const ContactUs = () => {
 
 	const [card, setCard] = useState({
-		ifcard: false,
+		ifcard: true,
 		studentAdvCard: false,
 		managementHead:false,
 		prHead:false,
@@ -123,34 +123,162 @@ const ContactUs = () => {
                         </div>
                         <div className="box-2" style={{flex:'1',height:'100vh',justifyContent:'center', alignItems:'center'}}>
 
-                        <div onMouseOver={() => setFlipped(state => !state)}>
-                              <a.img className="c back" src={designHead} style={{display: card.designHead? 'block':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
-                              <a.img className="c front" src={khushboo} style={{display: contacts.khushboo? 'block':'none', opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
+                        <div onClick={() => setFlipped(state => !state)}>
+                              <a.img className="c back" src={designHead} onClick={() => setContacts({khushboo: true, 
+																				saksham:false,
+																				harshil:false,
+																				aadil:false,
+																				aastha:false,
+																				adwait:false,
+																				surya:false,
+																				sourabh:false,
+																				darshay:false,
+																				sanya:false,
+																				sejal:false,
+																				namami:false,
+																				kartik:false,
+																				svara:false,
+																				satvik:false,
+																				deep:false,
+																				gunjan:false,
+																				mansi:false,
+																				akshay:false,
+																				arpit:false,
+																				naveen:false})} style={{display: card.designHead? 'block':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
+                              <a.img className="c front" src={khushboo} style={{display: contacts.khushboo? 'block': 'none', opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
                         </div>
 
-                        <div onMouseOver={() => setFlipped(state => !state)}>
-                              <a.img className="c back" src={studentAdvisor} style={{display: card.studentAdvCard? '':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
-                              <a.img className="c front" src={harshil} style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
+                        <div onClick={() => setFlipped(state => !state)}>
+                              <a.img className="c back" src={studentAdvisor} onClick={() => setContacts({
+					saksham:false,
+					harshil:true,
+					aadil:false,
+					aastha:false,
+					adwait:false,
+					surya:false,
+					sourabh:false,
+					darshay:false,
+					sanya:false,
+					sejal:false,
+					namami:false,
+					kartik:false,
+					svara:false,
+					satvik:false,
+					deep:false,
+					gunjan:false,
+					mansi:false,
+					akshay:false,
+					arpit:false,
+					naveen:false
+			      })} style={{display: card.studentAdvCard? 'block':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
+                              <a.img className="c front" src={harshil} style={{ display: contacts.harshil? 'block':'none', opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
                         </div>
-
-			<div onMouseOver={() => setFlipped(state => !state)}>
-				<a.img className="c back" src={overallCoordinator} style={{display: card.ifcard? '':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
-				<a.img className="c front" src={saksham} style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
+			
+			<div onClick={() => setFlipped(flipped => !flipped)}>
+				<a.img className="c back" src={overallCoordinator} onClick={() => setContacts({
+					saksham:true,
+					harshil:false,
+					aadil:false,
+					aastha:false,
+					adwait:false,
+					surya:false,
+					sourabh:false,
+					darshay:false,
+					sanya:false,
+					sejal:false,
+					namami:false,
+					kartik:false,
+					svara:false,
+					satvik:false,
+					deep:false,
+					gunjan:false,
+					mansi:false,
+					akshay:false,
+					arpit:false,
+					naveen:false
+			      })} style={{display: card.ifcard? 'block':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
+				<a.img className="c front" src={saksham} style={{display: contacts.saksham? 'block':'none', opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
 			</div>
 
-                        <div onMouseOver={() => setFlipped(state => !state)}>
-                              <a.img className="c back" src={financeHead} style={{display: card.financeHead? '':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
-                              <a.img className="c front" src={darshay} style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
+                        <div onClick={() => setFlipped(flipped => !flipped)}>
+                              <a.img className="c back" src={financeHead} onClick={() => setContacts({
+					saksham:false,
+					harshil:false,
+					aadil:false,
+					aastha:false,
+					adwait:false,
+					surya:false,
+					sourabh:false,
+					darshay:true,
+					sanya:false,
+					sejal:false,
+					namami:false,
+					kartik:false,
+					svara:false,
+					satvik:false,
+					deep:false,
+					gunjan:false,
+					mansi:false,
+					akshay:false,
+					arpit:false,
+					naveen:false
+			      })} style={{display: card.financeHead? 'block':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
+                              <a.img className="c front" src={darshay} style={{ display: contacts.darshay? 'block':'none', opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
                         </div>
 
-                        <div onMouseOver={() => setFlipped(state => !state)}>
-                              <a.img className="c back" src={contentHead} style={{display: card.contentHead? '':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
-                              <a.img className="c front" src={sanya} style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
+                        <div onClick={() => setFlipped(state => !state)}>
+                              <a.img className="c back" src={contentHead} onClick={() => setContacts({
+					saksham:false,
+					harshil:false,
+					aadil:false,
+					aastha:false,
+					adwait:false,
+					surya:false,
+					sourabh:false,
+					darshay:false,
+					sanya:true,
+					sejal:false,
+					namami:false,
+					kartik:false,
+					svara:false,
+					satvik:false,
+					deep:false,
+					gunjan:false,
+					mansi:false,
+					akshay:false,
+					arpit:false,
+					naveen:false
+			})} style={{display: card.contentHead? 'block':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
+                              <a.img className="c front" src={sanya} style={{ display: contacts.sanya? 'block':'none', opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
                         </div>
 
-                        <div onMouseOver={() => setFlipped(state => !state)}>
-                              <a.img className="c back" src={managementHead} style={{display: card.managementHead? '':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
-                              <a.img className="c front" src={aadil} style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
+                        <div onClick={() => {
+				setFlipped(state => !state)
+				setContacts(contacts => !contacts)}
+			}>
+                              <a.img className="c back" src={managementHead} onClick={() => setContacts({
+					saksham:false,
+					harshil:false,
+					aadil:true,
+					aastha:false,
+					adwait:false,
+					surya:false,
+					sourabh:false,
+					darshay:false,
+					sanya:false,
+					sejal:false,
+					namami:false,
+					kartik:false,
+					svara:false,
+					satvik:false,
+					deep:false,
+					gunjan:false,
+					mansi:false,
+					akshay:false,
+					arpit:false,
+					naveen:false
+			})} style={{display: card.managementHead? 'block':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
+                              <a.img className="c front" src={aadil} style={{ display: contacts.aadil? 'block':'none',opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
                         </div>
 
                               
