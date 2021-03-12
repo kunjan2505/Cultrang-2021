@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 .about-us-container {
 	background: radial-gradient(farthest-side, #5cb6d9, #308ec0);
 	width: 100vw;
@@ -70,6 +71,7 @@
 	font-size: 72px;
 	color: white;
 	display: block;
+	font-family: 'Roboto', sans-serif;;
 }
 .ant-image-img {
 	object-fit: cover;
