@@ -1,0 +1,197 @@
+@import url('http://fonts.cdnfonts.com/css/samarkan');
+.home-container{
+  height: 100vh;
+  background-color: orange;
+  background-size: 100% 100%;
+  display: flex;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 20px;
+  top: 20px;
+}
+
+span.bm-burger-bars {
+  background: white;
+}
+  
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+  
+
+.bm-cross {
+  background: #bdc3c7;
+}
+  
+div.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  min-width: min(70vw,500px);
+}
+  
+.bm-menu {
+  background: white;
+  padding: 2.5em 1.5em 2.5rem;
+  font-size: 1.15em;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bm-morph-shape {
+  fill: #373a47;
+}
+  
+.bm-item-list {
+  color: #b8b7ad;
+  position: absolute;
+  line-height: 45px;
+  top: -3.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bm-cross{
+    background: orange;
+    min-width: 5px;
+    min-height: 20px;
+}
+
+  
+.bm-item {
+  display: inline-block;
+  color: orange;
+  outline: none;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 600;
+}
+  
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+  
+
+.cultrang-title{
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  left: 11.5vw;;
+  font-size: 20vw;
+  font-family: 'Samarkan';
+  color: white;
+  top: 35vh;
+}
+
+.cloud1{
+  position: absolute;
+  min-height: 25vh;
+  min-width: 100vw;
+  background-image: url("./HomeIcon/Asset23.png");
+  background-size: 100% 100%;
+  top: -5vh;
+  opacity: 0.7;
+}
+
+.cloud2{
+  position: absolute;
+  min-height: 25vh;
+  min-width: 100vw;
+  background-image: url("./HomeIcon/Asset\ 22.png");
+  background-size: 100% 100%;
+  top: -5vh;
+  opacity: 0.7;
+}
+
+.bottom{
+  position: absolute;
+  bottom: -0.6vh;
+}
+
+.taj{
+  position: absolute;
+  min-height: 22vh;
+  min-width: 45vw;
+  background-image: url("./HomeIcon/Asset\ 19.png");
+  background-size: 100% 100%;
+  bottom: -0.5vh;
+}
+
+.plane1{
+  position: absolute;
+  min-height: 10vh;
+  min-width: 15vw;
+  background-image: url("./HomeIcon/Asset\ 9.png");
+  background-size: 100% 100%;
+  bottom: 27vh;
+  left: 7vw;
+}
+
+.eiffel-tower{
+  position: absolute;
+  min-height: 32vh;
+  min-width: 25vw;
+  background-image: url("./HomeIcon/Asset\ 16.png");
+  background-size: 100% 100%;
+  bottom: 0vh;
+  left: 44vw;
+}
+
+.fairywheel{
+  position: absolute;
+  min-height: 23vh;
+  min-width: 35vw;
+  background-image: url("./HomeIcon/Asset\ 14.png");
+  background-size: 100% 100%;
+  bottom: 0vh;
+  left: 65vw;
+}
+
+.baloon1{
+  position: absolute;
+  min-height: 10vh;
+  min-width: 15vw;
+  background-image: url("./HomeIcon/Asset\ 10.png");
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+  bottom: 20vh;
+  left: 23vw;
+}
+
+.baloon2{
+  position: absolute;
+  min-height: 10vh;
+  min-width: 15vw;
+  background-image: url("./HomeIcon/Asset\ 10.png");
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+  bottom: 23vh;
+  left: 85vw;
+}
+
+.plane2{
+  position: absolute;
+  min-height: 10vh;
+  min-width: 15vw;
+  background-image: url("./HomeIcon/Asset\ 12.png");
+  background-size: 100% 100%;
+  bottom: 27vh;
+  left: 65vw;
+}
+
+.moon{
+  position: absolute;
+  min-height: 10vh;
+  min-width: 15vw;
+  background-image: url("./HomeIcon/Asset\ 11.png");
+  background-size: 100% 100%;
+  bottom: 27vh;
+  left: 38vw;
+}
