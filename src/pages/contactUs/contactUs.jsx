@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useSpring, animated as a } from 'react-spring';
+import Slider from 'react-slick';
+import './contactUs.css';
 import clouds from '../../components/vectors/contactUs/contact_us_cloud.svg';
 import bottom from '../../components/vectors/contactUs/contact_us_bottom.svg';
-import './contactUs.css';
 import designHead from '../../components/vectors/contact_headings/design_head.png';
 import studentAdvisor from '../../components/vectors/contact_headings/student_advisor.png';
 import prHead from '../../components/vectors/contact_headings/pr_head.png';
@@ -63,8 +65,6 @@ import sejal_m from '../../components/vectors/mobile_passes/sejal_m@4x.png';
 import sourabh_m from '../../components/vectors/mobile_passes/sourabh_m@4x.png';
 import surya_m from '../../components/vectors/mobile_passes/surya_m@4x.png';
 import svara_m from '../../components/vectors/mobile_passes/svara_m@4x.png';
-import { useSpring, animated as a } from 'react-spring';
-import Slider from 'react-slick';
 
 const ContactUs = () => {
 	const settings = {
