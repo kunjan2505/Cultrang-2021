@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import clouds from '../../vectors/contactUs/contact_us_cloud.svg';
 import bottom from '../../vectors/contactUs/contact_us_bottom.svg';
 import './contactUs.css';
@@ -70,58 +70,143 @@ const ContactUs = () => {
       })
 
       const [contacts,setContacts] = useState({
-            khushboo:false,
-            saksham:false,
-            harshil:false,
-            aadil:false,
-            aastha:false,
-            adwait:false,
-            surya:false,
-            sourabh:false,
-            darshay:false,
-            sanya:false,
-            sejal:false,
-            namami:false,
-            kartik:false,
-            svara:false,
-            satvik:false,
-            deep:false,
-            gunjan:false,
-            mansi:false,
-            akshay:false,
-            arpit:false,
-            naveen:false
+	khushboo: false, 
+	saksham:false,
+	harshil:false,
+	aadil:false,
+	aastha:false,
+	adwait:false,
+	surya:false,
+	sourabh:false,
+	darshay:false,
+	sanya:false,
+	sejal:false,
+	namami:false,
+	kartik:false,
+	svara:false,
+	satvik:false,
+	deep:false,
+	gunjan:false,
+	mansi:false,
+	akshay:false,
+	arpit:false,
+	naveen:false
       })
 
-      const [flipped, setFlipped] = useState(false);
+	const [flipped, setFlipped] = useState(false);
 
-      const { transform, opacity } = useSpring({
-            opacity: flipped ? 1 : 0,
-            transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
-            config: { mass: 5, tension: 500, friction: 80 }
-      })
+	const { transform, opacity } = useSpring({
+		opacity: flipped ? 1 : 0,
+		transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
+		config: { mass: 5, tension: 500, friction: 80 },
+	});
 
-      return(
-            <div className="contactUs">
-                  <img src={clouds} />
-                  <div className="container-1" style={{display:'flex', zIndex:'2'}}>
-                        <div className="box-1" style={{flex:'1',height:'100vh', justifyContent:'center', alignItems:'center'}}>
-                              <div className="designation" style={{display:'flex',flexDirection:'column', justifyContent:'center', alignItems:'center', alignContent:'center'}}>
-                                    <span className="individualDesignation" 
-                                                style={{opacity: card.ifcard? '1' : ''}}
-                                                onClick={() => {setCard({ifcard: true})}}> Overall Coordinator</span>
-                                    <span className="individualDesignation" 
-                                                style={{opacity: card.studentAdvCard? '1' : ''}}
-                                                onClick={() => {setCard({studentAdvCard: true})}}>Student Adviser</span>
-                                    <span className="individualDesignation"
-                                          style={{opacity: card.managementHead? '1' : ''}}
-                                          onClick={() => {setCard({managementHead: true})}}>Management Head</span>
-                                    <span className="individualDesignation"
-                                          style={{opacity: card.sponsorshipHead? '1' : ''}}
-                                          onClick={() => {setCard({sponsorshipHead: true})}}>Sponsorship Head</span>
-                              </div>
-                        </div>
-                        <div className="box-2" style={{flex:'1',height:'100vh',justifyContent:'center', alignItems:'center'}}>
+	return (
+		<div className='contactUs'>
+			<img src={clouds} />
+			<div className='container-1'>
+				<div className='designation'>
+					<span
+						className='individualDesignation'
+						style={{ opacity: card.ifcard ? '1' : '' }}
+						onClick={() => {
+							setCard({ ifcard: true });
+						}}
+					>
+						{' '}
+						Overall Coordinator
+					</span>
+					<span
+						className='individualDesignation'
+						style={{ opacity: card.studentAdvCard ? '1' : '' }}
+						onClick={() => {
+							setCard({ studentAdvCard: true });
+						}}
+					>
+						Student Adviser
+					</span>
+					<span
+						className='individualDesignation'
+						style={{ opacity: card.managementHead ? '1' : '' }}
+						onClick={() => {
+							setCard({ managementHead: true });
+						}}
+					>
+						Management Head
+					</span>
+					<span
+						className='individualDesignation'
+						style={{ opacity: card.sponsorshipHead ? '1' : '' }}
+						onClick={() => {
+							setCard({ sponsorshipHead: true });
+						}}
+					>
+						Sponsorship Head
+					</span>
+				</div>
+				<div className='box-2' style={{}}>
+					<div onMouseOver={() => setFlipped((state) => !state)}>
+						<a.img
+							className='c back'
+							src={designHead}
+							onMouseOver={() => setContacts({ khushboo: true })}
+							style={{
+								display: card.designHead ? 'block' : 'none',
+								opacity: opacity.interpolate((o) => 1 - o),
+								transform,
+							}}
+						/>
+						<a.img
+							className='c front'
+							src={khushboo}
+							style={{
+								display: contacts.khushboo ? 'block' : 'none',
+								opacity,
+								transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
+							}}
+						/>
+					</div>
+
+					<img
+						src={studentAdvisor}
+						style={{ display: card.studentAdvCard ? '' : 'none' }}
+					/>
+					<img
+						src={publicrelations}
+						style={{ display: card.prHead ? '' : 'none' }}
+					/>
+					<img
+						src={overallCoordinator}
+						style={{ display: card.ifcard ? '' : 'none' }}
+					/>
+					<img src={ikraarHead} style={{ display: card.ikraarHead ? '' : 'none' }} />
+					<img
+						src={contentHead}
+						style={{ display: card.contentHead ? '' : 'none' }}
+					/>
+					<img src={debateHead} style={{ display: card.debateHead ? '' : 'none' }} />
+					<img src={sketchHead} style={{ display: card.sketchHead ? '' : 'none' }} />
+					<img src={filmHead} style={{ display: card.filmwarsHead ? '' : 'none' }} />
+					<img
+						src={financeHead}
+						style={{ display: card.financeHead ? '' : 'none' }}
+					/>
+					<img
+						src={harmonyHead}
+						style={{ display: card.harmonyHead ? '' : 'none' }}
+					/>
+					<img src={quizHead} style={{ display: card.quizHead ? '' : 'none' }} />
+					<img src={danceHead} style={{ display: card.danceHead ? '' : 'none' }} />
+					{/* <img src={sponsorshipHead} style={{display: card.sponsHead? '':'none'}}/> */}
+					<img
+						src={photographyHead}
+						style={{ display: card.vividHead ? '' : 'none' }}
+					/>
+					<img src={artHead} style={{ display: card.brushHead ? '' : 'none' }} />
+					<img
+						src={managementHead}
+						style={{ display: card.managementHead ? '' : 'none' }}
+					/>
 
                         <div onClick={() => setFlipped(state => !state)}>
                               <a.img className="c back" src={designHead} onClick={() => setContacts({khushboo: true, 
