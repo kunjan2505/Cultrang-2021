@@ -1,0 +1,33 @@
+.register-container{
+    background: radial-gradient(farthest-side, #1A53E6, #3678f3);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.clouds{
+    width: 100vw;
+}
+.register-div{
+    background-color: white;
+    width: 50vw;
+    padding: 1rem 3rem 1rem 3rem;
+    transform: translate(1px);
+    height: 50vh;
+    border-radius: 50px;
+    margin-top: -40vw;
+    box-shadow: 5px 10px 20px #353535;
+}
+.bbuilding{
+    width: 100vw;
+    margin-top: -50vw;
+}
+.heading-container-reg{
+    margin-top: 5rem;
+}
+.headingReg{
+    font-size: 72px;
+	color: white;
+	display: block;
+	font-family: 'Montserrat';
+}

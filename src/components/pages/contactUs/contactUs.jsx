@@ -46,15 +46,14 @@ import { useSpring, animated as a } from 'react-spring';
 import Slider from 'react-slick';
 
 const ContactUs = () => {
-
 	const settings = {
 		dots: true,
 		infinite: true,
 		slidesToShow: 2,
-		slidesToScroll: 1,
+		slidesToScroll: 0,
 		vertical: true,
 		verticalSwiping: true,
-	}
+	};
 
 	const [card, setCard] = useState({
 		ifcard: true,
@@ -63,7 +62,7 @@ const ContactUs = () => {
 		prHead: false,
 		sponsHead1: false,
 		sponsHead2: false,
-		sponsCarousel:false,
+		sponsCarousel: false,
 		financeHead: false,
 		designHead: false,
 		contentHead: false,
@@ -221,37 +220,25 @@ const ContactUs = () => {
 						/>
 					</div>
 
-					<div>
-						<Slider {...settings} style={{display: card.sponsCarousel? 'block' : 'none', width:'40vw'}}>
-							<div onClick = {() => setFlipped((flipped) => !flipped)}
-								style = {{ display: card.sponsHead1? '' : 'none'}} >
+					{/* <div
+						style={{
+							display: card.sponsCarousel ? 'block' : 'none',
+							width: '40vw',
+							height: '50vh',
+						}}
+					>
+						<Slider {...settings}>
+							<div
+								onClick={() => setFlipped((flipped) => !flipped)}
+								style={{ display: card.sponsHead2 ? '' : 'none' }}
+							>
 								<a.img
-								className='c back'
-								src={sponsorshipHead}
-								style={{
-									opacity: opacity.interpolate((o) => 1 - o),
-									transform,
-								}}
-								/>
-								<a.img
-									className='c front'
-									src={aastha}
+									className='c back'
+									src={sponsorshipHead}
 									style={{
-										opacity,
-										transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
+										opacity: opacity.interpolate((o) => 1 - o),
+										transform,
 									}}
-								/>
-							</div>
-
-							<div onClick = {() => setFlipped((flipped) => !flipped)}
-								style = {{ display: card.sponsHead2? '' : 'none'}} >
-								<a.img
-								className='c back'
-								src={sponsorshipHead}
-								style={{
-									opacity: opacity.interpolate((o) => 1 - o),
-									transform,
-								}}
 								/>
 								<a.img
 									className='c front'
@@ -262,7 +249,91 @@ const ContactUs = () => {
 									}}
 								/>
 							</div>
+							<div
+								onClick={() => setFlipped((flipped) => !flipped)}
+								style={{ display: card.sponsHead1 ? '' : 'none' }}
+							>
+								<a.img
+									className='c back'
+									src={sponsorshipHead}
+									style={{
+										opacity: opacity.interpolate((o) => 1 - o),
+										transform,
+									}}
+								/>
+								<a.img
+									className='c front'
+									src={aastha}
+									style={{
+										opacity,
+										transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
+									}}
+								/>
+							</div>
 						</Slider>
+					</div> */}
+
+					<div
+						id='carouselExampleControls'
+						class='carousel slide'
+						data-bs-ride='carousel'
+					>
+						<div class='carousel-inner'>
+							<div class='carousel-item active'>
+								<a.img
+									className='c back'
+									src={sponsorshipHead}
+									style={{
+										opacity: opacity.interpolate((o) => 1 - o),
+										transform,
+									}}
+								/>
+								<a.img
+									className='c front d-block w-100'
+									src={adwait}
+									style={{
+										opacity,
+										transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
+									}}
+								/>
+							</div>
+							<div class='carousel-item'>
+								<a.img
+									className='c back'
+									src={sponsorshipHead}
+									style={{
+										opacity: opacity.interpolate((o) => 1 - o),
+										transform,
+									}}
+								/>
+								<a.img
+									className='c front'
+									src={aastha}
+									style={{
+										opacity,
+										transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
+									}}
+								/>
+							</div>
+						</div>
+						<button
+							class='carousel-control-prev'
+							type='button'
+							data-bs-target='#carouselExampleControls'
+							data-bs-slide='prev'
+						>
+							<span class='carousel-control-prev-icon' aria-hidden='true'></span>
+							<span class='visually-hidden'>Previous</span>
+						</button>
+						<button
+							class='carousel-control-next'
+							type='button'
+							data-bs-target='#carouselExampleControls'
+							data-bs-slide='next'
+						>
+							<span class='carousel-control-next-icon' aria-hidden='true'></span>
+							<span class='visually-hidden'>Next</span>
+						</button>
 					</div>
 
 					<div
