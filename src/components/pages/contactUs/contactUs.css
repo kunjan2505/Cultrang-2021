@@ -46,14 +46,17 @@
 	justify-content: center;
 	align-items: center;
 	display: flex;
-	transform: translate(1px); 
+	transform: translate(1px);
 	z-index: 2;
 	margin-top: -40vw;
 }
 
 .c {
-	/* position: absolute; */
+	position: absolute;
 	will-change: opacity, transform;
+    max-width: 35vw;
+    margin-left: -15vw;
+    margin-top: -8vw;
 }
 .designation {
 	display: flex;
@@ -65,4 +68,8 @@
 }
 .contact-us-building {
 	z-index: -2;
+}
+.front,
+.back {
+	background-size: cover;
 }

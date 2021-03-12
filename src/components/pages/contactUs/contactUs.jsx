@@ -68,29 +68,29 @@ const ContactUs = () => {
 		eventHeads: false,
 	});
 
-	const [contacts, setContacts] = useState({
-		khushboo: false,
-		saksham: false,
-		harshil: false,
-		aadil: false,
-		aastha: false,
-		adwait: false,
-		surya: false,
-		sourabh: false,
-		darshay: false,
-		sanya: false,
-		sejal: false,
-		namami: false,
-		kartik: false,
-		svara: false,
-		satvik: false,
-		deep: false,
-		gunjan: false,
-		mansi: false,
-		akshay: false,
-		arpit: false,
-		naveen: false,
-	});
+	// const [contacts, setContacts] = useState({
+	// 	khushboo: false,
+	// 	saksham: false,
+	// 	harshil: false,
+	// 	aadil: false,
+	// 	aastha: false,
+	// 	adwait: false,
+	// 	surya: false,
+	// 	sourabh: false,
+	// 	darshay: false,
+	// 	sanya: false,
+	// 	sejal: false,
+	// 	namami: false,
+	// 	kartik: false,
+	// 	svara: false,
+	// 	satvik: false,
+	// 	deep: false,
+	// 	gunjan: false,
+	// 	mansi: false,
+	// 	akshay: false,
+	// 	arpit: false,
+	// 	naveen: false,
+	// });
 
 	const [flipped, setFlipped] = useState(false);
 
@@ -103,7 +103,7 @@ const ContactUs = () => {
 	return (
 		<div className='contactUs'>
 			<img src={clouds} />
-			<div className='container-1' >
+			<div className='container-1'>
 				<div className='designation'>
 					<span
 						className='individualDesignation'
@@ -143,14 +143,15 @@ const ContactUs = () => {
 						Sponsorship Head
 					</span>
 				</div>
-				<div className='box-2' style={{}}>
-					<div onMouseOver={() => setFlipped((state) => !state)}>
+				<div className='box-2'>
+					<div
+						onClick={() => setFlipped((state) => !state)}
+						style={{ display: card.designHead ? '' : 'none' }}
+					>
 						<a.img
 							className='c back'
 							src={designHead}
-							onMouseOver={() => setContacts({ khushboo: true })}
 							style={{
-								display: card.designHead ? 'block' : 'none',
 								opacity: opacity.interpolate((o) => 1 - o),
 								transform,
 							}}
@@ -159,14 +160,14 @@ const ContactUs = () => {
 							className='c front'
 							src={khushboo}
 							style={{
-								display: contacts.khushboo ? 'block' : 'none',
+								// display: contacts.khushboo ? '' : 'none',
 								opacity,
 								transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
 							}}
 						/>
 					</div>
 
-					<img
+					{/* <img
 						src={studentAdvisor}
 						style={{ display: card.studentAdvCard ? '' : 'none' }}
 					/>
@@ -196,7 +197,7 @@ const ContactUs = () => {
 					/>
 					<img src={quizHead} style={{ display: card.quizHead ? '' : 'none' }} />
 					<img src={danceHead} style={{ display: card.danceHead ? '' : 'none' }} />
-					{/* <img src={sponsorshipHead} style={{display: card.sponsHead? '':'none'}}/> */}
+					<img src={sponsorshipHead} style={{display: card.sponsHead? '':'none'}}/>
 					<img
 						src={photographyHead}
 						style={{ display: card.vividHead ? '' : 'none' }}
@@ -205,9 +206,12 @@ const ContactUs = () => {
 					<img
 						src={managementHead}
 						style={{ display: card.managementHead ? '' : 'none' }}
-					/>
+					/> */}
 
-					<div onClick={() => setFlipped((state) => !state)}>
+					{/* <div
+						onClick={() => setFlipped((state) => !state)}
+						style={{ display: card.designHead ? '' : 'none' }}
+					>
 						<a.img
 							className='c back'
 							src={designHead}
@@ -237,7 +241,6 @@ const ContactUs = () => {
 								})
 							}
 							style={{
-								display: card.designHead ? 'block' : 'none',
 								opacity: opacity.interpolate((o) => 1 - o),
 								transform,
 							}}
@@ -251,38 +254,16 @@ const ContactUs = () => {
 								transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
 							}}
 						/>
-					</div>
+					</div> */}
 
-					<div onClick={() => setFlipped((state) => !state)}>
+					<div
+						onClick={() => setFlipped((state) => !state)}
+						style={{ display: card.studentAdvCard ? '' : 'none' }}
+					>
 						<a.img
 							className='c back'
 							src={studentAdvisor}
-							onClick={() =>
-								setContacts({
-									saksham: false,
-									harshil: true,
-									aadil: false,
-									aastha: false,
-									adwait: false,
-									surya: false,
-									sourabh: false,
-									darshay: false,
-									sanya: false,
-									sejal: false,
-									namami: false,
-									kartik: false,
-									svara: false,
-									satvik: false,
-									deep: false,
-									gunjan: false,
-									mansi: false,
-									akshay: false,
-									arpit: false,
-									naveen: false,
-								})
-							}
 							style={{
-								display: card.studentAdvCard ? 'block' : 'none',
 								opacity: opacity.interpolate((o) => 1 - o),
 								transform,
 							}}
@@ -291,43 +272,44 @@ const ContactUs = () => {
 							className='c front'
 							src={harshil}
 							style={{
-								display: contacts.harshil ? 'block' : 'none',
 								opacity,
 								transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
 							}}
 						/>
 					</div>
 
-					<div onClick={() => setFlipped((flipped) => !flipped)}>
+					<div
+						onClick={() => setFlipped((flipped) => !flipped)}
+						style={{ display: card.ifcard ? 'block' : 'none' }}
+					>
 						<a.img
 							className='c back'
 							src={overallCoordinator}
-							onClick={() =>
-								setContacts({
-									saksham: true,
-									harshil: false,
-									aadil: false,
-									aastha: false,
-									adwait: false,
-									surya: false,
-									sourabh: false,
-									darshay: false,
-									sanya: false,
-									sejal: false,
-									namami: false,
-									kartik: false,
-									svara: false,
-									satvik: false,
-									deep: false,
-									gunjan: false,
-									mansi: false,
-									akshay: false,
-									arpit: false,
-									naveen: false,
-								})
-							}
+							// onClick={() =>
+							// 	setContacts({
+							// 		saksham: true,
+							// 		harshil: false,
+							// 		aadil: false,
+							// 		aastha: false,
+							// 		adwait: false,
+							// 		surya: false,
+							// 		sourabh: false,
+							// 		darshay: false,
+							// 		sanya: false,
+							// 		sejal: false,
+							// 		namami: false,
+							// 		kartik: false,
+							// 		svara: false,
+							// 		satvik: false,
+							// 		deep: false,
+							// 		gunjan: false,
+							// 		mansi: false,
+							// 		akshay: false,
+							// 		arpit: false,
+							// 		naveen: false,
+							// 	})
+							// }
 							style={{
-								display: card.ifcard ? 'block' : 'none',
 								opacity: opacity.interpolate((o) => 1 - o),
 								transform,
 							}}
@@ -336,43 +318,45 @@ const ContactUs = () => {
 							className='c front'
 							src={saksham}
 							style={{
-								display: contacts.saksham ? 'block' : 'none',
+								// display: contacts.saksham ? 'block' : 'none',
 								opacity,
 								transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
 							}}
 						/>
 					</div>
 
-					<div onClick={() => setFlipped((flipped) => !flipped)}>
+					<div
+						onClick={() => setFlipped((flipped) => !flipped)}
+						style={{ display: card.financeHead ? '' : 'none' }}
+					>
 						<a.img
 							className='c back'
 							src={financeHead}
-							onClick={() =>
-								setContacts({
-									saksham: false,
-									harshil: false,
-									aadil: false,
-									aastha: false,
-									adwait: false,
-									surya: false,
-									sourabh: false,
-									darshay: true,
-									sanya: false,
-									sejal: false,
-									namami: false,
-									kartik: false,
-									svara: false,
-									satvik: false,
-									deep: false,
-									gunjan: false,
-									mansi: false,
-									akshay: false,
-									arpit: false,
-									naveen: false,
-								})
-							}
+							// onClick={() =>
+							// 	setContacts({
+							// 		saksham: false,
+							// 		harshil: false,
+							// 		aadil: false,
+							// 		aastha: false,
+							// 		adwait: false,
+							// 		surya: false,
+							// 		sourabh: false,
+							// 		darshay: true,
+							// 		sanya: false,
+							// 		sejal: false,
+							// 		namami: false,
+							// 		kartik: false,
+							// 		svara: false,
+							// 		satvik: false,
+							// 		deep: false,
+							// 		gunjan: false,
+							// 		mansi: false,
+							// 		akshay: false,
+							// 		arpit: false,
+							// 		naveen: false,
+							// 	})
+							// }
 							style={{
-								display: card.financeHead ? 'block' : 'none',
 								opacity: opacity.interpolate((o) => 1 - o),
 								transform,
 							}}
@@ -381,43 +365,45 @@ const ContactUs = () => {
 							className='c front'
 							src={darshay}
 							style={{
-								display: contacts.darshay ? 'block' : 'none',
+								// display: contacts.darshay ? 'block' : 'none',
 								opacity,
 								transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
 							}}
 						/>
 					</div>
 
-					<div onClick={() => setFlipped((state) => !state)}>
+					<div
+						onClick={() => setFlipped((state) => !state)}
+						style={{ display: card.contentHead ? '' : 'none' }}
+					>
 						<a.img
 							className='c back'
 							src={contentHead}
-							onClick={() =>
-								setContacts({
-									saksham: false,
-									harshil: false,
-									aadil: false,
-									aastha: false,
-									adwait: false,
-									surya: false,
-									sourabh: false,
-									darshay: false,
-									sanya: true,
-									sejal: false,
-									namami: false,
-									kartik: false,
-									svara: false,
-									satvik: false,
-									deep: false,
-									gunjan: false,
-									mansi: false,
-									akshay: false,
-									arpit: false,
-									naveen: false,
-								})
-							}
+							// onClick={() =>
+							// 	setContacts({
+							// 		saksham: false,
+							// 		harshil: false,
+							// 		aadil: false,
+							// 		aastha: false,
+							// 		adwait: false,
+							// 		surya: false,
+							// 		sourabh: false,
+							// 		darshay: false,
+							// 		sanya: true,
+							// 		sejal: false,
+							// 		namami: false,
+							// 		kartik: false,
+							// 		svara: false,
+							// 		satvik: false,
+							// 		deep: false,
+							// 		gunjan: false,
+							// 		mansi: false,
+							// 		akshay: false,
+							// 		arpit: false,
+							// 		naveen: false,
+							// 	})
+							// }
 							style={{
-								display: card.contentHead ? 'block' : 'none',
 								opacity: opacity.interpolate((o) => 1 - o),
 								transform,
 							}}
@@ -426,7 +412,7 @@ const ContactUs = () => {
 							className='c front'
 							src={sanya}
 							style={{
-								display: contacts.sanya ? 'block' : 'none',
+								// display: contacts.sanya ? 'block' : 'none',
 								opacity,
 								transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
 							}}
@@ -436,38 +422,38 @@ const ContactUs = () => {
 					<div
 						onClick={() => {
 							setFlipped((state) => !state);
-							setContacts((contacts) => !contacts);
+							// setContacts((contacts) => !contacts);
 						}}
+						style={{ display: card.managementHead ? 'block' : 'none' }}
 					>
 						<a.img
 							className='c back'
 							src={managementHead}
-							onClick={() =>
-								setContacts({
-									saksham: false,
-									harshil: false,
-									aadil: true,
-									aastha: false,
-									adwait: false,
-									surya: false,
-									sourabh: false,
-									darshay: false,
-									sanya: false,
-									sejal: false,
-									namami: false,
-									kartik: false,
-									svara: false,
-									satvik: false,
-									deep: false,
-									gunjan: false,
-									mansi: false,
-									akshay: false,
-									arpit: false,
-									naveen: false,
-								})
-							}
+							// onClick={() =>
+							// 	setContacts({
+							// 		saksham: false,
+							// 		harshil: false,
+							// 		aadil: true,
+							// 		aastha: false,
+							// 		adwait: false,
+							// 		surya: false,
+							// 		sourabh: false,
+							// 		darshay: false,
+							// 		sanya: false,
+							// 		sejal: false,
+							// 		namami: false,
+							// 		kartik: false,
+							// 		svara: false,
+							// 		satvik: false,
+							// 		deep: false,
+							// 		gunjan: false,
+							// 		mansi: false,
+							// 		akshay: false,
+							// 		arpit: false,
+							// 		naveen: false,
+							// 	})
+							// }
 							style={{
-								display: card.managementHead ? 'block' : 'none',
 								opacity: opacity.interpolate((o) => 1 - o),
 								transform,
 							}}
@@ -476,7 +462,7 @@ const ContactUs = () => {
 							className='c front'
 							src={aadil}
 							style={{
-								display: contacts.aadil ? 'block' : 'none',
+								// display: contacts.aadil ? 'block' : 'none',
 								opacity,
 								transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
 							}}
