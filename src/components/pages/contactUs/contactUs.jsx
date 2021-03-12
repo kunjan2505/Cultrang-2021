@@ -512,63 +512,55 @@ const ContactUs = () => {
 						</div>
 					</Carousel>
 				</div>
-				<div
-					className='box-3'
-					style={{ flex: '1', height: '100vh', alignItems: 'center' }}
-				>
-					<div
-						className='designation'
-						style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+				<div className='box-3'>
+					<span
+						className='individualDesignation'
+						style={{ opacity: card.prHead ? '1' : '' }}
+						onClick={() => {
+							setCard({ prHead: true });
+						}}
 					>
-						<span
-							className='individualDesignation'
-							style={{ opacity: card.prHead ? '1' : '' }}
-							onClick={() => {
-								setCard({ prHead: true });
-							}}
-						>
-							Public Relations Head
-						</span>
-						<span
-							className='individualDesignation'
-							style={{ opacity: card.designHead ? '1' : '' }}
-							onClick={() => {
-								setCard({ designHead: true });
-							}}
-						>
-							Design Head
-						</span>
-						<span
-							className='individualDesignation'
-							style={{ opacity: card.financeHead ? '1' : '' }}
-							onClick={() => {
-								setCard({ financeHead: true });
-							}}
-						>
-							Finance Head
-						</span>
-						<span
-							className='individualDesignation'
-							style={{ opacity: card.contentHead ? '1' : '' }}
-							onClick={() => {
-								setCard({ contentHead: true });
-							}}
-						>
-							Social Media and Content Head
-						</span>
-						<span
-							className='individualDesignation'
-							style={{ opacity: card.eventHeads ? '1' : '' }}
-							onClick={() => {
-								setCard({ eventHeads: true });
-							}}
-						>
-							Event Heads
-						</span>
-					</div>
+						Public Relations Head
+					</span>
+					<span
+						className='individualDesignation'
+						style={{ opacity: card.designHead ? '1' : '' }}
+						onClick={() => {
+							setCard({ designHead: true });
+						}}
+					>
+						Design Head
+					</span>
+					<span
+						className='individualDesignation'
+						style={{ opacity: card.financeHead ? '1' : '' }}
+						onClick={() => {
+							setCard({ financeHead: true });
+						}}
+					>
+						Finance Head
+					</span>
+					<span
+						className='individualDesignation'
+						style={{ opacity: card.contentHead ? '1' : '' }}
+						onClick={() => {
+							setCard({ contentHead: true });
+						}}
+					>
+						Social Media and Content Head
+					</span>
+					<span
+						className='individualDesignation'
+						style={{ opacity: card.eventHeads ? '1' : '' }}
+						onClick={() => {
+							setCard({ eventHeads: true });
+						}}
+					>
+						Event Heads
+					</span>
 				</div>
 			</div>
-			<img src={bottom} style={{ marginTop: '-50vw', zIndex: '-1' }} />
+			<img src={bottom} style={{ marginTop: '-40vw', zIndex: '-1' }} />
 		</div>
 	);
 };

@@ -37,7 +37,7 @@ const AboutUs = () => {
 				breakpoint: 425,
 				settings: {
 					slidesToShow: 2,
-					slidesToScroll: 1,
+					slidesToScroll: 2,
 					rows: 1,
 					dots: false,
 				},
@@ -74,6 +74,7 @@ const AboutUs = () => {
 									performing arts that recognise the role of various cultures in our
 									everyday indulgences.
 								</p>
+								{/* <div style={{backgroundColor: 'white', width: '100%', height: '1rem', position: 'fixed', bottom: '0' }}></div> */}
 							</div>
 						</div>
 					</div>

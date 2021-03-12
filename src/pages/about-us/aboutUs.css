@@ -22,10 +22,10 @@
 	background-color: white;
 	width: 42vw;
 	border-radius: 10px;
-	/* margin-left: 5rem; */
+	position: relative;
 	z-index: 1;
+	padding-bottom: 1rem;
 	max-height: 400px;
-	/* position: absolute; */
 	transform-origin: top right;
 	overflow-y: auto;
 	transform: rotate(1.3deg);
@@ -37,7 +37,6 @@
 	border-radius: 10px;
 	margin-left: 5rem;
 	transform-origin: top right;
-	/* opacity: 0.3; */
 	transform: rotate(-1.3deg);
 }
 .slider-div {
@@ -60,10 +59,10 @@
 	display: none;
 }
 .buildings {
-	margin-top: -51vw;
+	margin-top: -53vw;
 }
 .heading-container1 {
-	margin-top: 4rem;
+	margin-top: 5rem;
 }
 .heading-container2 {
 	display: none;
@@ -118,7 +117,6 @@
 		padding: 1rem;
 	}
 	.heading-container2 {
-		/* transform: translateY(-9rem); */
 		margin-top: 1rem;
 		margin-bottom: 1rem;
 		display: inline-block;
