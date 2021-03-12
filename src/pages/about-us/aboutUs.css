@@ -72,6 +72,7 @@
 	color: white;
 	display: block;
 	font-family: 'Montserrat';
+	transform: translate(1px);
 }
 .ant-image-img {
 	object-fit: cover;

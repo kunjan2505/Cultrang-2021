@@ -52,12 +52,18 @@
 }
 
 .c {
-	position: absolute;
 	will-change: opacity, transform;    
 	width: 35vw;
-    margin-left: -17vw;
-    margin-top: -8vw;
+    /* margin-left: -17vw;
+    margin-top: -8vw; */
 }
+
+.sliderClass{
+      will-change: opacity, transform;    
+	width: 35vw;
+      margin-left: 1.5rem;
+}
+
 .designation {
 	display: flex;
 	flex-direction: column;
@@ -69,7 +75,41 @@
 .contact-us-building {
 	z-index: -2;
 }
-.front,
+
 .back {
 	background-size: cover;
+      position: absolute;
 }
+
+.container-2{
+	display: none;
+}
+
+@media only screen and (max-width: 720px){
+	.container-1{
+		display: none;
+	}
+
+	.container-2{
+		display: flex;
+		transform: translate(1px);
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		margin-top: -35vw;
+	}
+
+	.heading-mobile{
+		font-weight:bold;
+		color: white;
+		font-family: 'Montserrat';
+		font-size: x-large;
+	}
+
+	.slick-slider{
+		width:70vw;
+	}
+
+}
+

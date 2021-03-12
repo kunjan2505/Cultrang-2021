@@ -78,7 +78,7 @@ const AboutUs = () => {
 							</div>
 						</div>
 					</div>
-					<div className='slider-div'>
+					<div className='slider-div' >
 						<Slider {...settings}>
 							{IMAGE_URL.map((url) => (
 								<div>
