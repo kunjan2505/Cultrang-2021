@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useSpring, animated as a } from 'react-spring';
+import Slider from 'react-slick';
+import './contactUs.css';
 import clouds from '../../components/vectors/contactUs/contact_us_cloud.svg';
 import bottom from '../../components/vectors/contactUs/contact_us_bottom.svg';
-import './contactUs.css';
 import designHead from '../../components/vectors/contact_headings/design_head.png';
 import studentAdvisor from '../../components/vectors/contact_headings/student_advisor.png';
 import prHead from '../../components/vectors/contact_headings/pr_head.png';
@@ -63,8 +65,6 @@ import sejal_m from '../../components/vectors/mobile_passes/sejal_m@4x.png';
 import sourabh_m from '../../components/vectors/mobile_passes/sourabh_m@4x.png';
 import surya_m from '../../components/vectors/mobile_passes/surya_m@4x.png'; 
 import svara_m from '../../components/vectors/mobile_passes/svara_m@4x.png';
-import { useSpring, animated as a } from 'react-spring';
-import Slider from 'react-slick';
 
 const ContactUs = () => {
 
@@ -689,7 +689,7 @@ const ContactUs = () => {
 				</div>
 
 				<div className="sponsorshipHead" style={{display:'flex', flexDirection: 'column', alignItems:'center', margin:'1rem'}}>
-					<span className="heading-mobile">Sponsorship Head</span>
+					<span className="heading-mobile">Sponsorship Heads</span>
 					<Slider {...mobile_settings}>
 						<div>
 							<img src={aastha_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
@@ -701,7 +701,7 @@ const ContactUs = () => {
 				</div>
 
 				<div className="PRHead" style={{display:'flex', flexDirection: 'column', alignItems:'center', margin:'1rem'}}>
-					<span className="heading-mobile">Public Relations Head</span>
+					<span className="heading-mobile">Public Relations Heads</span>
 					<Slider {...mobile_settings}>
 						<div>
 							<img src={surya_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}}/>
