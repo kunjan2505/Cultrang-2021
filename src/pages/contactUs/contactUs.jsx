@@ -20,7 +20,7 @@ import photographyHead from '../../components/vectors/contact_headings/photograp
 import artHead from '../../components/vectors/contact_headings/brush_head.png';
 import managementHead from '../../components/vectors/contact_headings/management_head.png';
 import treasureHead from '../../components/vectors/contact_headings/treasure_head.png';
-import symphonyHead from '../../components/vectors/contact_headings/symphony_head.png'
+import symphonyHead from '../../components/vectors/contact_headings/symphony_head.png';
 import aastha from '../../components/vectors/boarding_passes/aastha.png';
 import adwait from '../../components/vectors/boarding_passes/adwait.png';
 import akshay from '../../components/vectors/boarding_passes/akshay.png';
@@ -61,21 +61,20 @@ import sanya_m from '../../components/vectors/mobile_passes/sanya_m@4x.png';
 import satvik_m from '../../components/vectors/mobile_passes/satvik_m@4x.png';
 import sejal_m from '../../components/vectors/mobile_passes/sejal_m@4x.png';
 import sourabh_m from '../../components/vectors/mobile_passes/sourabh_m@4x.png';
-import surya_m from '../../components/vectors/mobile_passes/surya_m@4x.png'; 
+import surya_m from '../../components/vectors/mobile_passes/surya_m@4x.png';
 import svara_m from '../../components/vectors/mobile_passes/svara_m@4x.png';
 import { useSpring, animated as a } from 'react-spring';
 import Slider from 'react-slick';
 
 const ContactUs = () => {
-
 	const settings = {
 		dots: true,
 		infinite: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		vertical: true,
-		verticalSwiping: true
-	}
+		verticalSwiping: true,
+	};
 
 	const event_settings = {
 		dots: true,
@@ -83,27 +82,27 @@ const ContactUs = () => {
 		slidesToShow: 2,
 		slidesToScroll: 2,
 		vertical: true,
-		verticalSwiping: true
-	}
+		verticalSwiping: true,
+	};
 
 	const mobile_settings = {
 		dots: false,
 		infinite: true,
 		speed: 500,
 		slidesToShow: 1,
-		slidesToScroll: 1
-	}
+		slidesToScroll: 1,
+	};
 
 	const [card, setCard] = useState({
 		ifcard: true,
 		studentAdvCard: false,
 		managementHead: false,
-		prCarousel:false,
+		prCarousel: false,
 		prHead1: false,
-		prHead2:false,
+		prHead2: false,
 		sponsHead1: false,
 		sponsHead2: false,
-		sponsCarousel:false,
+		sponsCarousel: false,
 		financeHead: false,
 		designHead: false,
 		contentHead: false,
@@ -128,7 +127,6 @@ const ContactUs = () => {
 		transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
 		config: { mass: 5, tension: 500, friction: 80 },
 	});
-
 
 	return (
 		<div className='contactUs'>
@@ -262,17 +260,19 @@ const ContactUs = () => {
 						/>
 					</div>
 
-					<div style={{display: card.sponsCarousel? 'block' : 'none'}}>
-						<Slider {...settings} style={{width:'40vw'}}>
-							<div onClick = {() => setFlipped((flipped) => !flipped)}
-								style = {{ display: card.sponsHead1? '' : 'none'}} >
+					<div style={{ display: card.sponsCarousel ? 'block' : 'none' }}>
+						<Slider {...settings} style={{ width: '40vw' }}>
+							<div
+								onClick={() => setFlipped((flipped) => !flipped)}
+								style={{ display: card.sponsHead1 ? '' : 'none' }}
+							>
 								<a.img
-								className='sliderClass back'
-								src={sponsorshipHead}
-								style={{
-									opacity: opacity.interpolate((o) => 1 - o),
-									transform,
-								}}
+									className='sliderClass back'
+									src={sponsorshipHead}
+									style={{
+										opacity: opacity.interpolate((o) => 1 - o),
+										transform,
+									}}
 								/>
 								<a.img
 									className='sliderClass front'
@@ -284,15 +284,17 @@ const ContactUs = () => {
 								/>
 							</div>
 
-							<div onClick = {() => setFlipped((flipped) => !flipped)}
-								style = {{ display: card.sponsHead2? '' : 'none'}} >
+							<div
+								onClick={() => setFlipped((flipped) => !flipped)}
+								style={{ display: card.sponsHead2 ? '' : 'none' }}
+							>
 								<a.img
-								className='sliderClass back'
-								src={sponsorshipHead}
-								style={{
-									opacity: opacity.interpolate((o) => 1 - o),
-									transform,
-								}}
+									className='sliderClass back'
+									src={sponsorshipHead}
+									style={{
+										opacity: opacity.interpolate((o) => 1 - o),
+										transform,
+									}}
 								/>
 								<a.img
 									className='sliderClass front'
@@ -306,17 +308,19 @@ const ContactUs = () => {
 						</Slider>
 					</div>
 
-					<div style={{display: card.prCarousel? 'block' : 'none'}}>
-						<Slider {...settings} style={{width:'40vw'}}>
-							<div onClick = {() => setFlipped((flipped) => !flipped)}
-								style = {{ display: card.prHead1? '' : 'none'}} >
+					<div style={{ display: card.prCarousel ? 'block' : 'none' }}>
+						<Slider {...settings} style={{ width: '40vw' }}>
+							<div
+								onClick={() => setFlipped((flipped) => !flipped)}
+								style={{ display: card.prHead1 ? '' : 'none' }}
+							>
 								<a.img
-								className='sliderClass back'
-								src={prHead}
-								style={{
-									opacity: opacity.interpolate((o) => 1 - o),
-									transform,
-								}}
+									className='sliderClass back'
+									src={prHead}
+									style={{
+										opacity: opacity.interpolate((o) => 1 - o),
+										transform,
+									}}
 								/>
 								<a.img
 									className='sliderClass front'
@@ -328,15 +332,17 @@ const ContactUs = () => {
 								/>
 							</div>
 
-							<div onClick = {() => setFlipped((flipped) => !flipped)}
-								style = {{ display: card.prHead2? '' : 'none'}} >
+							<div
+								onClick={() => setFlipped((flipped) => !flipped)}
+								style={{ display: card.prHead2 ? '' : 'none' }}
+							>
 								<a.img
-								className='sliderClass back'
-								src={prHead}
-								style={{
-									opacity: opacity.interpolate((o) => 1 - o),
-									transform,
-								}}
+									className='sliderClass back'
+									src={prHead}
+									style={{
+										opacity: opacity.interpolate((o) => 1 - o),
+										transform,
+									}}
 								/>
 								<a.img
 									className='sliderClass front'
@@ -350,18 +356,19 @@ const ContactUs = () => {
 						</Slider>
 					</div>
 
-					<div style={{display: card.eventHeads? 'block' : 'none'}}>
-
-						<Slider {...event_settings} style={{width:'40vw'}}>
-							<div onClick = {() => setFlipped((flipped) => !flipped)}
-								style = {{ display: card.filmwarsHead? '' : 'none'}} >
+					<div style={{ display: card.eventHeads ? 'block' : 'none' }}>
+						<Slider {...event_settings} style={{ width: '40vw' }}>
+							<div
+								onClick={() => setFlipped((flipped) => !flipped)}
+								style={{ display: card.filmwarsHead ? '' : 'none' }}
+							>
 								<a.img
-								className='sliderClass back'
-								src={filmHead}
-								style={{
-									opacity: opacity.interpolate((o) => 1 - o),
-									transform,
-								}}
+									className='sliderClass back'
+									src={filmHead}
+									style={{
+										opacity: opacity.interpolate((o) => 1 - o),
+										transform,
+									}}
 								/>
 								<a.img
 									className='sliderClass front'
@@ -373,15 +380,17 @@ const ContactUs = () => {
 								/>
 							</div>
 
-							<div onClick = {() => setFlipped((flipped) => !flipped)}
-								style = {{ display: card.vividHead? '' : 'none'}} >
+							<div
+								onClick={() => setFlipped((flipped) => !flipped)}
+								style={{ display: card.vividHead ? '' : 'none' }}
+							>
 								<a.img
-								className='sliderClass back'
-								src={photographyHead}
-								style={{
-									opacity: opacity.interpolate((o) => 1 - o),
-									transform,
-								}}
+									className='sliderClass back'
+									src={photographyHead}
+									style={{
+										opacity: opacity.interpolate((o) => 1 - o),
+										transform,
+									}}
 								/>
 								<a.img
 									className='sliderClass front'
@@ -393,15 +402,17 @@ const ContactUs = () => {
 								/>
 							</div>
 
-							<div onClick = {() => setFlipped((flipped) => !flipped)}
-								style = {{ display: card.symphonyHead? '' : 'none'}} >
+							<div
+								onClick={() => setFlipped((flipped) => !flipped)}
+								style={{ display: card.symphonyHead ? '' : 'none' }}
+							>
 								<a.img
-								className='sliderClass back'
-								src={symphonyHead}
-								style={{
-									opacity: opacity.interpolate((o) => 1 - o),
-									transform,
-								}}
+									className='sliderClass back'
+									src={symphonyHead}
+									style={{
+										opacity: opacity.interpolate((o) => 1 - o),
+										transform,
+									}}
 								/>
 								<a.img
 									className='sliderClass front'
@@ -413,15 +424,17 @@ const ContactUs = () => {
 								/>
 							</div>
 
-							<div onClick = {() => setFlipped((flipped) => !flipped)}
-								style = {{ display: card.debateHead? '' : 'none'}} >
+							<div
+								onClick={() => setFlipped((flipped) => !flipped)}
+								style={{ display: card.debateHead ? '' : 'none' }}
+							>
 								<a.img
-								className='sliderClass back'
-								src={debateHead}
-								style={{
-									opacity: opacity.interpolate((o) => 1 - o),
-									transform,
-								}}
+									className='sliderClass back'
+									src={debateHead}
+									style={{
+										opacity: opacity.interpolate((o) => 1 - o),
+										transform,
+									}}
 								/>
 								<a.img
 									className='sliderClass front'
@@ -433,15 +446,17 @@ const ContactUs = () => {
 								/>
 							</div>
 
-							<div onClick = {() => setFlipped((flipped) => !flipped)}
-								style = {{ display: card.treasureHead? '' : 'none'}} >
+							<div
+								onClick={() => setFlipped((flipped) => !flipped)}
+								style={{ display: card.treasureHead ? '' : 'none' }}
+							>
 								<a.img
-								className='sliderClass back'
-								src={treasureHead}
-								style={{
-									opacity: opacity.interpolate((o) => 1 - o),
-									transform,
-								}}
+									className='sliderClass back'
+									src={treasureHead}
+									style={{
+										opacity: opacity.interpolate((o) => 1 - o),
+										transform,
+									}}
 								/>
 								<a.img
 									className='sliderClass front'
@@ -453,15 +468,17 @@ const ContactUs = () => {
 								/>
 							</div>
 
-							<div onClick = {() => setFlipped((flipped) => !flipped)}
-								style = {{ display: card.harmonyHead? '' : 'none'}} >
+							<div
+								onClick={() => setFlipped((flipped) => !flipped)}
+								style={{ display: card.harmonyHead ? '' : 'none' }}
+							>
 								<a.img
-								className='sliderClass back'
-								src={harmonyHead}
-								style={{
-									opacity: opacity.interpolate((o) => 1 - o),
-									transform,
-								}}
+									className='sliderClass back'
+									src={harmonyHead}
+									style={{
+										opacity: opacity.interpolate((o) => 1 - o),
+										transform,
+									}}
 								/>
 								<a.img
 									className='sliderClass front'
@@ -473,15 +490,17 @@ const ContactUs = () => {
 								/>
 							</div>
 
-							<div onClick = {() => setFlipped((flipped) => !flipped)}
-								style = {{ display: card.quizHead? '' : 'none'}} >
+							<div
+								onClick={() => setFlipped((flipped) => !flipped)}
+								style={{ display: card.quizHead ? '' : 'none' }}
+							>
 								<a.img
-								className='sliderClass back'
-								src={quizHead}
-								style={{
-									opacity: opacity.interpolate((o) => 1 - o),
-									transform,
-								}}
+									className='sliderClass back'
+									src={quizHead}
+									style={{
+										opacity: opacity.interpolate((o) => 1 - o),
+										transform,
+									}}
 								/>
 								<a.img
 									className='sliderClass front'
@@ -493,15 +512,17 @@ const ContactUs = () => {
 								/>
 							</div>
 
-							<div onClick = {() => setFlipped((flipped) => !flipped)}
-								style = {{ display: card.ikraarHead? '' : 'none'}} >
+							<div
+								onClick={() => setFlipped((flipped) => !flipped)}
+								style={{ display: card.ikraarHead ? '' : 'none' }}
+							>
 								<a.img
-								className='sliderClass back'
-								src={ikraarHead}
-								style={{
-									opacity: opacity.interpolate((o) => 1 - o),
-									transform,
-								}}
+									className='sliderClass back'
+									src={ikraarHead}
+									style={{
+										opacity: opacity.interpolate((o) => 1 - o),
+										transform,
+									}}
 								/>
 								<a.img
 									className='sliderClass front'
@@ -513,15 +534,17 @@ const ContactUs = () => {
 								/>
 							</div>
 
-							<div onClick = {() => setFlipped((flipped) => !flipped)}
-								style = {{ display: card.danceHead? '' : 'none'}} >
+							<div
+								onClick={() => setFlipped((flipped) => !flipped)}
+								style={{ display: card.danceHead ? '' : 'none' }}
+							>
 								<a.img
-								className='sliderClass back'
-								src={danceHead}
-								style={{
-									opacity: opacity.interpolate((o) => 1 - o),
-									transform,
-								}}
+									className='sliderClass back'
+									src={danceHead}
+									style={{
+										opacity: opacity.interpolate((o) => 1 - o),
+										transform,
+									}}
 								/>
 								<a.img
 									className='sliderClass front'
@@ -533,15 +556,17 @@ const ContactUs = () => {
 								/>
 							</div>
 
-							<div onClick = {() => setFlipped((flipped) => !flipped)}
-								style = {{ display: card.brushHead? '' : 'none'}} >
+							<div
+								onClick={() => setFlipped((flipped) => !flipped)}
+								style={{ display: card.brushHead ? '' : 'none' }}
+							>
 								<a.img
-								className='sliderClass back'
-								src={artHead}
-								style={{
-									opacity: opacity.interpolate((o) => 1 - o),
-									transform,
-								}}
+									className='sliderClass back'
+									src={artHead}
+									style={{
+										opacity: opacity.interpolate((o) => 1 - o),
+										transform,
+									}}
 								/>
 								<a.img
 									className='sliderClass front'
@@ -553,15 +578,17 @@ const ContactUs = () => {
 								/>
 							</div>
 
-							<div onClick = {() => setFlipped((flipped) => !flipped)}
-								style = {{ display: card.sketchHead? '' : 'none'}} >
+							<div
+								onClick={() => setFlipped((flipped) => !flipped)}
+								style={{ display: card.sketchHead ? '' : 'none' }}
+							>
 								<a.img
-								className='sliderClass back'
-								src={sketchHead}
-								style={{
-									opacity: opacity.interpolate((o) => 1 - o),
-									transform,
-								}}
+									className='sliderClass back'
+									src={sketchHead}
+									style={{
+										opacity: opacity.interpolate((o) => 1 - o),
+										transform,
+									}}
 								/>
 								<a.img
 									className='sliderClass front'
@@ -572,8 +599,6 @@ const ContactUs = () => {
 									}}
 								/>
 							</div>
-
-							
 						</Slider>
 					</div>
 
@@ -672,100 +697,214 @@ const ContactUs = () => {
 				</div>
 			</div>
 
-			<div className="container-2">
-				<div className="overallCoordinator" style={{display:'flex', flexDirection: 'column', alignItems:'center', margin:'1rem'}}>
-					<span className="heading-mobile">Overall Coordinator</span>
-					<img src={saksham_m} style={{width:'60vw', height:'90vw'}} />
+			<div className='container-2'>
+				<div
+					className='overallCoordinator'
+					style={{
+						display: 'flex',
+						flexDirection: 'column',
+						alignItems: 'center',
+						margin: '1rem',
+					}}
+				>
+					<span className='heading-mobile'>Overall Coordinator</span>
+					<img src={saksham_m} style={{ width: '60vw', height: '90vw' }} />
 				</div>
 
-				<div className="studentAdvisor" style={{display:'flex', flexDirection: 'column', alignItems:'center', margin:'1rem'}}>
-					<span className="heading-mobile">Student Advisor</span>
-					<img src={harshil_m} style={{width:'60vw', height:'90vw'}} />
+				<div
+					className='studentAdvisor'
+					style={{
+						display: 'flex',
+						flexDirection: 'column',
+						alignItems: 'center',
+						margin: '1rem',
+					}}
+				>
+					<span className='heading-mobile'>Student Advisor</span>
+					<img src={harshil_m} style={{ width: '60vw', height: '90vw' }} />
 				</div>
 
-				<div className="managementHead" style={{display:'flex', flexDirection: 'column', alignItems:'center', margin:'1rem'}}>
-					<span className="heading-mobile">Management Head</span>
-					<img src={aadil_m} style={{width:'60vw', height:'90vw'}} />
+				<div
+					className='managementHead'
+					style={{
+						display: 'flex',
+						flexDirection: 'column',
+						alignItems: 'center',
+						margin: '1rem',
+					}}
+				>
+					<span className='heading-mobile'>Management Head</span>
+					<img src={aadil_m} style={{ width: '60vw', height: '90vw' }} />
 				</div>
 
-				<div className="sponsorshipHead" style={{display:'flex', flexDirection: 'column', alignItems:'center', margin:'1rem'}}>
-					<span className="heading-mobile">Sponsorship Head</span>
+				<div className='sponsorshipHead' style={{ margin: '1rem' }}>
+					<span className='heading-mobile'>Sponsorship Head</span>
+					<div className='sl-div'>
+						<Slider {...mobile_settings}>
+							<div>
+								<img
+									src={aastha_m}
+									style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+								/>
+							</div>
+							<div>
+								<img
+									src={adwait_m}
+									style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+								/>
+							</div>
+						</Slider>
+					</div>
+				</div>
+
+				<div
+					className='PRHead'
+					style={{
+						display: 'flex',
+						flexDirection: 'column',
+						alignItems: 'center',
+						margin: '1rem',
+					}}
+				>
+					<span className='heading-mobile'>Public Relations Head</span>
+					<div className='sl-div'>
+						<Slider {...mobile_settings}>
+							<div>
+								<img
+									src={surya_m}
+									style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+								/>
+							</div>
+							<div>
+								<img
+									src={sourabh_m}
+									style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+								/>
+							</div>
+						</Slider>
+					</div>
+				</div>
+
+				<div
+					className='designHead'
+					style={{
+						display: 'flex',
+						flexDirection: 'column',
+						alignItems: 'center',
+						margin: '1rem',
+					}}
+				>
+					<span className='heading-mobile'>Design Head</span>
+					<img src={khushboo_m} style={{ width: '60vw', height: '90vw' }} />
+				</div>
+
+				<div
+					className='financeHead'
+					style={{
+						display: 'flex',
+						flexDirection: 'column',
+						alignItems: 'center',
+						margin: '1rem',
+					}}
+				>
+					<span className='heading-mobile'>Finance Head</span>
+					<img src={darshay_m} style={{ width: '60vw', height: '90vw' }} />
+				</div>
+
+				<div
+					className='contentHead'
+					style={{
+						display: 'flex',
+						flexDirection: 'column',
+						alignItems: 'center',
+						margin: '1rem',
+					}}
+				>
+					<span className='heading-mobile'>Social Media & Content Head</span>
+					<img src={sanya_m} style={{ width: '60vw', height: '90vw' }} />
+				</div>
+
+				<div
+					className='eventHeads'
+					style={{
+						display: 'flex',
+						flexDirection: 'column',
+						alignItems: 'center',
+						margin: '1rem',
+					}}
+				>
+					<span className='heading-mobile'>Event Heads</span>
+					<div className='sl-div'>
 					<Slider {...mobile_settings}>
 						<div>
-							<img src={aastha_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
+							<img
+								src={arpit_m}
+								style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+							/>
 						</div>
 						<div>
-							<img src={adwait_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}}/>
+							<img
+								src={naveen_m}
+								style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+							/>
+						</div>
+						<div>
+							<img
+								src={mansi_m}
+								style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+							/>
+						</div>
+						<div>
+							<img
+								src={namami_m}
+								style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+							/>
+						</div>
+						<div>
+							<img
+								src={kartik_m}
+								style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+							/>
+						</div>
+						<div>
+							<img
+								src={akshay_m}
+								style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+							/>
+						</div>
+						<div>
+							<img
+								src={gunjan_m}
+								style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+							/>
+						</div>
+						<div>
+							<img
+								src={sejal_m}
+								style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+							/>
+						</div>
+						<div>
+							<img
+								src={satvik_m}
+								style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+							/>
+						</div>
+						<div>
+							<img
+								src={deep_m}
+								style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+							/>
+						</div>
+						<div>
+							<img
+								src={svara_m}
+								style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+							/>
 						</div>
 					</Slider>
+					</div>
 				</div>
-
-				<div className="PRHead" style={{display:'flex', flexDirection: 'column', alignItems:'center', margin:'1rem'}}>
-					<span className="heading-mobile">Public Relations Head</span>
-					<Slider {...mobile_settings}>
-						<div>
-							<img src={surya_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}}/>
-						</div>
-						<div>
-							<img src={sourabh_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
-						</div>
-					</Slider>
-				</div>
-
-				<div className="designHead" style={{display:'flex', flexDirection: 'column', alignItems:'center', margin:'1rem'}}>
-					<span className="heading-mobile">Design Head</span>
-					<img src={khushboo_m} style={{width:'60vw', height:'90vw'}} />
-				</div>
-
-				<div className="financeHead" style={{display:'flex', flexDirection: 'column', alignItems:'center', margin:'1rem'}}>
-					<span className="heading-mobile">Finance Head</span>
-					<img src={darshay_m} style={{width:'60vw', height:'90vw'}} />
-				</div>
-
-				<div className="contentHead" style={{display:'flex', flexDirection: 'column', alignItems:'center', margin:'1rem'}}>
-					<span className="heading-mobile">Social Media & Content Head</span>
-					<img src={sanya_m} style={{width:'60vw', height:'90vw'}} />
-				</div>
-
-				<div className="eventHeads" style={{display:'flex', flexDirection: 'column', alignItems:'center', margin:'1rem'}}>
-					<span className="heading-mobile">Event Heads</span>
-					<Slider {...mobile_settings}>
-						<div>
-							<img src={arpit_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
-						</div>
-						<div>
-							<img src={naveen_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
-						</div>
-						<div>
-							<img src={mansi_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
-						</div>
-						<div>
-							<img src={namami_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
-						</div>
-						<div>
-							<img src={kartik_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
-						</div>
-						<div>
-							<img src={akshay_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
-						</div>
-						<div>
-							<img src={gunjan_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
-						</div>
-						<div>
-							<img src={sejal_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
-						</div>
-						<div>
-							<img src={satvik_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
-						</div>
-						<div>
-							<img src={deep_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
-						</div>
-						<div>
-							<img src={svara_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
-						</div>
-					</Slider>
-				</div>
-
 			</div>
 			<img src={bottom} style={{ marginTop: '-40vw', zIndex: '-1' }} />
 		</div>

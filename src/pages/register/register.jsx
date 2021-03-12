@@ -7,55 +7,56 @@ import './register.css';
 // import Bottom from './SVG/register bottom.svg';
 
 const Register = () => {
-	const [data, setdata] = useState({
-        name:'',
+	const [registerData, setRegisterData] = useState({
+		leaderName: '',
+		teamName: '',
 		email: '',
-		password: '',
 	});
 	const handleSubmit = async (event) => {
-		event.preventDefault();
 	};
-	const handleChange = (event) => {
-        console.log(event)
-		const { value, name } = event.target;
-		// setdata((prevState) => ({
-		// 	...prevState,
-		// 	[id]: value,
-		// }));
-        setdata({ [name]: value });
-	};
+	const handleChange = (e) =>
+		setRegisterData({ ...registerData, [e.target.name]: e.target.value });
 	return (
 		<div className='register-container'>
 			<div className='clouds'>
 				<img src={Top} />
 			</div>
+			<div className='heading-container-reg1'>
+				<h1 className='headingReg'>REGISTER</h1>
+			</div>
 			<div className='register-div'>
-				<form onSubmit={handleSubmit}>
-					<FormInput
-						name='name'
-						label='NAME'
-						type='email'
-						value={data.name}
-						handleChange={handleChange}
-					/>
-					<FormInput
-						name='email'
-						label='EMAIL'
-						type='email'
-						value={data.email}
-						handleChange={handleChange}
-					/>
-					<FormInput
-						name='password'
-						label='PASSWORD'
-						type='email'
-						value={data.password}
-						handleChange={handleChange}
-					/>
-					<div>
-						<span className>Register</span>
-					</div>
-				</form>
+				<FormInput
+					name='leaderName'
+					label='LEADERNAME'
+					type='text'
+					value={registerData.leaderName}
+					handleChange={handleChange}
+				/>
+				<FormInput
+					name='teamName'
+					label='TEAM NAME'
+					type='text'
+					value={registerData.teamName}
+					handleChange={handleChange}
+				/>
+				<FormInput
+					name='email'
+					label='EMAIL'
+					type='email'
+					value={registerData.email}
+					handleChange={handleChange}
+				/>
+				<div className='reg-button'>
+					<button
+						type='button'
+						className='btn btn-secondary'
+						onClick={() => {
+							handleSubmit();
+						}}
+					>
+						Register
+					</button>
+				</div>
 			</div>
 			<div className='heading-container-reg'>
 				<h1 className='headingReg'>REGISTER</h1>
