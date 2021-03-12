@@ -2,46 +2,46 @@ import React, { useState } from 'react';
 import clouds from '../../vectors/contactUs/contact_us_cloud.svg';
 import bottom from '../../vectors/contactUs/contact_us_bottom.svg';
 import './contactUs.css';
-import designHead from '../../vectors/contact_headings/design_head.svg';
-import studentAdvisor from '../../vectors/contact_headings/student_advisor.svg';
-import publicrelations from '../../vectors/contact_headings/pr_head.svg';
-import overallCoordinator from '../../vectors/contact_headings/overall_coordinator.svg';
-import ikraarHead from '../../vectors/contact_headings/ikraar.svg';
-import danceHead from '../../vectors/contact_headings/dance.svg';
-import contentHead from '../../vectors/contact_headings/content_head.svg';
-import debateHead from '../../vectors/contact_headings/debate.svg';
-import sketchHead from '../../vectors/contact_headings/etch_sketch.svg';
-import filmHead from '../../vectors/contact_headings/film_wars.svg';
-import financeHead from '../../vectors/contact_headings/finance_head.svg';
-import harmonyHead from '../../vectors/contact_headings/harmony.svg';
-import quizHead from '../../vectors/contact_headings/quiz.svg';
-import sponsorshipHead from '../../vectors/contact_headings/sponsorship_head.svg';
-import photographyHead from '../../vectors/contact_headings/vivid_snaps.svg';
-import artHead from '../../vectors/contact_headings/brush_hour.svg';
-import managementHead from '../../vectors/contact_headings/management_head.svg';
-import treasureHead from '../../vectors/contact_headings/treasure_hunt.svg';
+import designHead from '../../vectors/contact_headings/design_head.png';
+import studentAdvisor from '../../vectors/contact_headings/student_advisor.png';
+import publicrelations from '../../vectors/contact_headings/pr_head.png';
+import overallCoordinator from '../../vectors/contact_headings/overall_coordinator.png';
+import ikraarHead from '../../vectors/contact_headings/ikraar_head.png';
+import danceHead from '../../vectors/contact_headings/dance_head.png';
+import contentHead from '../../vectors/contact_headings/content_head.png';
+import debateHead from '../../vectors/contact_headings/debate_head.png';
+import sketchHead from '../../vectors/contact_headings/sketch_head.png';
+import filmHead from '../../vectors/contact_headings/editing_head.png';
+import financeHead from '../../vectors/contact_headings/finance_head.png';
+import harmonyHead from '../../vectors/contact_headings/harmony_head.png';
+import quizHead from '../../vectors/contact_headings/quiz_head.png';
+import sponsorshipHead from '../../vectors/contact_headings/sponsorship_head.png';
+import photographyHead from '../../vectors/contact_headings/photography_head.png';
+import artHead from '../../vectors/contact_headings/brush_head.png';
+import managementHead from '../../vectors/contact_headings/management_head.png';
+import treasureHead from '../../vectors/contact_headings/treasure_head.png';
 import { Carousel } from 'antd';
-import aastha from '../../vectors/boarding_passes/aastha.svg';
-import adwait from '../../vectors/boarding_passes/adwait.svg';
-import akshay from '../../vectors/boarding_passes/akshay.svg';
-import khushboo from '../../vectors/boarding_passes/khushboo.svg';
-import saksham from '../../vectors/boarding_passes/saksham.svg';
-import sejal from '../../vectors/boarding_passes/sejal.svg';
-import surya from '../../vectors/boarding_passes/surya.svg';
-import aadil from '../../vectors/boarding_passes/aadil.svg';
-import arpit from '../../vectors/boarding_passes/arpit.svg';
-import darshay from '../../vectors/boarding_passes/darshay.svg';
-import deep from '../../vectors/boarding_passes/deep.svg';
-import gunjan from '../../vectors/boarding_passes/gunjan.svg';
-import harshil from '../../vectors/boarding_passes/harshil.svg';
-import kartik from '../../vectors/boarding_passes/kartik.svg';
-import mansi from '../../vectors/boarding_passes/mansi.svg';
-import namami from '../../vectors/boarding_passes/namami.svg';
-import naveen from '../../vectors/boarding_passes/naveen.svg';
-import sanya from '../../vectors/boarding_passes/sanya.svg';
-import satvik from '../../vectors/boarding_passes/satvik.svg';
-import sourabh from '../../vectors/boarding_passes/sourabh.svg';
-import svara from '../../vectors/boarding_passes/svara.svg';
+import aastha from '../../vectors/boarding_passes/aastha.png';
+import adwait from '../../vectors/boarding_passes/adwait.png';
+import akshay from '../../vectors/boarding_passes/akshay.png';
+import khushboo from '../../vectors/boarding_passes/khushboo.png';
+import saksham from '../../vectors/boarding_passes/saksham.png';
+import sejal from '../../vectors/boarding_passes/sejal.png';
+import surya from '../../vectors/boarding_passes/surya.png';
+import aadil from '../../vectors/boarding_passes/aadil.png';
+import arpit from '../../vectors/boarding_passes/arpit.png';
+import darshay from '../../vectors/boarding_passes/darshay.png';
+import deep from '../../vectors/boarding_passes/deep.png';
+import gunjan from '../../vectors/boarding_passes/gunjan.png';
+import harshil from '../../vectors/boarding_passes/harshil.png';
+import kartik from '../../vectors/boarding_passes/kartik.png';
+import mansi from '../../vectors/boarding_passes/mansi.png';
+import namami from '../../vectors/boarding_passes/namami.png';
+import naveen from '../../vectors/boarding_passes/naveen.png';
+import sanya from '../../vectors/boarding_passes/sanya.png';
+import satvik from '../../vectors/boarding_passes/satvik.png';
+import sourabh from '../../vectors/boarding_passes/sourabh.png';
+import svara from '../../vectors/boarding_passes/svara.png';
 import { useSpring, animated as a } from 'react-spring';
 
 const ContactUs = () => {
@@ -166,95 +166,6 @@ const ContactUs = () => {
 							}}
 						/>
 					</div>
-
-					{/* <img
-						src={studentAdvisor}
-						style={{ display: card.studentAdvCard ? '' : 'none' }}
-					/>
-					<img
-						src={publicrelations}
-						style={{ display: card.prHead ? '' : 'none' }}
-					/>
-					<img
-						src={overallCoordinator}
-						style={{ display: card.ifcard ? '' : 'none' }}
-					/>
-					<img src={ikraarHead} style={{ display: card.ikraarHead ? '' : 'none' }} />
-					<img
-						src={contentHead}
-						style={{ display: card.contentHead ? '' : 'none' }}
-					/>
-					<img src={debateHead} style={{ display: card.debateHead ? '' : 'none' }} />
-					<img src={sketchHead} style={{ display: card.sketchHead ? '' : 'none' }} />
-					<img src={filmHead} style={{ display: card.filmwarsHead ? '' : 'none' }} />
-					<img
-						src={financeHead}
-						style={{ display: card.financeHead ? '' : 'none' }}
-					/>
-					<img
-						src={harmonyHead}
-						style={{ display: card.harmonyHead ? '' : 'none' }}
-					/>
-					<img src={quizHead} style={{ display: card.quizHead ? '' : 'none' }} />
-					<img src={danceHead} style={{ display: card.danceHead ? '' : 'none' }} />
-					<img src={sponsorshipHead} style={{display: card.sponsHead? '':'none'}}/>
-					<img
-						src={photographyHead}
-						style={{ display: card.vividHead ? '' : 'none' }}
-					/>
-					<img src={artHead} style={{ display: card.brushHead ? '' : 'none' }} />
-					<img
-						src={managementHead}
-						style={{ display: card.managementHead ? '' : 'none' }}
-					/> */}
-
-					{/* <div
-						onClick={() => setFlipped((state) => !state)}
-						style={{ display: card.designHead ? '' : 'none' }}
-					>
-						<a.img
-							className='c back'
-							src={designHead}
-							onClick={() =>
-								setContacts({
-									khushboo: true,
-									saksham: false,
-									harshil: false,
-									aadil: false,
-									aastha: false,
-									adwait: false,
-									surya: false,
-									sourabh: false,
-									darshay: false,
-									sanya: false,
-									sejal: false,
-									namami: false,
-									kartik: false,
-									svara: false,
-									satvik: false,
-									deep: false,
-									gunjan: false,
-									mansi: false,
-									akshay: false,
-									arpit: false,
-									naveen: false,
-								})
-							}
-							style={{
-								opacity: opacity.interpolate((o) => 1 - o),
-								transform,
-							}}
-						/>
-						<a.img
-							className='c front'
-							src={khushboo}
-							style={{
-								display: contacts.khushboo ? 'block' : 'none',
-								opacity,
-								transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
-							}}
-						/>
-					</div> */}
 
 					<div
 						onClick={() => setFlipped((state) => !state)}
