@@ -20,7 +20,7 @@ import photographyHead from '../../vectors/contact_headings/vivid_snaps.svg';
 import artHead from '../../vectors/contact_headings/brush_hour.svg';
 import managementHead from '../../vectors/contact_headings/management_head.svg';
 import treasureHead from '../../vectors/contact_headings/treasure_hunt.svg';
-import {Carousel} from 'antd';
+import { Carousel } from 'antd';
 import aastha from '../../vectors/boarding_passes/aastha.svg';
 import adwait from '../../vectors/boarding_passes/adwait.svg';
 import akshay from '../../vectors/boarding_passes/akshay.svg';
@@ -42,56 +42,55 @@ import sanya from '../../vectors/boarding_passes/sanya.svg';
 import satvik from '../../vectors/boarding_passes/satvik.svg';
 import sourabh from '../../vectors/boarding_passes/sourabh.svg';
 import svara from '../../vectors/boarding_passes/svara.svg';
-import { useSpring, animated as a } from 'react-spring'
+import { useSpring, animated as a } from 'react-spring';
 
 const ContactUs = () => {
-
 	const [card, setCard] = useState({
 		ifcard: true,
 		studentAdvCard: false,
-		managementHead:false,
-		prHead:false,
-            sponsHead:false,
-            financeHead:false,
-            designHead:false,
-            contentHead:false,
-            danceHead:false,
-            symphonyHead:false,
-            harmonyHead:false,
-            quizHead:false,
-            debateHead:false,
-            ikraarHead:false,
-            brushHead:false,
-            sketchHead:false,
-            treasureHead:false,
-            vividHead:false,
-            filmwarsHead:false,
-            eventHeads: false
-      })
+		managementHead: false,
+		prHead: false,
+		sponsHead: false,
+		financeHead: false,
+		designHead: false,
+		contentHead: false,
+		danceHead: false,
+		symphonyHead: false,
+		harmonyHead: false,
+		quizHead: false,
+		debateHead: false,
+		ikraarHead: false,
+		brushHead: false,
+		sketchHead: false,
+		treasureHead: false,
+		vividHead: false,
+		filmwarsHead: false,
+		eventHeads: false,
+	});
 
-      const [contacts,setContacts] = useState({
-	khushboo: false, 
-	saksham:false,
-	harshil:false,
-	aadil:false,
-	aastha:false,
-	adwait:false,
-	surya:false,
-	sourabh:false,
-	darshay:false,
-	sanya:false,
-	sejal:false,
-	namami:false,
-	kartik:false,
-	svara:false,
-	satvik:false,
-	deep:false,
-	gunjan:false,
-	mansi:false,
-	akshay:false,
-	arpit:false,
-	naveen:false
-      })
+	const [contacts, setContacts] = useState({
+		khushboo: false,
+		saksham: false,
+		harshil: false,
+		aadil: false,
+		aastha: false,
+		adwait: false,
+		surya: false,
+		sourabh: false,
+		darshay: false,
+		sanya: false,
+		sejal: false,
+		namami: false,
+		kartik: false,
+		svara: false,
+		satvik: false,
+		deep: false,
+		gunjan: false,
+		mansi: false,
+		akshay: false,
+		arpit: false,
+		naveen: false,
+	});
 
 	const [flipped, setFlipped] = useState(false);
 
@@ -104,7 +103,7 @@ const ContactUs = () => {
 	return (
 		<div className='contactUs'>
 			<img src={clouds} />
-			<div className='container-1'>
+			<div className='container-1' >
 				<div className='designation'>
 					<span
 						className='individualDesignation'
@@ -208,211 +207,384 @@ const ContactUs = () => {
 						style={{ display: card.managementHead ? '' : 'none' }}
 					/>
 
-                        <div onClick={() => setFlipped(state => !state)}>
-                              <a.img className="c back" src={designHead} onClick={() => setContacts({khushboo: true, 
-																				saksham:false,
-																				harshil:false,
-																				aadil:false,
-																				aastha:false,
-																				adwait:false,
-																				surya:false,
-																				sourabh:false,
-																				darshay:false,
-																				sanya:false,
-																				sejal:false,
-																				namami:false,
-																				kartik:false,
-																				svara:false,
-																				satvik:false,
-																				deep:false,
-																				gunjan:false,
-																				mansi:false,
-																				akshay:false,
-																				arpit:false,
-																				naveen:false})} style={{display: card.designHead? 'block':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
-                              <a.img className="c front" src={khushboo} style={{display: contacts.khushboo? 'block': 'none', opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
-                        </div>
+					<div onClick={() => setFlipped((state) => !state)}>
+						<a.img
+							className='c back'
+							src={designHead}
+							onClick={() =>
+								setContacts({
+									khushboo: true,
+									saksham: false,
+									harshil: false,
+									aadil: false,
+									aastha: false,
+									adwait: false,
+									surya: false,
+									sourabh: false,
+									darshay: false,
+									sanya: false,
+									sejal: false,
+									namami: false,
+									kartik: false,
+									svara: false,
+									satvik: false,
+									deep: false,
+									gunjan: false,
+									mansi: false,
+									akshay: false,
+									arpit: false,
+									naveen: false,
+								})
+							}
+							style={{
+								display: card.designHead ? 'block' : 'none',
+								opacity: opacity.interpolate((o) => 1 - o),
+								transform,
+							}}
+						/>
+						<a.img
+							className='c front'
+							src={khushboo}
+							style={{
+								display: contacts.khushboo ? 'block' : 'none',
+								opacity,
+								transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
+							}}
+						/>
+					</div>
 
-                        <div onClick={() => setFlipped(state => !state)}>
-                              <a.img className="c back" src={studentAdvisor} onClick={() => setContacts({
-					saksham:false,
-					harshil:true,
-					aadil:false,
-					aastha:false,
-					adwait:false,
-					surya:false,
-					sourabh:false,
-					darshay:false,
-					sanya:false,
-					sejal:false,
-					namami:false,
-					kartik:false,
-					svara:false,
-					satvik:false,
-					deep:false,
-					gunjan:false,
-					mansi:false,
-					akshay:false,
-					arpit:false,
-					naveen:false
-			      })} style={{display: card.studentAdvCard? 'block':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
-                              <a.img className="c front" src={harshil} style={{ display: contacts.harshil? 'block':'none', opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
-                        </div>
-			
-			<div onClick={() => setFlipped(flipped => !flipped)}>
-				<a.img className="c back" src={overallCoordinator} onClick={() => setContacts({
-					saksham:true,
-					harshil:false,
-					aadil:false,
-					aastha:false,
-					adwait:false,
-					surya:false,
-					sourabh:false,
-					darshay:false,
-					sanya:false,
-					sejal:false,
-					namami:false,
-					kartik:false,
-					svara:false,
-					satvik:false,
-					deep:false,
-					gunjan:false,
-					mansi:false,
-					akshay:false,
-					arpit:false,
-					naveen:false
-			      })} style={{display: card.ifcard? 'block':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
-				<a.img className="c front" src={saksham} style={{display: contacts.saksham? 'block':'none', opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
+					<div onClick={() => setFlipped((state) => !state)}>
+						<a.img
+							className='c back'
+							src={studentAdvisor}
+							onClick={() =>
+								setContacts({
+									saksham: false,
+									harshil: true,
+									aadil: false,
+									aastha: false,
+									adwait: false,
+									surya: false,
+									sourabh: false,
+									darshay: false,
+									sanya: false,
+									sejal: false,
+									namami: false,
+									kartik: false,
+									svara: false,
+									satvik: false,
+									deep: false,
+									gunjan: false,
+									mansi: false,
+									akshay: false,
+									arpit: false,
+									naveen: false,
+								})
+							}
+							style={{
+								display: card.studentAdvCard ? 'block' : 'none',
+								opacity: opacity.interpolate((o) => 1 - o),
+								transform,
+							}}
+						/>
+						<a.img
+							className='c front'
+							src={harshil}
+							style={{
+								display: contacts.harshil ? 'block' : 'none',
+								opacity,
+								transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
+							}}
+						/>
+					</div>
+
+					<div onClick={() => setFlipped((flipped) => !flipped)}>
+						<a.img
+							className='c back'
+							src={overallCoordinator}
+							onClick={() =>
+								setContacts({
+									saksham: true,
+									harshil: false,
+									aadil: false,
+									aastha: false,
+									adwait: false,
+									surya: false,
+									sourabh: false,
+									darshay: false,
+									sanya: false,
+									sejal: false,
+									namami: false,
+									kartik: false,
+									svara: false,
+									satvik: false,
+									deep: false,
+									gunjan: false,
+									mansi: false,
+									akshay: false,
+									arpit: false,
+									naveen: false,
+								})
+							}
+							style={{
+								display: card.ifcard ? 'block' : 'none',
+								opacity: opacity.interpolate((o) => 1 - o),
+								transform,
+							}}
+						/>
+						<a.img
+							className='c front'
+							src={saksham}
+							style={{
+								display: contacts.saksham ? 'block' : 'none',
+								opacity,
+								transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
+							}}
+						/>
+					</div>
+
+					<div onClick={() => setFlipped((flipped) => !flipped)}>
+						<a.img
+							className='c back'
+							src={financeHead}
+							onClick={() =>
+								setContacts({
+									saksham: false,
+									harshil: false,
+									aadil: false,
+									aastha: false,
+									adwait: false,
+									surya: false,
+									sourabh: false,
+									darshay: true,
+									sanya: false,
+									sejal: false,
+									namami: false,
+									kartik: false,
+									svara: false,
+									satvik: false,
+									deep: false,
+									gunjan: false,
+									mansi: false,
+									akshay: false,
+									arpit: false,
+									naveen: false,
+								})
+							}
+							style={{
+								display: card.financeHead ? 'block' : 'none',
+								opacity: opacity.interpolate((o) => 1 - o),
+								transform,
+							}}
+						/>
+						<a.img
+							className='c front'
+							src={darshay}
+							style={{
+								display: contacts.darshay ? 'block' : 'none',
+								opacity,
+								transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
+							}}
+						/>
+					</div>
+
+					<div onClick={() => setFlipped((state) => !state)}>
+						<a.img
+							className='c back'
+							src={contentHead}
+							onClick={() =>
+								setContacts({
+									saksham: false,
+									harshil: false,
+									aadil: false,
+									aastha: false,
+									adwait: false,
+									surya: false,
+									sourabh: false,
+									darshay: false,
+									sanya: true,
+									sejal: false,
+									namami: false,
+									kartik: false,
+									svara: false,
+									satvik: false,
+									deep: false,
+									gunjan: false,
+									mansi: false,
+									akshay: false,
+									arpit: false,
+									naveen: false,
+								})
+							}
+							style={{
+								display: card.contentHead ? 'block' : 'none',
+								opacity: opacity.interpolate((o) => 1 - o),
+								transform,
+							}}
+						/>
+						<a.img
+							className='c front'
+							src={sanya}
+							style={{
+								display: contacts.sanya ? 'block' : 'none',
+								opacity,
+								transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
+							}}
+						/>
+					</div>
+
+					<div
+						onClick={() => {
+							setFlipped((state) => !state);
+							setContacts((contacts) => !contacts);
+						}}
+					>
+						<a.img
+							className='c back'
+							src={managementHead}
+							onClick={() =>
+								setContacts({
+									saksham: false,
+									harshil: false,
+									aadil: true,
+									aastha: false,
+									adwait: false,
+									surya: false,
+									sourabh: false,
+									darshay: false,
+									sanya: false,
+									sejal: false,
+									namami: false,
+									kartik: false,
+									svara: false,
+									satvik: false,
+									deep: false,
+									gunjan: false,
+									mansi: false,
+									akshay: false,
+									arpit: false,
+									naveen: false,
+								})
+							}
+							style={{
+								display: card.managementHead ? 'block' : 'none',
+								opacity: opacity.interpolate((o) => 1 - o),
+								transform,
+							}}
+						/>
+						<a.img
+							className='c front'
+							src={aadil}
+							style={{
+								display: contacts.aadil ? 'block' : 'none',
+								opacity,
+								transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
+							}}
+						/>
+					</div>
+
+					<img
+						src={publicrelations}
+						style={{ display: card.prHead ? '' : 'none' }}
+					/>
+					<img src={ikraarHead} style={{ display: card.ikraarHead ? '' : 'none' }} />
+					<img src={debateHead} style={{ display: card.debateHead ? '' : 'none' }} />
+					<img src={sketchHead} style={{ display: card.sketchHead ? '' : 'none' }} />
+					<img src={filmHead} style={{ display: card.filmwarsHead ? '' : 'none' }} />
+					<img
+						src={harmonyHead}
+						style={{ display: card.harmonyHead ? '' : 'none' }}
+					/>
+					<img src={quizHead} style={{ display: card.quizHead ? '' : 'none' }} />
+					<img src={danceHead} style={{ display: card.danceHead ? '' : 'none' }} />
+					<img
+						src={sponsorshipHead}
+						style={{ display: card.sponsHead ? '' : 'none' }}
+					/>
+					<img
+						src={photographyHead}
+						style={{ display: card.vividHead ? '' : 'none' }}
+					/>
+					<img src={artHead} style={{ display: card.brushHead ? '' : 'none' }} />
+					<img
+						src={treasureHead}
+						style={{ display: card.treasureHead ? '' : 'none' }}
+					/>
+
+					<Carousel vertical style={{ display: card.eventHeads ? 'block' : 'none' }}>
+						<div>
+							<img src={filmHead} />
+						</div>
+						<div>
+							<img src={filmHead} />
+						</div>
+						<div>
+							<img src={filmHead} />
+						</div>
+						<div>
+							<img src={filmHead} />
+						</div>
+					</Carousel>
+				</div>
+				<div
+					className='box-3'
+					style={{ flex: '1', height: '100vh', alignItems: 'center' }}
+				>
+					<div
+						className='designation'
+						style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+					>
+						<span
+							className='individualDesignation'
+							style={{ opacity: card.prHead ? '1' : '' }}
+							onClick={() => {
+								setCard({ prHead: true });
+							}}
+						>
+							Public Relations Head
+						</span>
+						<span
+							className='individualDesignation'
+							style={{ opacity: card.designHead ? '1' : '' }}
+							onClick={() => {
+								setCard({ designHead: true });
+							}}
+						>
+							Design Head
+						</span>
+						<span
+							className='individualDesignation'
+							style={{ opacity: card.financeHead ? '1' : '' }}
+							onClick={() => {
+								setCard({ financeHead: true });
+							}}
+						>
+							Finance Head
+						</span>
+						<span
+							className='individualDesignation'
+							style={{ opacity: card.contentHead ? '1' : '' }}
+							onClick={() => {
+								setCard({ contentHead: true });
+							}}
+						>
+							Social Media and Content Head
+						</span>
+						<span
+							className='individualDesignation'
+							style={{ opacity: card.eventHeads ? '1' : '' }}
+							onClick={() => {
+								setCard({ eventHeads: true });
+							}}
+						>
+							Event Heads
+						</span>
+					</div>
+				</div>
 			</div>
-
-                        <div onClick={() => setFlipped(flipped => !flipped)}>
-                              <a.img className="c back" src={financeHead} onClick={() => setContacts({
-					saksham:false,
-					harshil:false,
-					aadil:false,
-					aastha:false,
-					adwait:false,
-					surya:false,
-					sourabh:false,
-					darshay:true,
-					sanya:false,
-					sejal:false,
-					namami:false,
-					kartik:false,
-					svara:false,
-					satvik:false,
-					deep:false,
-					gunjan:false,
-					mansi:false,
-					akshay:false,
-					arpit:false,
-					naveen:false
-			      })} style={{display: card.financeHead? 'block':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
-                              <a.img className="c front" src={darshay} style={{ display: contacts.darshay? 'block':'none', opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
-                        </div>
-
-                        <div onClick={() => setFlipped(state => !state)}>
-                              <a.img className="c back" src={contentHead} onClick={() => setContacts({
-					saksham:false,
-					harshil:false,
-					aadil:false,
-					aastha:false,
-					adwait:false,
-					surya:false,
-					sourabh:false,
-					darshay:false,
-					sanya:true,
-					sejal:false,
-					namami:false,
-					kartik:false,
-					svara:false,
-					satvik:false,
-					deep:false,
-					gunjan:false,
-					mansi:false,
-					akshay:false,
-					arpit:false,
-					naveen:false
-			})} style={{display: card.contentHead? 'block':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
-                              <a.img className="c front" src={sanya} style={{ display: contacts.sanya? 'block':'none', opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
-                        </div>
-
-                        <div onClick={() => {
-				setFlipped(state => !state)
-				setContacts(contacts => !contacts)}
-			}>
-                              <a.img className="c back" src={managementHead} onClick={() => setContacts({
-					saksham:false,
-					harshil:false,
-					aadil:true,
-					aastha:false,
-					adwait:false,
-					surya:false,
-					sourabh:false,
-					darshay:false,
-					sanya:false,
-					sejal:false,
-					namami:false,
-					kartik:false,
-					svara:false,
-					satvik:false,
-					deep:false,
-					gunjan:false,
-					mansi:false,
-					akshay:false,
-					arpit:false,
-					naveen:false
-			})} style={{display: card.managementHead? 'block':'none', opacity: opacity.interpolate(o => 1 - o), transform}}/>
-                              <a.img className="c front" src={aadil} style={{ display: contacts.aadil? 'block':'none',opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
-                        </div>
-
-                              
-                              
-                              <img src={publicrelations} style={{display: card.prHead? '':'none'}}/>
-                              <img src={ikraarHead} style={{display: card.ikraarHead? '':'none'}}/>
-                              <img src={debateHead } style={{display: card.debateHead? '':'none'}}/>
-                              <img src={sketchHead} style={{display: card.sketchHead? '':'none'}}/>
-                              <img src={filmHead} style={{display: card.filmwarsHead? '':'none'}}/>
-                              <img src={harmonyHead} style={{display: card.harmonyHead? '':'none'}}/>
-                              <img src={quizHead} style={{display: card.quizHead? '':'none'}}/>
-                              <img src={danceHead} style={{display: card.danceHead? '':'none'}}/>
-                              <img src={sponsorshipHead} style={{display: card.sponsHead? '':'none'}}/>
-                              <img src={photographyHead } style={{display: card.vividHead? '':'none'}}/>
-                              <img src={artHead} style={{display: card.brushHead? '':'none'}}/>
-                              <img src={treasureHead} style={{display: card.treasureHead? '':'none'}} />
-
-                              <Carousel vertical style={{display: card.eventHeads? 'block':'none'}}>
-                                    <div><img src={filmHead} /></div>
-                                    <div><img src={filmHead} /></div>
-                                    <div><img src={filmHead} /></div>
-                                    <div><img src={filmHead} /></div>
-                              </Carousel>
-
-
-                        </div>
-                        <div className="box-3" style={{flex:'1', height:'100vh', alignItems:'center'}}>
-                              <div className="designation" style={{display:'flex',flexDirection:'column', alignItems:'center'}}>
-                                    <span className="individualDesignation" 
-                                          style={{opacity: card.prHead? '1' : ''}}
-                                          onClick={() => {setCard({prHead: true})}}>Public Relations Head</span>
-                                    <span className="individualDesignation" 
-                                          style={{opacity: card.designHead? '1' : ''}}
-                                          onClick={() => {setCard({designHead: true})}}>Design Head</span>
-                                    <span className="individualDesignation"
-                                          style={{opacity: card.financeHead? '1' : ''}}
-                                          onClick={() => {setCard({financeHead: true})}}>Finance Head</span>
-                                    <span className="individualDesignation"
-                                          style={{opacity: card.contentHead? '1' : ''}}
-                                          onClick={() => {setCard({contentHead : true})}}>Social Media and Content Head</span>
-                                    <span className="individualDesignation"
-                                          style={{opacity: card.eventHeads? '1' : ''}}
-                                          onClick={() => {setCard({eventHeads: true})}}>Event Heads</span>
-                              </div>
-                        </div>
-                  </div>
-                  <img src={bottom} style={{marginTop: '-50vw'}}/>
-            </div>
-      )
+			<img src={bottom} style={{ marginTop: '-50vw', zIndex: '-1' }} />
+		</div>
+	);
 };
 
 export default ContactUs;
