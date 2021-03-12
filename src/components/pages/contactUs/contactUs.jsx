@@ -191,7 +191,7 @@ const ContactUs = () => {
 
 					<div
 						onClick={() => setFlipped((flipped) => !flipped)}
-						style={{ display: card.ifcard ? 'block' : 'none' }}
+						style={{ display: card.ifcard ? '' : 'none' }}
 					>
 						<a.img
 							className='c back'
@@ -380,7 +380,7 @@ const ContactUs = () => {
 						/>
 					</div>
 
-					<img
+					{/* <img
 						src={publicrelations}
 						style={{ display: card.prHead ? '' : 'none' }}
 					/>
@@ -406,7 +406,7 @@ const ContactUs = () => {
 					<img
 						src={treasureHead}
 						style={{ display: card.treasureHead ? '' : 'none' }}
-					/>
+					/> */}
 
 					<Carousel vertical style={{ display: card.eventHeads ? 'block' : 'none' }}>
 						<div>

@@ -53,8 +53,8 @@
 
 .c {
 	position: absolute;
-	will-change: opacity, transform;
-    max-width: 35vw;
+	will-change: opacity, transform;    
+	width: 35vw;
     margin-left: -15vw;
     margin-top: -8vw;
 }
