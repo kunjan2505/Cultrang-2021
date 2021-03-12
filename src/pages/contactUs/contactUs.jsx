@@ -691,11 +691,11 @@ const ContactUs = () => {
 				<div className="sponsorshipHead" style={{display:'flex', flexDirection: 'column', alignItems:'center', margin:'1rem'}}>
 					<span className="heading-mobile">Sponsorship Head</span>
 					<Slider {...mobile_settings}>
-						<div style={{width:'40vw'}}>
-							<img src={aastha_m} style={{width:'60vw', height:'90vw'}} />
+						<div>
+							<img src={aastha_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
 						</div>
 						<div>
-							<img src={adwait_m} style={{width:'60vw', height:'90vw'}}/>
+							<img src={adwait_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}}/>
 						</div>
 					</Slider>
 				</div>
@@ -703,11 +703,11 @@ const ContactUs = () => {
 				<div className="PRHead" style={{display:'flex', flexDirection: 'column', alignItems:'center', margin:'1rem'}}>
 					<span className="heading-mobile">Public Relations Head</span>
 					<Slider {...mobile_settings}>
-						<div style={{width:'40vw'}}>
-							<img src={surya_m} style={{width:'60vw', height:'90vw'}}/>
+						<div>
+							<img src={surya_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}}/>
 						</div>
 						<div>
-							<img src={sourabh_m} style={{width:'60vw', height:'90vw'}} />
+							<img src={sourabh_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
 						</div>
 					</Slider>
 				</div>
@@ -730,38 +730,38 @@ const ContactUs = () => {
 				<div className="eventHeads" style={{display:'flex', flexDirection: 'column', alignItems:'center', margin:'1rem'}}>
 					<span className="heading-mobile">Event Heads</span>
 					<Slider {...mobile_settings}>
-						<div style={{width:'40vw'}}>
-							<img src={arpit_m} style={{width:'60vw', height:'90vw'}} />
+						<div>
+							<img src={arpit_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
 						</div>
 						<div>
-							<img src={naveen_m} style={{width:'60vw', height:'90vw'}} />
+							<img src={naveen_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
 						</div>
 						<div>
-							<img src={mansi_m} style={{width:'60vw', height:'90vw'}} />
+							<img src={mansi_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
 						</div>
 						<div>
-							<img src={namami_m} style={{width:'60vw', height:'90vw'}} />
+							<img src={namami_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
 						</div>
 						<div>
-							<img src={kartik_m} style={{width:'60vw', height:'90vw'}} />
+							<img src={kartik_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
 						</div>
 						<div>
-							<img src={akshay_m} style={{width:'60vw', height:'90vw'}} />
+							<img src={akshay_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
 						</div>
 						<div>
-							<img src={gunjan_m} style={{width:'60vw', height:'90vw'}} />
+							<img src={gunjan_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
 						</div>
 						<div>
-							<img src={sejal_m} style={{width:'60vw', height:'90vw'}} />
+							<img src={sejal_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
 						</div>
 						<div>
-							<img src={satvik_m} style={{width:'60vw', height:'90vw'}} />
+							<img src={satvik_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
 						</div>
 						<div>
-							<img src={deep_m} style={{width:'60vw', height:'90vw'}} />
+							<img src={deep_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
 						</div>
 						<div>
-							<img src={svara_m} style={{width:'60vw', height:'90vw'}} />
+							<img src={svara_m} style={{width:'60vw', height:'90vw', marginLeft:'1.6rem'}} />
 						</div>
 					</Slider>
 				</div>
