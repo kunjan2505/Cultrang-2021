@@ -56,7 +56,7 @@ const AboutUs = () => {
 				<div className='content-div'>
 					<div className='contents'>
 						<div className='content-dark'>
-							<div className='content'>
+							<div className='content1'>
 								<p className='regrets'>
 									IIT Goa, into its 5th year of existence only has already grown to be a
 									much sought-after institution for engineering students and a

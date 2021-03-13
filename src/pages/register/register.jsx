@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {useHistory, Link } from 'react-router-dom';
+import {useHistory, Link, useParams } from 'react-router-dom';
 import FormInput from '../../components/formInput/formInput';
 import Top from './SVG/register cloud.svg';
 import Bottom from './SVG/register bottom.svg';
@@ -8,7 +8,8 @@ import validator from 'validator';
 import axios from 'axios';
 import {message} from 'antd'
 
-const Register = ({ id }) => {
+const Register = () => {
+	const { id } = useParams();
 	const history = useHistory()
 	const [registerData, setRegisterData] = useState({
 		leaderName: '',
@@ -36,6 +37,7 @@ const Register = ({ id }) => {
 			message.error(err.response.data);
 		}
 	};
+	console.log(id)
 	const handleChange = (e) =>
 		setRegisterData({ ...registerData, [e.target.name]: e.target.value });
 	return (

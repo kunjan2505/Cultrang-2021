@@ -16,10 +16,12 @@ function App() {
 					<AboutUs />
 					<Events />
 					<ContactUs />
-					<Register />
 				</Route>
 				<Route path='/event/:id'>
 					<EventPage />
+				</Route>
+				<Route path='/registration/:id'>
+					<Register />
 				</Route>
 			</Switch>
 		</div>
