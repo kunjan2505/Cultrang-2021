@@ -65,6 +65,7 @@ import sejal_m from '../../components/vectors/mobile_passes/sejal_m@4x.png';
 import sourabh_m from '../../components/vectors/mobile_passes/sourabh_m@4x.png';
 import surya_m from '../../components/vectors/mobile_passes/surya_m@4x.png';
 import svara_m from '../../components/vectors/mobile_passes/svara_m@4x.png';
+import bottom_m from '../../components/vectors/mobile_passes/bottom_m.png';
 
 const ContactUs = () => {
 	const settings = {
@@ -915,7 +916,8 @@ const ContactUs = () => {
 					</div>
 				</div>
 			</div>
-			<img src={bottom} className="bottom" />
+			<img src={bottom} className="bottomImage" />
+			<img src={bottom_m} className="bottomMobile" />
 		</div>
 	);
 };

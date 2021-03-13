@@ -5,9 +5,14 @@
 	scroll-snap-align: start;
 }
 
-.bottom{
+.bottomImage{
+	display: block;
 	margin-top: -40vw;
 	z-index: -1; 
+}
+
+.bottomMobile{
+	display: none;
 }
 
 .individualDesignation {
@@ -83,7 +88,7 @@
 
 .back {
 	background-size: cover;
-    position: absolute;
+	position: absolute;
 }
 
 .container-2{
@@ -116,8 +121,13 @@
 		width:70vw;
 	}
 
-	.bottom{
+	.bottomImage{
 		display: none;
+	}
+
+	.bottomMobile{
+		display: block;
+		width:100vw;
 	}
 }
 
