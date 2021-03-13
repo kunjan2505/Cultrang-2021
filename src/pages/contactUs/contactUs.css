@@ -3,6 +3,7 @@
 	width: 100vw;
 	overflow: hidden;
 	scroll-snap-align: start;
+	-webkit-overflow-scrolling: touch;
 }
 
 .bottomImage{
