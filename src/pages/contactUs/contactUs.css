@@ -2,6 +2,12 @@
 	background-color: #aa0407;
 	width: 100vw;
 	overflow: hidden;
+	scroll-snap-align: start;
+}
+
+.bottom{
+	margin-top: -40vw;
+	z-index: -1; 
 }
 
 .individualDesignation {
@@ -108,6 +114,10 @@
 
 	.sl-div{
 		width:70vw;
+	}
+
+	.bottom{
+		display: none;
 	}
 }
 

@@ -698,6 +698,15 @@ const ContactUs = () => {
 			</div>
 
 			<div className='container-2'>
+				<div 
+					style={{
+						display: 'flex',
+						flexDirection: 'column',
+						alignItems: 'center',
+						margin: '1rem',
+					}}>
+					<span className="heading-mobile" >CONTACT US</span>
+				</div>
 				<div
 					className='overallCoordinator'
 					style={{
@@ -906,7 +915,7 @@ const ContactUs = () => {
 					</div>
 				</div>
 			</div>
-			<img src={bottom} style={{ marginTop: '-40vw', zIndex: '-1' }} />
+			<img src={bottom} className="bottom" />
 		</div>
 	);
 };
