@@ -1,9 +1,10 @@
 @import url('http://fonts.cdnfonts.com/css/samarkan');
 .home-container{
-  height: 100vh;
+  height: 97vh;
   background-color: orange;
   background-size: 100% 100%;
   display: flex;
+  scroll-snap-align: start;
 }
 
 .bm-burger-button {
@@ -73,18 +74,25 @@ div.bm-menu-wrap {
   font-size: 30px;
   font-weight: 600;
 }
+
+.item{
+  font-size: 1vw;
+}
   
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
   
+.bm-item:hover{
+  color: rgb(255, 123, 0);
+}
 
 .cultrang-title{
   position: absolute;
   display: flex;
   justify-content: space-evenly;
-  left: 11.5vw;;
-  font-size: 20vw;
+  min-width: 100vw;
+  font-size: min(8em,20vw);
   font-family: 'Samarkan';
   color: white;
   top: 35vh;
@@ -112,16 +120,16 @@ div.bm-menu-wrap {
 
 .bottom{
   position: absolute;
-  bottom: -0.6vh;
 }
 
 .taj{
   position: absolute;
   min-height: 22vh;
-  min-width: 45vw;
+  min-width: 47vw;
   background-image: url("./HomeIcon/Asset\ 19.png");
   background-size: 100% 100%;
   bottom: -0.5vh;
+  left: -2vw;
 }
 
 .plane1{
@@ -141,7 +149,7 @@ div.bm-menu-wrap {
   background-image: url("./HomeIcon/Asset\ 16.png");
   background-size: 100% 100%;
   bottom: 0vh;
-  left: 44vw;
+  left: 43vw;
 }
 
 .fairywheel{
@@ -151,7 +159,7 @@ div.bm-menu-wrap {
   background-image: url("./HomeIcon/Asset\ 14.png");
   background-size: 100% 100%;
   bottom: 0vh;
-  left: 65vw;
+  left: 62vw;
 }
 
 .baloon1{
@@ -161,7 +169,7 @@ div.bm-menu-wrap {
   background-image: url("./HomeIcon/Asset\ 10.png");
   background-size: 75% 75%;
   background-repeat: no-repeat;
-  bottom: 20vh;
+  bottom: 17vh;
   left: 23vw;
 }
 
@@ -172,7 +180,7 @@ div.bm-menu-wrap {
   background-image: url("./HomeIcon/Asset\ 10.png");
   background-size: 75% 75%;
   background-repeat: no-repeat;
-  bottom: 23vh;
+  bottom: 20vh;
   left: 85vw;
 }
 
@@ -182,7 +190,7 @@ div.bm-menu-wrap {
   min-width: 15vw;
   background-image: url("./HomeIcon/Asset\ 12.png");
   background-size: 100% 100%;
-  bottom: 27vh;
+  bottom: 24vh;
   left: 65vw;
 }
 
@@ -192,6 +200,24 @@ div.bm-menu-wrap {
   min-width: 15vw;
   background-image: url("./HomeIcon/Asset\ 11.png");
   background-size: 100% 100%;
-  bottom: 27vh;
+  bottom: 24vh;
   left: 38vw;
+}
+
+.blank-space{
+  height: 3vh;
+}
+
+@media only screen and (max-width: 420px){
+  .baloon1, .baloon2, .plane1, .plane2, .moon, .eiffel-tower{
+    display: none;
+  }
+  .taj{
+    min-width: 58vw;
+    left: -1vw;
+  }
+  .fairywheel{
+    min-width: 45vw;
+    left: 55vw;
+  }
 }
