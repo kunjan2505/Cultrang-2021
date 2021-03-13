@@ -6,6 +6,7 @@ import Register from './pages/register/register';
 import { Switch, Route } from 'react-router-dom';
 import Events from './pages/Events/Events';
 import EventPage from './pages/Events/EventPage';
+import RegistrationSuccess from './pages/registerSuccess/registerSuccess';
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
 				<Route path='/registration/:id'>
 					<Register />
 				</Route>
+				<Route path='/registration-success' component={RegistrationSuccess} />
 			</Switch>
 		</div>
 	);

@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import {useHistory, Link, useParams } from 'react-router-dom';
+import { useHistory, Link, useParams } from 'react-router-dom';
 import FormInput from '../../components/formInput/formInput';
 import Top from './SVG/register cloud.svg';
 import Bottom from './SVG/register bottom.svg';
 import './register.css';
 import validator from 'validator';
 import axios from 'axios';
-import {message} from 'antd'
+import { message } from 'antd';
 
 const Register = () => {
 	const { id } = useParams();
-	const history = useHistory()
+	const history = useHistory();
 	const [registerData, setRegisterData] = useState({
 		leaderName: '',
 		email: '',
@@ -19,36 +19,39 @@ const Register = () => {
 	const handleSubmit = async () => {
 		const newUser = {
 			name: leaderName,
-			mail: email
-		}
+			mail: email,
+		};
 		try {
 			if (validator.isEmail(email)) {
-				const res = await axios.post(`http://18.224.35.78:3000/comps/${id}`, newUser);
+				const res = await axios.post(
+					`http://18.224.35.78:3000/comps/${id}`,
+					newUser
+				);
 				if (res.data.success) {
 					message.success('Registration Successful!');
 					history.push('/');
-				}else{
+				} else {
 					message.error('Registration Failed! Please try again');
 				}
-			}else{
-				message.warning('Please enter a valid email', 1)
+			} else {
+				message.warning('Please enter a valid email', 1);
 			}
 		} catch (err) {
 			message.error(err.response);
 		}
 	};
-	console.log(id)
+	console.log(id);
 	const handleChange = (e) =>
 		setRegisterData({ ...registerData, [e.target.name]: e.target.value });
 	return (
 		<div className='register-container'>
 			<div className='clouds'>
-				<img src={Top} />
+				<img src={Top} alt='clouds' />
 			</div>
 			<div className='heading-container-reg1'>
 				<h1 className='headingReg'>REGISTER</h1>
 			</div>
-			<div className='register-div'>
+			<div className='register-div' style={{marginBottom: '5rem'}}>
 				<FormInput
 					name='leaderName'
 					label='LEADERNAME'
@@ -79,7 +82,7 @@ const Register = () => {
 				<h1 className='headingReg'>REGISTER</h1>
 			</div>
 			<div className='bbuilding'>
-				<img src={Bottom} />
+				<img src={Bottom} alt='bottom' />
 			</div>
 		</div>
 	);
