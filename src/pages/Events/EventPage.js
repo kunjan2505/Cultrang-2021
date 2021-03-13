@@ -60,9 +60,11 @@ function EventPage() {
 							<p className='eventDetailText'>{event.eventDetails}</p>
 							<p className='eventDeadlineText'>Deadline: {event.deadline}</p>
 						</div>
-						<div className='register-button'>
-							<p className='register-text'>REGISTER</p>
-						</div>
+						<Link to={`/registration/${id}`}>
+							<div className='register-button'>
+								<p className='register-text'>REGISTER</p>
+							</div>
+						</Link>
 					</div>
 				</div>
 			)}
@@ -101,19 +103,9 @@ function EventPage() {
 						</div>
 						<div className='register-button'>
 							<Link to={`/registration/${id}`}>
-								<button
-									style={{
-										fontSize: '20px',
-										fontWeight: 'bold',
-										margin: '0px',
-										transform: 'translate(1px)',
-									}}
-									onClick={() => {
-										console.log('click');
-									}}
-								>
+								<p style={{ fontSize: '20px', fontWeight: 'bold', margin: '0px' }}>
 									REGISTER
-								</button>
+								</p>
 							</Link>
 						</div>
 					</div>

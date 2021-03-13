@@ -3,7 +3,8 @@
     background: radial-gradient(farthest-side, #E6703E, #c05930);
     height: 100vh;
     position: relative;
-    
+    scroll-snap-align: start;
+
 }
 
 .Card {

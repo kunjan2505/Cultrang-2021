@@ -3,14 +3,16 @@
 
 .event {
     background: radial-gradient(farthest-side, #d9605c, #c05930);
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
     
 }
 .event-vector {
     position: absolute;
 }
-
+a{
+    color: black;
+}
 .event-poster {
     position: relative;
     width: 24vw;

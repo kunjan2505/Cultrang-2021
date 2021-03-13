@@ -6,11 +6,15 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	scroll-snap-align: start;
+}
+.aboutusClouds{
+	top: 0;
 }
 .about-us {
 	display: flex;
 	justify-content: center;
-	margin-top: -38vw;
+	margin-top: -40vw;
 }
 .content-div {
 	width: 100%;
@@ -62,7 +66,7 @@
 	margin-top: -53vw;
 }
 .heading-container1 {
-	margin-top: 5rem;
+	margin-top: 4rem;
 }
 .heading-container2 {
 	display: none;

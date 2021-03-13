@@ -19,11 +19,11 @@ const Register = () => {
 	const handleSubmit = async () => {
 		const newUser = {
 			name: leaderName,
-			email: email
+			mail: email
 		}
 		try {
 			if (validator.isEmail(email)) {
-				const res = await axios.post(`/comp/${id}`, newUser);
+				const res = await axios.post(`http://18.224.35.78:3000/comps/${id}`, newUser);
 				if (res.data.success) {
 					message.success('Registration Successful!');
 					history.push('/');
@@ -34,7 +34,7 @@ const Register = () => {
 				message.warning('Please enter a valid email', 1)
 			}
 		} catch (err) {
-			message.error(err.response.data);
+			message.error(err.response);
 		}
 	};
 	console.log(id)
