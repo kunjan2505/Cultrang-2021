@@ -1,14 +1,15 @@
 .home--container{
-    height: 100vh;
+    height: 96vh;
     background-color: orange;
     background-image: url("./background-complete.png");
     background-size: 100% 100%;
+    background-repeat: no-repeat;
     scroll-snap-align: start;
 }
 
 .navbar-container{
     position: relative;
-    top: 34.10vh;
+    top: 32.3vh;
     left: 10vw;
     background-color: whitesmoke;
     max-width: 80vw;
@@ -28,6 +29,7 @@
 .item > a{
     color: orange;
     text-decoration: none;
+    font-weight: 700;
 }
 
 .item > a:hover{
@@ -43,4 +45,6 @@ div.item{
     text-shadow: 0 1px orange;
 }
 
-
+.bottom-space{
+    height: 4vh;
+}
