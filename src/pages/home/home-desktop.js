@@ -1,6 +1,5 @@
 import React from 'react'
 import './home-desktop.css'
-import {Link} from 'react-scroll'
 
 const Home = () => {
     return (
