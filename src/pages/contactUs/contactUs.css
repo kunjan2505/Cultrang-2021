@@ -77,7 +77,7 @@
 
 .back {
 	background-size: cover;
-      position: absolute;
+    position: absolute;
 }
 
 .container-2{
@@ -106,9 +106,8 @@
 		font-size: x-large;
 	}
 
-	.slick-slider{
+	.sl-div{
 		width:70vw;
 	}
-
 }
 
