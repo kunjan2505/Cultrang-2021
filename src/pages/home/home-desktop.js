@@ -36,9 +36,15 @@ const Home = () => {
                             CONTACT US
                         </Link>
                     </div>
+                    <div className="item item7">
+                        <a href="https://drive.google.com/uc?id=1B9CCpy68TpNBdQhSdRLKGv6vfc3XdGi0&export=download">
+                            RULEBOOK
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+        <div className="bottom-space"></div>
         </>
     )
 }
