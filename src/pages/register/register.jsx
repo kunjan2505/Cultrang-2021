@@ -1,19 +1,43 @@
 import React, { useState } from 'react';
-
+import {useHistory, Link, useParams } from 'react-router-dom';
 import FormInput from '../../components/formInput/formInput';
 import Top from './SVG/register cloud.svg';
 import Bottom from './SVG/register bottom.svg';
 import './register.css';
-// import Bottom from './SVG/register bottom.svg';
+import validator from 'validator';
+import axios from 'axios';
+import {message} from 'antd'
 
 const Register = () => {
+	const { id } = useParams();
+	const history = useHistory()
 	const [registerData, setRegisterData] = useState({
 		leaderName: '',
-		teamName: '',
 		email: '',
 	});
-	const handleSubmit = async (event) => {
+	const { leaderName, email } = registerData;
+	const handleSubmit = async () => {
+		const newUser = {
+			name: leaderName,
+			mail: email
+		}
+		try {
+			if (validator.isEmail(email)) {
+				const res = await axios.post(`http://18.224.35.78:3000/comps/${id}`, newUser);
+				if (res.data.success) {
+					message.success('Registration Successful!');
+					history.push('/');
+				}else{
+					message.error('Registration Failed! Please try again');
+				}
+			}else{
+				message.warning('Please enter a valid email', 1)
+			}
+		} catch (err) {
+			message.error(err.response);
+		}
 	};
+	console.log(id)
 	const handleChange = (e) =>
 		setRegisterData({ ...registerData, [e.target.name]: e.target.value });
 	return (
@@ -30,13 +54,6 @@ const Register = () => {
 					label='LEADERNAME'
 					type='text'
 					value={registerData.leaderName}
-					handleChange={handleChange}
-				/>
-				<FormInput
-					name='teamName'
-					label='TEAM NAME'
-					type='text'
-					value={registerData.teamName}
 					handleChange={handleChange}
 				/>
 				<FormInput

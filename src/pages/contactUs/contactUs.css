@@ -1,8 +1,19 @@
 .contactUs {
 	background-color: #aa0407;
 	width: 100vw;
-	/* height: 100vh; */
-	/* overflow: hidden; */
+	overflow: hidden;
+	scroll-snap-align: start;
+	-webkit-overflow-scrolling: touch;
+}
+
+.bottomImage{
+	display: block;
+	margin-top: -40vw;
+	z-index: -1; 
+}
+
+.bottomMobile{
+	display: none;
 }
 
 .individualDesignation {
@@ -78,7 +89,7 @@
 
 .back {
 	background-size: cover;
-    position: absolute;
+	position: absolute;
 }
 
 .container-2{
@@ -109,6 +120,15 @@
 
 	.sl-div{
 		width:70vw;
+	}
+
+	.bottomImage{
+		display: none;
+	}
+
+	.bottomMobile{
+		display: block;
+		width:100vw;
 	}
 }
 
