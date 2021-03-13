@@ -12,29 +12,19 @@ const Home = () => {
                         HOME
                     </div>
                     <div className="item item2">
-                        <Link to="about" spy={true} smooth={true}>
-                            ABOUT US
-                        </Link>
+                        <a href="#about">ABOUT US</a>
                     </div>
                     <div className="item item3">
-                        <Link to="events" spy={true} smooth={true}>
-                            EVENTS
-                        </Link>
+                        <a href="#events">EVENTS</a>
                     </div>
                     <div className="item item4">
-                        <Link to="pro-events" spy={true} smooth={true}>
-                            PRO EVENTS
-                        </Link>
+                        <a href="#pro-events">PRO EVENTS</a>
                     </div>
                     <div className="item item5">
-                        <Link to="sponsor" spy={true} smooth={true}>
-                            SPONSOR
-                        </Link>
+                        <a href="#sponsor">SPONSOR</a>
                     </div>
                     <div className="item item6">
-                        <Link to="contact" spy={true} smooth={true}>
-                            CONTACT US
-                        </Link>
+                        <a href="#contact">CONTACT US</a>
                     </div>
                     <div className="item item7">
                         <a href="https://drive.google.com/uc?id=1B9CCpy68TpNBdQhSdRLKGv6vfc3XdGi0&export=download">
