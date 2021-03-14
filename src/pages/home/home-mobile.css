@@ -4,7 +4,6 @@
   background-color: orange;
   background-size: 100% 100%;
   display: flex;
-  scroll-snap-align: start;
 }
 
 .bm-burger-button {
@@ -40,7 +39,7 @@ div.bm-menu-wrap {
   background: white;
   padding: 2.5em 1.5em 2.5rem;
   font-size: 1.15em;
-  border-radius: 25px;
+  border-radius: 0 25px 25px 0;
   display: flex;
   justify-content: space-evenly;
 }
@@ -207,7 +206,11 @@ div.bm-menu-wrap {
 .blank-space{
   height: 3vh;
 }
-
+@media only screen and (max-width: 800px){
+  .home-container{
+    scroll-snap-align: start;
+  }
+}
 @media only screen and (max-width: 420px){
   .baloon1, .baloon2, .plane1, .plane2, .moon, .eiffel-tower{
     display: none;

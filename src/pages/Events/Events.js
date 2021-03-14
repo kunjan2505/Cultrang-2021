@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Events.css';
-import bottomLeft from './Event_vector/bottom_left.png';
-import bottomRight from './Event_vector/bottom_right.png';
+import mobileBottom from './Event_vector/mobile-bottom.png';
 import cloud1 from './Event_vector/cloud1.png';
 import cloud2 from './Event_vector/cloud2.png';
 import eventTop from './Event-SVG/events cloud.svg';
@@ -21,7 +20,7 @@ function Events() {
 	});
 	const Card = ({ id, eventName, icon }) => {
 		return (
-			<div className='Card'>
+			<div className='Card' >
 				<img src={cardCorner} className='card-corner' />
 				<div className='card-content'>
 					<div className='poster'>
@@ -46,7 +45,7 @@ function Events() {
 		);
 	};
 	return (
-		<div id="events" className='events'>
+		<div className='events' id='events'>
 			<img src={eventTop} className='event-vector' style={{ left: '0px' }} />
 			<img
 				src={eventBottom}
@@ -65,9 +64,9 @@ function Events() {
 				style={{ top: '0px', right: '0px', width: '100vw' }}
 			/>
 			<img
-				src={bottomRight}
+				src={mobileBottom}
 				className='mobile-event-vector'
-				style={{ bottom: '0px', marginLeft: '20vw', height: '20vh' }}
+				style={{ bottom: '0px', width: '100vw' }}
 			/>
 			<p
 				className='mobile-event-vector'
@@ -108,7 +107,13 @@ function Events() {
 			)}
 			{mobile && (
 				<div className='mobile-card'>
-					<Carousel interval={null} indicators={false} wrap={false}>
+					<Carousel
+						interval={null}
+						indicators={false}
+						wrap={false}
+						prevLabel=''
+						nextLabel=''
+					>
 						<Carousel.Item>
 							<div className='mobile-event'>
 								<div className='mobile-event-row1'>

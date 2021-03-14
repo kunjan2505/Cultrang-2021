@@ -65,3 +65,4 @@ export const IMAGE_URL = [
 		url: 'images/16.JPG',
 	},
 ];
+

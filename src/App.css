@@ -2,9 +2,9 @@
 	height: 100vh;
 }
 .App {
-  text-align: center;
+	text-align: center;
 	overflow: hidden;
-  overflow-y: scroll;
+	overflow-y: scroll;
 	height: 100vh;
 	scroll-snap-type: y mandatory;
 	position: relative;
