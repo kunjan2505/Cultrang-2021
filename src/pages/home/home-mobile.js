@@ -13,7 +13,7 @@ const Home = () => {
                 <a href="#pro-events" className="menu-item">PRO EVENTS</a>
                 <a href="#sponsor" className="menu-item">SPONSOR</a>
                 <a href="#contact" className="menu-item">CONTACT US</a>
-                <a href="https://drive.google.com/uc?id=1B9CCpy68TpNBdQhSdRLKGv6vfc3XdGi0&export=download">RULEBOOK</a>
+                <a href="https://drive.google.com/uc?id=1B9CCpy68TpNBdQhSdRLKGv6vfc3XdGi0&export=download">RULEBOOK</a> 
             </Menu>
         </div>
         <div id="page-wrap">
