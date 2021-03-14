@@ -45,7 +45,7 @@ const AboutUs = () => {
 		],
 	};
 	return (
-		<div className='about-us-container'>
+		<div id="about" className='about-us-container'>
 			<div>
 				<img src={Asset1} alt='clouds' className='aboutusClouds' />
 			</div>
