@@ -14,7 +14,7 @@
 	padding: 3rem 4vw 3rem 4vw;
 	transform: translate(1px);
 	border-radius: 50px;
-    margin-top: -35vw;
+	margin-top: -35vw;
 	box-shadow: 5px 10px 20px #353535;
 }
 .bbuilding {
@@ -44,22 +44,27 @@
 @media only screen and (max-width: 720px) {
 	.heading-container-reg {
 		display: none;
-	}.heading-container-reg1 {
+	}
+	.heading-container-reg1 {
 		display: block;
-		margin-top: -40vw
-	}.register-div{
+		margin-top: -25vw;
+	}
+	.register-div {
 		margin-top: 0;
 		width: 80vw;
 		padding: 1.5rem 7vw 1.5rem 7vw;
-	}.bbuilding {
-		width: 200vw;
-		margin-top: -65vw;
-		margin-left:100vw;
-	}.headingReg{
+	}
+	.bbuilding {
+		width: 250vw;
+		margin-top: -80vw;
+		margin-left: 120vw;
+	}
+	.headingReg {
 		font-size: 36px;
-	}.btn-secondary {
+	}
+	.btn-secondary {
 		width: 100px;
 		height: 50px;
-		font-size: 16px
+		font-size: 16px;
 	}
 }

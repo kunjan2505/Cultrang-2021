@@ -8,6 +8,7 @@ import validator from 'validator';
 import axios from 'axios';
 import { message } from 'antd';
 
+
 const Register = () => {
 	const { id } = useParams();
 	const history = useHistory();
@@ -29,7 +30,8 @@ const Register = () => {
 				);
 				if (res.data.success) {
 					message.success('Registration Successful!');
-					history.push('/');
+					localStorage.setItem('auth', res.data.success);
+					history.push('/registeration-success');
 				} else {
 					message.error('Registration Failed! Please try again');
 				}
@@ -45,13 +47,14 @@ const Register = () => {
 		setRegisterData({ ...registerData, [e.target.name]: e.target.value });
 	return (
 		<div className='register-container'>
+			
 			<div className='clouds'>
 				<img src={Top} alt='clouds' />
 			</div>
 			<div className='heading-container-reg1'>
 				<h1 className='headingReg'>REGISTER</h1>
 			</div>
-			<div className='register-div' style={{marginBottom: '5rem'}}>
+			<div className='register-div' style={{ marginBottom: '5rem' }}>
 				<FormInput
 					name='leaderName'
 					label='LEADERNAME'

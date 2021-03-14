@@ -60,7 +60,7 @@ function EventPage() {
 							<p className='eventDetailText'>{event.eventDetails}</p>
 							<p className='eventDeadlineText'>Deadline: {event.deadline}</p>
 						</div>
-						<Link to={`/registration/${id}`}>
+						<Link to={`/registeration/${id}`}>
 							<div className='register-button'>
 								<p className='register-text'>REGISTER</p>
 							</div>
@@ -102,7 +102,7 @@ function EventPage() {
 							</div>
 						</div>
 						<div className='register-button'>
-							<Link to={`/registration/${id}`}>
+							<Link to={`/registeration/${id}`}>
 								<p style={{ fontSize: '20px', fontWeight: 'bold', margin: '0px' }}>
 									REGISTER
 								</p>

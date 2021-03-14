@@ -68,6 +68,10 @@ function RegistrationSuccess() {
 						</div>
 					</div>
 				</div>
+				<div>
+					<p className='inst-text'>You've successfully registered for CultRang 2021! A mail have been send to you that contains the further instructions. 
+					</p>
+				</div>
 			</div>
 
 			<div className='heading-container-reg'>

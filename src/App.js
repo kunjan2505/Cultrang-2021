@@ -7,6 +7,7 @@ import { Switch, Route } from 'react-router-dom';
 import Events from './pages/Events/Events';
 import EventPage from './pages/Events/EventPage';
 import RegistrationSuccess from './pages/registerSuccess/registerSuccess';
+import GuardedRoute from './components/guardedRoute/guardedRoute';
 
 function App() {
 	return (
@@ -21,10 +22,15 @@ function App() {
 				<Route path='/event/:id'>
 					<EventPage />
 				</Route>
-				<Route path='/registration/:id'>
+				<Route path='/registeration/:id'>
 					<Register />
 				</Route>
-				<Route path='/registration-success' component={RegistrationSuccess} />
+				<GuardedRoute
+					exact
+					path='/registeration-success'
+					component={RegistrationSuccess}
+					auth={localStorage.getItem('auth')}
+				/>
 			</Switch>
 		</div>
 	);
