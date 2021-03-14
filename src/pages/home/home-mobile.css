@@ -103,6 +103,7 @@ div.bm-menu-wrap {
   min-width: 100vw;
   background-image: url("./HomeIcon/Asset23.png");
   background-size: 100% 75%;
+  background-repeat: no-repeat;
   top: -5vh;
   opacity: 0.7;
 }
@@ -113,6 +114,7 @@ div.bm-menu-wrap {
   min-width: 100vw;
   background-image: url("./HomeIcon/Asset\ 22.png");
   background-size: 100% 65%;
+  background-repeat: no-repeat;
   top: -5vh;
   opacity: 0.7;
 }
