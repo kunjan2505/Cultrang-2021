@@ -1,50 +1,54 @@
-.home--container{
-    height: 96vh;
-    background-color: orange;
-    background-image: url("./background-complete.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    scroll-snap-align: start;
+.home--container {
+	height: 94vh;
+	background-color: orange;
+	background-image: url('./background-complete.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
 
-.navbar-container{
-    position: relative;
-    top: 32.3vh;
-    left: 10vw;
-    background-color: whitesmoke;
-    max-width: 80vw;
-    min-height: 5vh;
-    border-radius: 15px 15px 15px 15px;
+.navbar-container {
+	position: relative;
+	top: 32.3vh;
+	left: 10vw;
+	background-color: whitesmoke;
+	max-width: 80vw;
+	min-height: 5vh;
+	border-radius: 15px 15px 15px 15px;
 }
 
-.items{
-    position: relative;
-    padding-left: 25px;
-    padding-right: 25px;
-    line-height: 5vh;
-    display: flex;
-    justify-content: space-between;
+.items {
+	position: relative;
+	padding-left: 25px;
+	padding-right: 25px;
+	line-height: 5vh;
+	display: flex;
+	justify-content: space-between;
 }
 
-.item > a{
-    color: orange;
-    text-decoration: none;
-    font-weight: 700;
+.item > a {
+	color: orange;
+	text-decoration: none;
+	font-weight: 700;
 }
 
-.item > a:hover{
-    color: rgb(255, 81, 0);
-    font-size: larger;
+.item > a:hover {
+	color: rgb(255, 81, 0);
+	font-size: larger;
 }
 
-div.item{
-    cursor: pointer;
-    letter-spacing: 3px;
-    color: orange !important;
-    font-weight: 700;
-    text-shadow: 0 1px orange;
+div.item {
+	cursor: pointer;
+	letter-spacing: 3px;
+	color: orange !important;
+	font-weight: 700;
+	text-shadow: 0 1px orange;
 }
 
-.bottom-space{
-    height: 4vh;
+.bottom-space {
+	height: 6vh;
+}
+@media only screen and (max-width: 800px) {
+	.home--container {
+		scroll-snap-align: start;
+	}
 }

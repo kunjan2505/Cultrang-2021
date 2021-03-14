@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { Link } from "react-router-dom";
+import { useParams, Link } from 'react-router-dom';
 import './EventPage.css';
 import events from './Data/Data';
 import bottomLeft from './Event_vector/bottom_left.png';
 import bottomRight from './Event_vector/bottom_right.png';
+import mobileBottom from './Event_vector/mobile-bottom.png';
+
 import cloud1 from './Event_vector/cloud1.png';
 import cloud2 from './Event_vector/cloud2.png';
 import eventTop from './Event-SVG/events cloud.svg';
@@ -41,9 +42,9 @@ function EventPage() {
 				style={{ top: '0px', right: '0px', width: '100vw' }}
 			/>
 			<img
-				src={bottomRight}
+				src={mobileBottom}
 				className='mobileEventVector'
-				style={{ bottom: '0px', marginLeft: '20vw', height: '20vh' }}
+				style={{ bottom: '0px', width: '100vw' }}
 			/>
 			{!mobile && (
 				<div className='event-info'>
@@ -60,11 +61,11 @@ function EventPage() {
 							<p className='eventDetailText'>{event.eventDetails}</p>
 							<p className='eventDeadlineText'>Deadline: {event.deadline}</p>
 						</div>
-						<Link to={`/registeration/${id}`}>
-							<div className='register-button'>
+						<div className='register-button'>
+							<Link to={`/registeration/${id}`}>
 								<p className='register-text'>REGISTER</p>
-							</div>
-						</Link>
+							</Link>
+						</div>
 					</div>
 				</div>
 			)}
@@ -77,7 +78,7 @@ function EventPage() {
 								fontSize: '2em',
 								color: 'white',
 								fontWeight: 'bold',
-								margin: '10px',
+								margin: '0px',
 								textShadow: ' 4px 4px #000000',
 							}}
 						>

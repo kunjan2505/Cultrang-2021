@@ -25,10 +25,11 @@ const Register = () => {
 		try {
 			if (validator.isEmail(email)) {
 				const res = await axios.post(
-					`http://18.224.35.78:3000/comps/${id}`,
+					`http://cultrangbackend-env.eba-mpa8r9nr.us-east-2.elasticbeanstalk.com/comps/${id}`,
 					newUser
 				);
 				if (res.data.success) {
+					console.log(res)
 					message.success('Registration Successful!');
 					localStorage.setItem('auth', res.data.success);
 					history.push('/registeration-success');

@@ -6,7 +6,7 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	scroll-snap-align: start;
+	
 }
 .aboutusClouds{
 	top: 0;
@@ -102,6 +102,9 @@
 }
 
 @media only screen and (max-width: 800px) {
+	.about-us-container {
+		scroll-snap-align: start;
+	}
 	.content-div {
 		flex-direction: column;
 	}

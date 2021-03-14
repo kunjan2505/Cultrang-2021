@@ -3,10 +3,12 @@
     background: radial-gradient(farthest-side, #E6703E, #c05930);
     height: 100vh;
     position: relative;
-    scroll-snap-align: start;
-
+    
 }
 
+a{
+    color: black;
+}
 .Card {
     position: relative;
     width: 180px;
@@ -104,10 +106,13 @@
     .events-content{
         display: none;
     }
-   
-   
-    
 }
+@media only screen and (max-width: 800px) {
+    .events {
+        scroll-snap-align: center; 
+    }
+}
+
 @media only screen and (max-width: 720px) {
     .tab-card {
         display: none;

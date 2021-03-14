@@ -29,7 +29,7 @@ function App() {
 					exact
 					path='/registeration-success'
 					component={RegistrationSuccess}
-					auth={localStorage.getItem('auth')}
+					auth={true}
 				/>
 			</Switch>
 		</div>
