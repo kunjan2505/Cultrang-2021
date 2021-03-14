@@ -10,6 +10,7 @@ import RegistrationSuccess from './pages/registerSuccess/registerSuccess';
 import GuardedRoute from './components/guardedRoute/guardedRoute';
 
 function App() {
+	console.log(localStorage.getItem('auth'));
 	return (
 		<div className='App'>
 			<Switch>
@@ -29,7 +30,7 @@ function App() {
 					exact
 					path='/registeration-success'
 					component={RegistrationSuccess}
-					auth={localStorage.getItem('auth')}
+					auth={localStorage.getItem('auth') ? true : false}
 				/>
 			</Switch>
 		</div>

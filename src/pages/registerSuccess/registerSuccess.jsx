@@ -69,8 +69,20 @@ function RegistrationSuccess() {
 					</div>
 				</div>
 				<div>
-					<p className='inst-text'>You've successfully registered for CultRang 2021! A mail have been send to you that contains the further instructions. 
+					<p className='inst-text'>
+						You've successfully registered for CultRang 2021! A mail have been send to
+						you that contains the further instructions.
 					</p>
+				</div>
+				<div>
+					<Link to='/'>
+						<button
+							className='btn btn-light'
+							style={{ transform: 'translateY(-10px)', marginBottom: '1rem' }}
+						>
+							Back to home
+						</button>
+					</Link>
 				</div>
 			</div>
 

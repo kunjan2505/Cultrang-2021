@@ -37,6 +37,9 @@
 	border-radius: 20px;
 	font-size: 20px;
 }
+.btn-light {
+	border-radius: 20px;
+}
 .heading-container-reg1 {
 	display: none;
 }
