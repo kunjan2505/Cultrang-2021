@@ -8,7 +8,6 @@ import validator from 'validator';
 import axios from 'axios';
 import { message } from 'antd';
 
-
 const Register = () => {
 	const { id } = useParams();
 	const history = useHistory();
@@ -29,7 +28,7 @@ const Register = () => {
 					newUser
 				);
 				if (res.data.success) {
-					console.log(res.data.success)
+					console.log(res.data.success);
 					message.success('Registration Successful!');
 					localStorage.setItem('auth', res.data.success);
 					history.push('/registeration-success');
@@ -48,7 +47,6 @@ const Register = () => {
 		setRegisterData({ ...registerData, [e.target.name]: e.target.value });
 	return (
 		<div className='register-container'>
-			
 			<div className='clouds'>
 				<img src={Top} alt='clouds' />
 			</div>
@@ -81,6 +79,16 @@ const Register = () => {
 						Register
 					</button>
 				</div>
+			</div>
+			<div>
+				<Link to='/'>
+					<button
+						className='btn btn-light'
+						style={{ transform: 'translateY(-1px)', marginBottom: '1rem' }}
+					>
+						Back to home
+					</button>
+				</Link>
 			</div>
 			<div className='heading-container-reg'>
 				<h1 className='headingReg'>REGISTER</h1>
