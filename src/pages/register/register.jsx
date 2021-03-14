@@ -29,7 +29,7 @@ const Register = () => {
 					newUser
 				);
 				if (res.data.success) {
-					console.log(res)
+					console.log(res.data.success)
 					message.success('Registration Successful!');
 					localStorage.setItem('auth', res.data.success);
 					history.push('/registeration-success');

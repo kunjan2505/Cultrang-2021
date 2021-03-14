@@ -19,6 +19,9 @@
 	* {
 		box-sizing: border-box;
 	}
+	* {
+		scroll-behavior: smooth;
+	}
 
 	#page-wrap {
 		padding-bottom: 0px;
