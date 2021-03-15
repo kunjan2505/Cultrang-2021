@@ -10,7 +10,7 @@
 	position: relative;
 	will-change: transform;
 }
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 800px) {
 	.App {
 		scroll-snap-type: y mandatory;
 	}
