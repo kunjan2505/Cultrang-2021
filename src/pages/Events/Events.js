@@ -20,7 +20,7 @@ function Events() {
 	});
 	const Card = ({ id, eventName, icon }) => {
 		return (
-			<div className='Card' >
+			<div className='Card'>
 				<img src={cardCorner} className='card-corner' />
 				<div className='card-content'>
 					<div className='poster'>
