@@ -1,6 +1,7 @@
 import React from 'react'
 import {slide as Menu} from 'react-burger-menu'
-import './home-mobile.css'
+import './home-mobile.css';
+import cultrangLogo from "./cultrang-logo.png";
 
 const Home = () => {
     return (
@@ -31,7 +32,7 @@ const Home = () => {
 							</Menu>
 						</div>
 						<div id='page-wrap'>
-							<div className='cultrang-title'>CULTRANG</div>
+							<img src={cultrangLogo} className='cultrang-title' />
 							<div className='cloud1'></div>
 							<div className='cloud2'></div>
 							<div className='bottom'>
