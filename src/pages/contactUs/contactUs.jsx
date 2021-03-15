@@ -121,7 +121,7 @@ const ContactUs = () => {
 		eventHeads: false,
 	});
 
-	const [flipped, setFlipped] = useState(false);
+	const [flipped, setFlipped] = useState(true);
 
 	const { transform, opacity } = useSpring({
 		opacity: flipped ? 1 : 0,
