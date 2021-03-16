@@ -1,19 +1,20 @@
 .home--container {
-	height: 94vh;
+	height: 100vh;
 	background-color: orange;
-	background-image: url('./background-complete.png');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
+	z-index: 12;
 }
 
 .navbar-container {
-	position: relative;
-	top: 32.3vh;
-	left: 10vw;
+	position: absolute;
+	top: 30vh;
+	left: 12vw;
 	background-color: whitesmoke;
-	max-width: 80vw;
+	width: 76vw;
 	min-height: 5vh;
 	border-radius: 15px 15px 15px 15px;
+	z-index: 10;
 }
 
 .items {
@@ -45,9 +46,44 @@ div.item {
 }
 
 .bottom-space {
+	position: absolute;
+	bottom: 0;
 	height: 6vh;
+	width: 100vw;
+	background-color: white;
 }
-@media only screen and (max-width: 800px) {
+
+.logo-container{
+	display: flex;
+	position: absolute;
+	width: 100vw;
+	justify-content: center;
+	top: 33vh;
+}
+
+.cultrang-logo-pc{
+	position: absolute;
+	width: 40vw;
+	height: 37vh;
+}
+
+.home-bottom{
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	bottom: 6vh;
+	overflow: hidden;
+}
+
+.bottom-image{
+	max-height: 80vh;
+	width: 100vw;
+	margin-bottom: -6vh;
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 700px) {
 	.home--container {
 		scroll-snap-align: start;
 	}
