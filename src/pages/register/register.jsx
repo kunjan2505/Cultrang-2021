@@ -26,7 +26,7 @@ const Register = () => {
 				const res = await axios.post(
 					`http://cultrangbackend-env.eba-mpa8r9nr.us-east-2.elasticbeanstalk.com/comps/${id}`,
 					newUser
-				);
+				);//server post request
 				if (res.data.success) {
 					console.log(res.data.success);
 					message.success('Registration Successful!');
@@ -39,7 +39,7 @@ const Register = () => {
 				message.warning('Please enter a valid email', 1);
 			}
 		} catch (err) {
-			message.error(err.response);
+			message.error('Error occurred! Please try again.');
 		}
 	};
 	console.log(id);
