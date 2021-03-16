@@ -6,6 +6,12 @@
 	overflow: hidden;
 	overflow-y: scroll;
 	height: 100vh;
-	scroll-snap-type: y mandatory;
+
 	position: relative;
+	will-change: transform;
+}
+@media only screen and (max-width: 800px) {
+	.App {
+		scroll-snap-type: y mandatory;
+	}
 }

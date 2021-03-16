@@ -91,10 +91,9 @@ div.bm-menu-wrap {
   display: flex;
   justify-content: space-evenly;
   min-width: 100vw;
-  font-size: min(8em,20vw);
-  font-family: 'Samarkan';
+  width: 50vw;
   color: white;
-  top: 35vh;
+  top: 15vh;
 }
 
 .cloud1{
@@ -213,9 +212,12 @@ div.bm-menu-wrap {
     scroll-snap-align: start;
   }
 }
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 426px){
   .baloon1, .baloon2, .plane1, .plane2, .moon, .eiffel-tower{
     display: none;
+  }.cultrang-title{
+    top:25vh;
+    width: 70vw;
   }
   .taj{
     min-width: 58vw;
