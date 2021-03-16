@@ -1,7 +1,8 @@
 import React from 'react'
 import {slide as Menu} from 'react-burger-menu'
 import './home-mobile.css';
-import cultrangLogo from "./cultrang-logo.png";
+import cultrangLogo from "./cultrang-logo.png"
+import clouds from './home-cloud.svg'
 
 const Home = () => {
     return (
@@ -32,9 +33,14 @@ const Home = () => {
 							</Menu>
 						</div>
 						<div id='page-wrap'>
-							<img src={cultrangLogo} className='cultrang-title' />
-							<div className='cloud1'></div>
-							<div className='cloud2'></div>
+							{<div className="cloud-container">
+								<img className="clouds-home" src={clouds} alt="clouds"></img>
+							</div>}
+							<div className="title-container">
+								<img src={cultrangLogo} className='cultrang-title' />
+							</div>
+							{/* <div className='cloud1'></div>
+							<div className='cloud2'></div> */}
 							<div className='bottom'>
 								<div className='taj'></div>
 								<div className='plane1'></div>

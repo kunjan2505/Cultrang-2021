@@ -3,12 +3,12 @@
 }
 .App {
 	text-align: center;
-	overflow: hidden;
+	overflow-x: hidden;
 	overflow-y: scroll;
 	height: 100vh;
 
 	position: relative;
-	will-change: transform;
+	/* will-change: transform; */
 }
 @media only screen and (max-width: 800px) {
 	.App {

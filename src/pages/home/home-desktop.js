@@ -1,10 +1,16 @@
 import React from 'react'
 import './home-desktop.css'
+import cultrangLogo from './cultrang-logo.png'
+import clouds from './home-cloud.svg'
+import bottom from './home-bottom.svg'
 
 const Home = () => {
     return (
 					<>
 						<div className='home--container'>
+							<div className="home-top">
+								<img className="home-clouds" src={clouds} alt="clouds"></img>
+							</div>
 							<div className='navbar-container'>
 								<div className='items'>
 									<div className='item item1'>HOME</div>
@@ -30,8 +36,14 @@ const Home = () => {
 									</div>
 								</div>
 							</div>
+							<div className="logo-container">
+								<img src={cultrangLogo} alt="CULTRANG" className="cultrang-logo-pc"></img>
+							</div>
+							<div className="home-bottom">
+								<img className="bottom-image" src={bottom} alt="bottom"></img>
+							</div>
+							<div className='bottom-space'></div>
 						</div>
-						<div className='bottom-space'></div>
 					</>
 				);
 }
