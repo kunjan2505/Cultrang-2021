@@ -16,7 +16,7 @@ function App() {
 			<Switch>
 				<Route exact path='/'>
 					<Home className='home-page' />
-					{<AboutUs />}
+					<AboutUs />
 					<Events />
 					<ContactUs />
 				</Route>
