@@ -39,6 +39,7 @@ const Register = () => {
 				message.warning('Please enter a valid email', 1);
 			}
 		} catch (err) {
+			console.log(err);
 			message.error('Error occurred! Please try again.');
 		}
 	};
