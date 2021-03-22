@@ -12,13 +12,13 @@ const Register = () => {
 	const { id } = useParams();
 	const history = useHistory();
 	const [registerData, setRegisterData] = useState({
-		leaderName: '',
+		Name: '',
 		email: '',
 	});
-	const { leaderName, email } = registerData;
+	const { Name, email } = registerData;
 	const handleSubmit = async () => {
 		const newUser = {
-			name: leaderName,
+			name: Name,
 			mail: email,
 		};
 		try {
@@ -56,10 +56,10 @@ const Register = () => {
 			</div>
 			<div className='register-div' style={{ marginBottom: '5rem' }}>
 				<FormInput
-					name='leaderName'
-					label='LEADERNAME'
+					name='Name'
+					label='NAME'
 					type='text'
-					value={registerData.leaderName}
+					value={registerData.Name}
 					handleChange={handleChange}
 				/>
 				<FormInput

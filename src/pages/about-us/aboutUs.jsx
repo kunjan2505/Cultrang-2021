@@ -76,7 +76,6 @@ const AboutUs = () => {
 										of various cultures in our everyday indulgences.
 									</p>
 								</div>
-								{/* <div style={{backgroundColor: 'white', width: '100%', height: '1rem', position: 'fixed', bottom: '0' }}></div> */}
 							</div>
 						</div>
 					</div>
