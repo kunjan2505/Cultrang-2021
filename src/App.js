@@ -30,7 +30,7 @@ function App() {
 					exact
 					path='/registeration-success'
 					component={RegistrationSuccess}
-					auth={localStorage.getItem('auth') ? true : false}
+					auth={true}
 				/>
 			</Switch>
 		</div>
@@ -38,3 +38,4 @@ function App() {
 }
 
 export default App;
+// localStorage.getItem('auth') ? true : false;
