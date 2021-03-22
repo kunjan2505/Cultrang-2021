@@ -16,18 +16,18 @@ export const IMAGE_URL = [
 		id: 4,
 		url: 'images/4.jpg',
 	},
-	{
-		id: 5,
-		url: 'images/5.jpg',
-	},
+	// {
+	// 	id: 5,
+	// 	url: 'images/5.jpg',
+	// },
 	{
 		id: 6,
 		url: 'images/6.jpg',
 	},
-	{
-		id: 7,
-		url: 'images/7.jpg',
-	},
+	// {
+	// 	id: 7,
+	// 	url: 'images/7.jpg',
+	// },
 	{
 		id: 8,
 		url: 'images/8.jpg',
@@ -48,10 +48,10 @@ export const IMAGE_URL = [
 		id: 12,
 		url: 'images/12.jpg',
 	},
-	{
-		id: 13,
-		url: 'images/13.jpg',
-	},
+	// {
+	// 	id: 13,
+	// 	url: 'images/13.jpg',
+	// },
 	{
 		id: 14,
 		url: 'images/14.jpg',
@@ -60,9 +60,9 @@ export const IMAGE_URL = [
 		id: 15,
 		url: 'images/15.jpg',
 	},
-	{
-		id: 16,
-		url: 'images/16.jpg',
-	},
+	// {
+	// 	id: 16,
+	// 	url: 'images/16.jpg',
+	// },
 ];
 

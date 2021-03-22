@@ -2,12 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router } from 'react-router-dom';
+import HttpsRedirect from 'react-https-redirect';
 
 ReactDOM.render(
-	<Router basename='/cultrang'>
-		<App />
-	</Router>,
+	<HttpsRedirect>
+		<Router basename='/cultrang'>
+			<App />
+		</Router>
+	</HttpsRedirect>,
 	document.getElementById('root')
 );
 

@@ -130,7 +130,7 @@ const ContactUs = () => {
 	});
 
 	return (
-		<div id="contact" className='contactUs'>
+		<div id='contact' className='contactUs'>
 			<img src={clouds} />
 			<div className='container-1'>
 				<div className='designation'>
@@ -424,29 +424,6 @@ const ContactUs = () => {
 									}}
 								/>
 							</div>
-
-							<div
-								onClick={() => setFlipped((flipped) => !flipped)}
-								style={{ display: card.debateHead ? '' : 'none' }}
-							>
-								<a.img
-									className='sliderClass back'
-									src={debateHead}
-									style={{
-										opacity: opacity.interpolate((o) => 1 - o),
-										transform,
-									}}
-								/>
-								<a.img
-									className='sliderClass front'
-									src={mansi}
-									style={{
-										opacity,
-										transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
-									}}
-								/>
-							</div>
-
 							<div
 								onClick={() => setFlipped((flipped) => !flipped)}
 								style={{ display: card.treasureHead ? '' : 'none' }}
@@ -600,6 +577,27 @@ const ContactUs = () => {
 									}}
 								/>
 							</div>
+							<div
+								onClick={() => setFlipped((flipped) => !flipped)}
+								style={{ display: card.debateHead ? '' : 'none' }}
+							>
+								<a.img
+									className='sliderClass back'
+									src={debateHead}
+									style={{
+										opacity: opacity.interpolate((o) => 1 - o),
+										transform,
+									}}
+								/>
+								<a.img
+									className='sliderClass front'
+									src={mansi}
+									style={{
+										opacity,
+										transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
+									}}
+								/>
+							</div>
 						</Slider>
 					</div>
 
@@ -699,14 +697,15 @@ const ContactUs = () => {
 			</div>
 
 			<div className='container-2'>
-				<div 
+				<div
 					style={{
 						display: 'flex',
 						flexDirection: 'column',
 						alignItems: 'center',
 						margin: '1rem',
-					}}>
-					<span className="heading-mobile" >CONTACT US</span>
+					}}
+				>
+					<span className='heading-mobile'>CONTACT US</span>
 				</div>
 				<div
 					className='overallCoordinator'
@@ -845,79 +844,79 @@ const ContactUs = () => {
 				>
 					<span className='heading-mobile'>Event Heads</span>
 					<div className='sl-div'>
-					<Slider {...mobile_settings}>
-						<div>
-							<img
-								src={arpit_m}
-								style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
-							/>
-						</div>
-						<div>
-							<img
-								src={naveen_m}
-								style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
-							/>
-						</div>
-						<div>
-							<img
-								src={mansi_m}
-								style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
-							/>
-						</div>
-						<div>
-							<img
-								src={namami_m}
-								style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
-							/>
-						</div>
-						<div>
-							<img
-								src={kartik_m}
-								style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
-							/>
-						</div>
-						<div>
-							<img
-								src={akshay_m}
-								style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
-							/>
-						</div>
-						<div>
-							<img
-								src={gunjan_m}
-								style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
-							/>
-						</div>
-						<div>
-							<img
-								src={sejal_m}
-								style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
-							/>
-						</div>
-						<div>
-							<img
-								src={satvik_m}
-								style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
-							/>
-						</div>
-						<div>
-							<img
-								src={deep_m}
-								style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
-							/>
-						</div>
-						<div>
-							<img
-								src={svara_m}
-								style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
-							/>
-						</div>
-					</Slider>
+						<Slider {...mobile_settings}>
+							<div>
+								<img
+									src={arpit_m}
+									style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+								/>
+							</div>
+							<div>
+								<img
+									src={naveen_m}
+									style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+								/>
+							</div>
+							<div>
+								<img
+									src={namami_m}
+									style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+								/>
+							</div>
+							<div>
+								<img
+									src={kartik_m}
+									style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+								/>
+							</div>
+							<div>
+								<img
+									src={akshay_m}
+									style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+								/>
+							</div>
+							<div>
+								<img
+									src={gunjan_m}
+									style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+								/>
+							</div>
+							<div>
+								<img
+									src={sejal_m}
+									style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+								/>
+							</div>
+							<div>
+								<img
+									src={satvik_m}
+									style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+								/>
+							</div>
+							<div>
+								<img
+									src={deep_m}
+									style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+								/>
+							</div>
+							<div>
+								<img
+									src={mansi_m}
+									style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+								/>
+							</div>
+							<div>
+								<img
+									src={svara_m}
+									style={{ width: '60vw', height: '90vw', marginLeft: '1.6rem' }}
+								/>
+							</div>
+						</Slider>
 					</div>
 				</div>
 			</div>
-			<img src={bottom} className="bottomImage" />
-			<img src={bottom_m} className="bottomMobile" />
+			<img src={bottom} className='bottomImage' />
+			<img src={bottom_m} className='bottomMobile' />
 		</div>
 	);
 };

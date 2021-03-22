@@ -6,7 +6,7 @@
 
 .bottomImage {
 	display: block;
-	margin-top: -40vw;
+	margin-top: -43vw;
 	z-index: -1;
 }
 
@@ -57,7 +57,7 @@
 	display: flex;
 	transform: translate(1px);
 	z-index: 2;
-	margin-top: -40vw;
+	margin-top: -43vw;
 }
 
 .c {
