@@ -27,7 +27,7 @@ const Home = () => {
 								<a href='#contact' className='menu-item'>
 									CONTACT US
 								</a>
-								<a href='https://drive.google.com/u/0/uc?id=1ehuudTD-AaFSG7fwus6KbbC_7xtOdU-c&export=download'>
+								<a href='https://drive.google.com/uc?export=download&id=1qG5HKNXfs7-jVbuPeJcDrJPwuVm0alSs'>
 									RULEBOOK
 								</a>
 							</Menu>

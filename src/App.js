@@ -18,8 +18,8 @@ function App() {
 				<Route exact path='/'>
 					<Home className='home-page' />
 					<AboutUs />
-					<Proevents />
 					<Events />
+					<Proevents />
 					<ContactUs />
 				</Route>
 				<Route path='/event/:id'>
