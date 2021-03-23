@@ -54,7 +54,7 @@ const Register = () => {
 			<div className='heading-container-reg1'>
 				<h1 className='headingReg'>REGISTER</h1>
 			</div>
-			<div className='register-div' style={{ marginBottom: '5rem' }}>
+			<div className='register-div' style={{ marginBottom: '3rem' }}>
 				<FormInput
 					name='Name'
 					label='NAME'

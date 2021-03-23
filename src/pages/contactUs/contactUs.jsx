@@ -169,7 +169,7 @@ const ContactUs = () => {
 							setCard({ sponsCarousel: true });
 						}}
 					>
-						Sponsorship Head
+						Sponsorship Coordinator
 					</span>
 				</div>
 				<div className='box-2'>
@@ -655,7 +655,7 @@ const ContactUs = () => {
 							setCard({ prCarousel: true });
 						}}
 					>
-						Public Relations Head
+						Public Relations Coordinator
 					</span>
 					<span
 						className='individualDesignation'
@@ -747,7 +747,7 @@ const ContactUs = () => {
 				</div>
 
 				<div className='sponsorshipHead' style={{ margin: '1rem' }}>
-					<span className='heading-mobile'>Sponsorship Head</span>
+					<span className='heading-mobile'>Sponsorship Coordinator</span>
 					<div className='sl-div'>
 						<Slider {...mobile_settings}>
 							<div>
@@ -775,7 +775,7 @@ const ContactUs = () => {
 						margin: '1rem',
 					}}
 				>
-					<span className='heading-mobile'>Public Relations Head</span>
+					<span className='heading-mobile'>Public Relations Coordinator</span>
 					<div className='sl-div'>
 						<Slider {...mobile_settings}>
 							<div>
