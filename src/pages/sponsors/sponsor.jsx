@@ -25,7 +25,7 @@ const Sponsor = () => {
 				<Divider id='divi-der'>TITLE SPONSOR</Divider>
 				<div className='row1'>
 					<div className='card' style={{ width: '25vw', marginTop: '-7vw' }}>
-						<img src={isb} class='card-img-top' alt='...' />
+						<img src={isb} class='card-img-top' alt='...' id='spons-image' />
 					</div>
 				</div>
 				<Divider id='divi-der' style={{ marginTop: '-4vw' }}>
@@ -33,28 +33,28 @@ const Sponsor = () => {
 				</Divider>
 				<div className='row2'>
 					<div className='card' style={{ width: '10vw' }}>
-						<img src={delta} class='card-img-top' alt='...' />
+						<img src={delta} class='card-img-top' alt='...' id='spons-image' />
 					</div>
 					<div className='card' style={{ width: '10vw' }}>
-						<img src={sponsorBull} class='card-img-top' alt='...' />
+						<img src={sponsorBull} class='card-img-top' alt='...' id='spons-image' />
 					</div>
 				</div>
 				<Divider id='divi-der'>INDIVIDUAL SPONSORS</Divider>
 				<div className='column4'>
 					<div className='row41'>
-						<div className='card' style={{ width: '10vw' }}>
+						<div className='card' style={{ width: '10vw' }} id='spons-image'>
 							<img src={mtechPost} class='card-img-top' alt='...' />
 							<div class='card-body'>
 								<h5 class='card-title'>Educational Partner</h5>
 							</div>
 						</div>
-						<div className='card' style={{ width: '10vw' }}>
+						<div className='card' style={{ width: '10vw' }} id='spons-image'>
 							<img src={town} alt='...' class='card-img-top' />
 							<div>
 								<h5 class='card-title'>Platform Partner</h5>
 							</div>
 						</div>
-						<div className='card' style={{ width: '10vw' }}>
+						<div className='card' style={{ width: '10vw' }} id='spons-image'>
 							<img src={inMovidu} class='card-img-top' alt='...' />
 							<div class='card-body'>
 								<h5 class='card-title'>
@@ -64,19 +64,19 @@ const Sponsor = () => {
 						</div>
 					</div>
 					<div className='row41'>
-						<div className='card' style={{ width: '10vw' }}>
+						<div className='card' style={{ width: '10vw' }} id='spons-image'>
 							<img src={nomobo} alt='...' class='card-img-top' />
 							<div>
 								<h5 class='card-title'>Treasure Hunt Partner</h5>
 							</div>
 						</div>
-						<div className='card' style={{ width: '10vw' }}>
+						<div className='card' style={{ width: '10vw' }} id='spons-image'>
 							<img src={hoverRobotix} class='card-img-top' alt='...' />
 							<div class='card-body'>
 								<h5 class='card-title'>Tech Gadgets Partner</h5>
 							</div>
 						</div>
-						<div className='card' style={{ width: '10vw' }}>
+						<div className='card' style={{ width: '10vw' }} id='spons-image'>
 							<img src={tossido} class='card-img-top' alt='...' />
 							<div class='card-body'>
 								<h5 class='card-title'>Coding Partner</h5>
@@ -84,19 +84,19 @@ const Sponsor = () => {
 						</div>
 					</div>
 					<div className='row41'>
-						<div className='card' style={{ width: '10vw' }}>
+						<div className='card' style={{ width: '10vw' }} id='spons-image'>
 							<img src={skillIndia} class='card-img-top' alt='...' />
 							<div class='card-body'>
 								<h5 class='card-title'>E-learning Partner</h5>
 							</div>
 						</div>
-						<div className='card' style={{ width: '10vw' }}>
+						<div className='card' style={{ width: '10vw' }} id='spons-image'>
 							<img src={sociana} class='card-img-top' alt='...' />
 							<div class='card-body'>
 								<h5 class='card-title'>Registration Partner</h5>
 							</div>
 						</div>
-						<div className='card' style={{ width: '10vw' }}>
+						<div className='card' style={{ width: '10vw' }} id='spons-image'>
 							<img src={tossido} class='card-img-top' alt='...' />
 							<div class='card-body'>
 								<h5 class='card-title'>Online Shopping Partner</h5>
@@ -107,13 +107,13 @@ const Sponsor = () => {
 				<Divider id='divi-der'>MEDIA SPONSORS</Divider>
 				<div className='column3'>
 					<div className='row41'>
-						<div className='card' style={{ width: '8vw' }}>
+						<div className='card' style={{ width: '8vw' }} id='spons-image'>
 							<img src={yi} class='card-img-top' alt='...' />
 							<div class='card-body'>
 								<h5 class='card-title'>Youth Media Partner</h5>
 							</div>
 						</div>
-						<div className='card' style={{ width: '8vw' }}>
+						<div className='card' style={{ width: '8vw' }} id='spons-image'>
 							<img src={inCampus} class='card-img-top' alt='...' />
 							<div class='card-body'>
 								<h5 class='card-title'>Outreach Partner</h5>
