@@ -28,10 +28,10 @@
 	border-radius: 10px;
 	position: relative;
 	z-index: 1;
-	padding-bottom: 1rem;
 	max-height: 400px;
+	padding: 2rem;
 	transform-origin: top right;
-	overflow-y: auto;
+	display: flex;
 	transform: rotate(1.3deg);
 }
 .content-dark {
@@ -55,11 +55,11 @@
 }
 .regrets {
 	font-size: large;
-	padding: 2rem;
+	
 	font-family: 'Roboto', sans-serif;
 	text-align: left;
 }
-.content1::-webkit-scrollbar {
+.content11::-webkit-scrollbar {
 	display: none;
 }
 .buildings {
@@ -92,6 +92,9 @@
 	width: 150px;
 	height: 150px;
 }
+.content11{
+	overflow-y: auto;
+}
 @media only screen and (max-width: 1100px) {
 	.images {
 		width: 100px;
@@ -122,7 +125,6 @@
 	}
 	.regrets {
 		font-size: 14px;
-		padding: 1rem;
 	}
 	.heading-container2 {
 		margin-top: 1rem;
@@ -151,13 +153,12 @@
 		width: 320vw;
 		right: 0;
 		margin-top: -127vw;
-	}
-}
-@media only screen and (max-width: 800px) {
-	.content1{
+	}.content1{
 		border-radius: 10px !important;
+		padding: 1.5rem;
 	}
 }
+
 @media only screen and (max-width: 425px) {
 	.slider-div {
 		width: 250px;

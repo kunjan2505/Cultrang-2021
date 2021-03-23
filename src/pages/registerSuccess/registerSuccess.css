@@ -170,6 +170,7 @@ h1 {
 		--size-div: 2.3;
 	}.divdiv{
         height: 50vh;
+		margin-top: -10vw
     }
 	.building-reg {
 		width: 150vw;

@@ -8,10 +8,11 @@
 	height: 100vh;
 
 	position: relative;
-	/* will-change: transform; */
+	will-change: transform;
 }
 @media only screen and (max-width: 800px) {
 	.App {
 		scroll-snap-type: y mandatory;
+		will-change: unset;
 	}
 }
