@@ -1,0 +1,91 @@
+.pro-events-container{
+    height: 109vh;
+    background-color: rgb(251, 123, 175);
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.events-context{
+    height: 103vh;
+}
+
+.pevents-bottom{
+	width: 100vw;
+	position: absolute;
+	bottom: 1vh;
+	overflow: hidden;
+}
+
+
+.pevents-tickets{
+    z-index: 10;
+    height: 30vh;
+    width: 100vw;
+    position: absolute;
+    top: 25vh;
+    display: flex;
+    justify-content: center;
+}
+
+.ticket{
+    width: min(40vw,400px);
+    height: min(25vw,250px);
+}
+
+.pevents-title{
+    font-family: 'Montserrat';
+    color: white;
+    position: absolute;
+    top: 13vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-size: min(50px,10vw);
+}
+
+.pevents-mobile{
+    display: none;
+}
+
+.blank-space-bottom{
+    height: 6vh;
+    background-color: white;
+}
+
+.pevnts-mobile-bottom{
+    bottom: 6vh;
+}
+
+.pevnts-mobile-bottom > img{
+    height: 80vh;
+    width: 306vw;
+    position: absolute;
+    left: -103vw;
+    bottom: 2vh;
+}
+
+@media only screen and (max-width: 800px){
+    .pevents-bottom{
+        display: none;
+    }
+    .pevents-mobile{
+        display: block;
+    }
+    .pro-events-container{
+        height: 106vh;
+    }
+    .events-context{
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .pevents-tickets{
+        display: block;
+    }
+
+    .ticket{
+        width: min(60vw,400px);
+        height: min(40vw,250px);
+    }
+}
