@@ -1,0 +1,86 @@
+.sponsor_main{
+    /* height: 100vh; */
+    width: 100%;
+    background-color: purple;
+    /* overflow: hidden; */
+}
+#bottomVector{
+    margin-top: -36vw;
+}
+.box_01{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: -42vw;
+}
+
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.column3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.column4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card-title{
+    color: white !important;
+}
+
+.card-body{
+    width: auto;
+}
+#divi-der{
+    color: white;
+    font-size: 36px;
+    margin: 2rem;
+}
+.slide_carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.row41{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.spons-card{
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.spons-card-image{
+    vertical-align: middle;
+    border-style: none;
+}
+.spons-card-label{
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+.card{
+    background-color: transparent;
+    border: 0
+}
+@media only screen and (max-width: 800px) {
+    .sponsor_main{
+        scroll-snap-align: start;
+    }
+}

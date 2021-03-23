@@ -9,6 +9,7 @@ import EventPage from './pages/Events/EventPage';
 import RegistrationSuccess from './pages/registerSuccess/registerSuccess';
 import GuardedRoute from './components/guardedRoute/guardedRoute';
 import Proevents from './pages/proEvents/pro-events'
+import Sponsor from './pages/sponsors/sponsor'
 
 function App() {
 	console.log(localStorage.getItem('auth'));
@@ -20,6 +21,7 @@ function App() {
 					<AboutUs />
 					<Events />
 					<Proevents />
+					<Sponsor />
 					<ContactUs />
 				</Route>
 				<Route path='/event/:id'>
