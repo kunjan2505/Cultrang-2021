@@ -74,7 +74,7 @@ function RegistrationSuccess() {
 						you that contains the further instructions.
 					</p>
 				</div>
-				<div>
+				<div style={{marginBottom: '4rem'}}>
 					<Link to='/'>
 						<button
 							className='btn btn-light'
@@ -85,7 +85,6 @@ function RegistrationSuccess() {
 					</Link>
 				</div>
 			</div>
-
 			<div className='heading-container-reg'>
 				<h1 className='headingReg'>REGISTER</h1>
 			</div>

@@ -14,18 +14,15 @@
 	padding: 3rem 4vw 3rem 4vw;
 	transform: translate(1px);
 	border-radius: 50px;
-	margin-top: -35vw;
+	margin-top: -41vw;
 	box-shadow: 5px 10px 20px #353535;
 }
 .bbuilding {
 	width: 100vw;
-	margin-top: -50vw;
-}
-.heading-container-reg {
-	margin-top: 5rem;
+	margin-top: -52vw;
 }
 .headingReg {
-	font-size: 72px;
+	font-size: 4vw;
 	color: white;
 	display: block;
 	font-family: 'Montserrat';
