@@ -122,14 +122,14 @@ class Sponsor extends React.Component {
 					<div className='column3'>
 						<div className='row41'>
 							<a href='https://youthincmag.com/' target='_blank'>
-							<div className='card' style={{ width: '8vw' }} id='spons-image'>
+							<div className='card' style={{ width: '10vw' }} id='spons-image'>
 								<img src={yi} class='card-img-top' alt='...' />
 								<div class='card-body'>
 									<h5 class='card-title'>Youth Media Partner</h5>
 								</div>
 							</div></a>
 							<a href='https://incampus.in/' target='_blank'>
-							<div className='card' style={{ width: '8vw' }} id='spons-image'>
+							<div className='card' style={{ width: '10vw' }} id='spons-image'>
 								<img src={inCampus} class='card-img-top' alt='...' />
 								<div class='card-body'>
 									<h5 class='card-title'>Outreach Partner</h5>
