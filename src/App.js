@@ -6,6 +6,7 @@ import Register from './pages/register/register';
 import { Switch, Route } from 'react-router-dom';
 import Events from './pages/Events/Events';
 import EventPage from './pages/Events/EventPage';
+import ProEventPage from './pages/proEvents/pevent-page';
 import RegistrationSuccess from './pages/registerSuccess/registerSuccess';
 import GuardedRoute from './components/guardedRoute/guardedRoute';
 import Proevents from './pages/proEvents/pro-events'
@@ -26,6 +27,9 @@ function App() {
 				</Route>
 				<Route path='/event/:id'>
 					<EventPage />
+				</Route>
+				<Route path='/pro-events/:id'>
+					<ProEventPage />
 				</Route>
 				<Route path='/registeration/:id'>
 					<Register />
