@@ -16,6 +16,7 @@ import town from './logos/town.jpg';
 import yi from './logos/yi.png';
 import cloudVect from './sponsor_cloud.svg';
 import bottomVect from './sponsor_bottom.svg';
+import cb from './logos/cb.png';
 
 const Sponsor = () => {
 	return (
@@ -77,7 +78,7 @@ const Sponsor = () => {
 							</div>
 						</div>
 						<div className='card' style={{ width: '10vw' }} id='spons-image'>
-							<img src={tossido} class='card-img-top' alt='...' />
+							<img src={cb} class='card-img-top' alt='...' />
 							<div class='card-body'>
 								<h5 class='card-title'>Coding Partner</h5>
 							</div>

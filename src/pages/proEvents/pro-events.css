@@ -16,14 +16,15 @@
 	overflow: hidden;
 }
 
-.pevents-tickets {
-	z-index: 10;
-	height: 30vh;
-	width: 100vw;
-	position: absolute;
-	top: 25vh;
-	display: flex;
-	justify-content: center;
+
+.pevents-tickets{
+    z-index: 10;
+    height: 30vh;
+    width: 100vw;
+    position: absolute;
+    top: 35vh;
+    display: flex;
+    justify-content: center;
 }
 
 .ticket {
@@ -81,10 +82,12 @@
 	}
 }
 
-@media only screen and (max-width: 420px) {
-	.pevents-tickets {
-		display: block;
-	}
+@media only screen and (max-width: 420px){
+    .pevents-tickets{
+        display: block;
+        top: 25vh;
+    }
+
 
 	.ticket {
 		width: min(60vw, 400px);
