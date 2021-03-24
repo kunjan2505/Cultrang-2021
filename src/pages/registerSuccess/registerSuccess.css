@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-top: -35vw;
+    margin-top: -37vw;
 	align-items: center;
 }
 .user-id-reg-suc {
@@ -63,7 +63,7 @@
 	background-color: white;
 	color: black;
 	text-align: center;
-	margin-top: 1rem;
+	/* margin-top: 1rem; */
 	padding: 10px 50px 10px 50px;
 	border-radius: 50px;
 	position: relative;
@@ -85,7 +85,7 @@
 	text-align: center;
 	border-radius: 50px;
 	font-size: 1.5rem;
-	margin-top: calc(3rem / var(--size-div));
+	/* margin-top: calc(3rem / var(--size-div)); */
 	color: black;
 	padding: 20px 50px 20px 40px;
     box-shadow: 5px 10px 20px #353535;
