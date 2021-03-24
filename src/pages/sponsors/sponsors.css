@@ -48,7 +48,7 @@
 #divi-der{
     color: white;
     font-size: 36px;
-    margin: 2rem;
+    margin: 2rem 0 2rem 0;
 }
 .slide_carousel{
     display: flex;
@@ -86,8 +86,45 @@
     background-color: transparent;
     border: 0
 }
-@media only screen and (max-width: 800px) {
+
+#bottomPng{
+    width: 100vw;
+}
+
+@media only screen and (max-width: 760px) {
     .sponsor_main{
         scroll-snap-align: start;
+    }
+
+    #divi-der{
+        font-size: 20px;
+        margin: 2rem 2rem 2rem 0rem;
+    }
+    
+    .row1 .card{
+        width: 50vw !important;
+        margin-top: -19vw !important;
+    }
+
+    .row2 .card{
+        width: 20vw !important;
+    }
+
+    .column4 .card{
+        width: 20vw !important;
+    }
+
+    .column3 .card{
+        width: 20vw !important;
+    }
+
+    .media_divider{
+        margin-top: -1rem;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .card-title{
+        font-size: 8px;
     }
 }
