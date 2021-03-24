@@ -1,134 +1,140 @@
-.sponsor_main{
-    /* height: 100vh; */
-    width: 100%;
-    background-color: purple;
-    /* overflow: hidden; */
+.sponsor_main {
+	/* height: 100vh; */
+	width: 100%;
+	background-color: purple;
+	/* overflow: hidden; */
 }
-#bottomVector{
-    margin-top: -39vw;
+#bottomVector {
+	margin-top: -39vw;
 }
-.box_01{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin-top: -42vw;
-}
-
-.row1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.box_01 {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin-top: -42vw;
 }
 
-.row2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.row1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
 
-.column3{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.row2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
 
-.column4{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.column3 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 
-.card-title{
-    color: white !important;
+.column4 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 
-.card-body{
-    width: auto;
-}
-#divi-der{
-    color: white;
-    font-size: 36px;
-    margin: 2rem 0 2rem 0;
-}
-.slide_carousel{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.row41{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.card-title {
+	color: white !important;
 }
 
-.spons-card{
-    width: 25vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.card-body {
+	width: auto;
 }
-.spons-card-image{
-    vertical-align: middle;
-    border-style: none;
+#divi-der {
+	color: white;
+	font-size: 36px;
+	margin: 2rem 0 2rem 0;
 }
-#spons-image{
-    opacity: 0.7;
+.slide_carousel {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
-#spons-image:hover{
-    opacity: 1;
-    cursor: pointer;
-}
-.spons-card-label{
-    flex: 1 1 auto;
-    padding: 1rem 1rem;
-}
-.card{
-    background-color: transparent;
-    border: 0
+.row41 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
 
-#bottomPng{
-    width: 100vw;
+.spons-card {
+	width: 25vw;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.spons-card-image {
+	vertical-align: middle;
+	border-style: none;
+}
+#spons-image {
+	opacity: 0.7;
+}
+#spons-image:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+.spons-card-label {
+	flex: 1 1 auto;
+	padding: 1rem 1rem;
+}
+.card {
+	background-color: transparent;
+	border: 0;
 }
 
+#bottomPng {
+	width: 100vw;
+}
+.heading-container-sponsor {
+	display: none;
+}
 @media only screen and (max-width: 760px) {
-    .sponsor_main{
-        scroll-snap-align: start;
-    }
+	.sponsor_main {
+		scroll-snap-align: start;
+	}
+	.heading-container-sponsor {
+		display: block;
+	}
+	#divi-der {
+		font-size: 18px;
+		margin: 1.5rem 0rem 1.5rem 0rem;
+	}
 
-    #divi-der{
-        font-size: 20px;
-        margin: 2rem 2rem 2rem 0rem;
-    }
-    
-    .row1 .card{
-        width: 50vw !important;
-        margin-top: -19vw !important;
-    }
+	.row1 .card {
+		width: 50vw !important;
+		margin-top: -19vw !important;
+	}
 
-    .row2 .card{
-        width: 20vw !important;
-    }
+	.row2 .card {
+		width: 20vw !important;
+	}
 
-    .column4 .card{
-        width: 20vw !important;
-    }
+	.column4 .card {
+		width: 20vw !important;
+	}
 
-    .column3 .card{
-        width: 20vw !important;
-    }
+	.column3 .card {
+		width: 20vw !important;
+	}
 
-    .media_divider{
-        margin-top: -1rem;
-    }#bottomPng{
-        width: 300vw;
-    }#bottomVector{
-        margin-top: -115vw;
-    }
+	.media_divider {
+		margin-top: -1rem;
+	}
+	#bottomPng {
+		width: 300vw;
+	}
+	#bottomVector {
+		margin-top: -115vw;
+	}
 }
 
-@media only screen and (max-width: 400px){
-    .card-title{
-        font-size: 8px;
-    }
+@media only screen and (max-width: 400px) {
+	.card-title {
+		font-size: 8px;
+	}
 }
