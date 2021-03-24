@@ -120,6 +120,10 @@
 
     .media_divider{
         margin-top: -1rem;
+    }#bottomPng{
+        width: 300vw;
+    }#bottomVector{
+        margin-top: -115vw;
     }
 }
 
