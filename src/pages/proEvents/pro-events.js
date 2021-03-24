@@ -14,29 +14,18 @@ const Proevents = () => {
                     <img src={clouds} alt="clouds"></img>
                 </div>
                 <div className="pevents-tickets">
-                        <a href="#">
+                        <a href="/pro-events/comedyNight">
                             <div className="ticket1-container">
                                 <img className="ticket" src={ticett1} alt="ticet"></img>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="/pro-events/melodiousAuRevoir">
                             <div className="ticket2-container">
                                 <img className="ticket" src={ticket2} alt="ticet"></img>
                             </div>
                         </a>
-                    </div>
-                    {/* <div className="r2">
-                        <a href="#">
-                            <div className="r2c1">
-                                <img className="ticket3" src={peventsticket} alt="ticet"></img>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div className="r2c2">
-                                <img className="ticket4" src={peventsticket} alt="ticet"></img>
-                            </div>
-                        </a>
-                    </div> */}
+                </div>
+                    
                 <div className="pevents-bottom">
                     <img src={pevntsbottom} alt="pevents-bottom"></img>
                 </div>
