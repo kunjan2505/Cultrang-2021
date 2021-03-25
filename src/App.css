@@ -18,18 +18,7 @@
 /* .fp-scrollable {
 	height: 100% !important;
 } */
-@media only screen and (max-width: 800px) {
-	.App {
-		scroll-snap-type: y mandatory;
-		will-change: unset;
-	}
-	.mobileApp {
-		display: unset;
-		overflow: auto;
-	}.desktopApp{
-		display: none;
-	}
-}
+
 .iScrollIndicator{
 	display: none !important;
 }
