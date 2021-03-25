@@ -7,8 +7,13 @@
     position: relative;
     
 }
-.event-vector {
-    position: absolute;
+.event-vector-top{
+    top: 0px;
+    width: 100vw;
+}
+.event-vector-bottom{
+    margin-top: -55vw;
+    width: 100vw;
 }
 
 .event-poster {
@@ -42,7 +47,7 @@
     color: white;
     text-shadow: 4px 4px #000000;
     font-family: 'Montserrat';
-    
+    margin: 10px 0px;
 }
 .event-details {
     border-radius: 49px;
@@ -52,29 +57,45 @@
     min-width: 40vw;
     width: 40vw;
     box-shadow: 1px 3px;
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.event-details-box{
+    width: 95%;
+    height: 95%;
+    border-radius: 49px;
+    margin: 0px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto', 'sans-serif';
+    justify-content: space-between;
+    overflow-y: scroll;
 }
+
+.event-details-box::-webkit-scrollbar {
+    display: none;
+  }
 .eventDetailText{
-    font-size: 1.2em;
+    font-size: 1vw;
     font-weight: bold;
     font-family: 'Roboto', 'sans-serif';
-    
+    position: relative;
+    margin-top: 5%;
 }
 .eventDeadlineText{
     font-size: 1em;
     font-family: 'Roboto', 'sans-serif';
     margin: 0px;
+    position: relative;
+    
 }
 .event-info {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+    margin-top: -55vw;
     
 }
 .event-register {
@@ -153,9 +174,10 @@
     height: 90%;
     overflow-y: scroll;
     margin: 0px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 
     
 }
@@ -205,6 +227,7 @@
         font-family: 'Roboto', 'sans-serif';
         margin: 0px;
     }
+    
 }
 @media only screen and (max-width: 1024px) {
     .eventDetailText{
@@ -243,8 +266,6 @@
         font-family: 'Roboto', 'sans-serif';
         margin: 0px;
     }
-    
-
 }
 
 
@@ -261,6 +282,8 @@
         height: 100vh;
         position: relative;
     }
-    
+    .event-vector-top, .event-vector-bottom {
+        display: none;
+    }
 }  
 
