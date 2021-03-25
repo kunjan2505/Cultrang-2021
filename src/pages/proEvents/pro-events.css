@@ -12,7 +12,7 @@
 .pevents-bottom {
 	width: 100vw;
 	position: absolute;
-	bottom: 1vh;
+	bottom: 0vh;
 	overflow: hidden;
 }
 
@@ -22,14 +22,46 @@
     height: 30vh;
     width: 100vw;
     position: absolute;
-    top: 35vh;
-    display: flex;
-    justify-content: center;
+    top: 25vh;
 }
 
+.pevents-r1{
+	display: flex;
+	width: 100vw;
+	justify-content: center;
+}
+
+.pevents-r2{
+	display: flex;
+	width: 100vw;
+	justify-content: center;
+}
+
+.pevents-r3{
+	display: none;
+}
+
+
 .ticket {
-	width: min(40vw, 400px);
-	height: min(25vw, 250px);
+	width: min(29vw, 290px);
+	height: min(19vw, 190px);
+}
+
+.ticket3 {
+	width: min(32vw, 320px);
+	height: min(20vw, 200px);
+	margin-top: -5px;
+}
+
+.ticket4 {
+	width: min(31vw, 310px);
+	height: min(19vw, 190px);
+}
+
+.ticket5 {
+	width: min(32vw, 320px);
+	height: min(20vw, 200px);
+	margin-top: -15px;
 }
 
 .pevents-title {
@@ -61,8 +93,9 @@
 	width: 306vw;
 	position: absolute;
 	left: -103vw;
-	bottom: 2vh;
+	bottom: 0vh;
 }
+
 
 @media only screen and (max-width: 800px) {
 	.pro-events-container {
@@ -82,15 +115,50 @@
 	}
 }
 
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 500px){
+	.pro-events-container{
+		scroll-snap-align: start;
+		height: 130vh;
+	}
     .pevents-tickets{
-        display: block;
         top: 25vh;
     }
 
+	.pevents-r1{
+		flex-direction: row;
+		height: 25vh;
+	}
+	.pevents-r2{
+		flex-direction: row;
+		height: 25vh;
+	}
+	.pevents-r3{
+		display: flex;
+		width: 100vw;
+		justify-content: center;
+	}
 
 	.ticket {
-		width: min(60vw, 400px);
-		height: min(40vw, 250px);
+		width: min(50vw, 400px);
+		height: min(23vh, 250px);
+	}
+	.ticket3 {
+		width: min(55vw, 415px);
+		height: min(25vh, 260px);
+		position: absolute;
+		left: -1vw;
+	}
+	.ticket4 {
+		width: min(53vw, 410px);
+		height: min(23vh, 250px);
+		position: absolute;
+		right: -2vw;
+	}
+	.ticket5-container{
+		display: none;
+	}
+	.ticket5 {
+		width: min(59vw, 440px);
+		height: min(44vw, 270px);
 	}
 }
