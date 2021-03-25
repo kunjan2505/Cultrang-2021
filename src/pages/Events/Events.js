@@ -19,7 +19,7 @@ function Events() {
 		return () => mediaMatch.removeListener(handler);
 	});
 	var settings = {
-		dots: true,
+		dots: false,
 		infinite: false,
 		speed: 500,
 		slidesToShow: 1,
@@ -39,13 +39,14 @@ function Events() {
 								objectFit='contain'
 							/>
 						</Link>
-
+						
 						<p
 							className='event-name'
 							style={{ color: 'grey', fontWeight: 'bold', margin: '4px 0px' }}
 						>
 							{eventName.toUpperCase()}
 						</p>
+						
 					</div>
 				</div>
 			</div>
@@ -95,7 +96,7 @@ function Events() {
 							
 							if (index < 6) {
 								return (
-									<Card id={event.id} eventName={event.eventName} icon={event.icon} />
+									<Card id={event.id} eventName={event.eventNickName} icon={event.icon} />
 								);
 							}
 							return null;
@@ -105,7 +106,7 @@ function Events() {
 						{events.map((event, index) => {
 							if (index >= 6) {
 								return (
-									<Card id={event.id} eventName={event.eventName} icon={event.icon} />
+									<Card id={event.id} eventName={event.eventNickName} icon={event.icon} />
 								);
 							}
 							return null;
@@ -121,24 +122,24 @@ function Events() {
 								<div className='mobile-event-row1'>
 									<Card
 										id={events[0].id}
-										eventName={events[0].eventName}
+										eventName={events[0].eventNickName}
 										icon={events[0].icon}
 									/>
 									<Card
 										id={events[1].id}
-										eventName={events[1].eventName}
+										eventName={events[1].eventNickName}
 										icon={events[1].icon}
 									/>
 								</div>
 								<div className='mobile-event-row2'>
 									<Card
 										id={events[2].id}
-										eventName={events[2].eventName}
+										eventName={events[2].eventNickName}
 										icon={events[2].icon}
 									/>
 									<Card
 										id={events[3].id}
-										eventName={events[3].eventName}
+										eventName={events[3].eventNickName}
 										icon={events[3].icon}
 									/>
 								</div>
@@ -149,24 +150,24 @@ function Events() {
 								<div className='mobile-event-row1'>
 									<Card
 										id={events[4].id}
-										eventName={events[4].eventName}
+										eventName={events[4].eventNickName}
 										icon={events[4].icon}
 									/>
 									<Card
 										id={events[5].id}
-										eventName={events[5].eventName}
+										eventName={events[5].eventNickName}
 										icon={events[5].icon}
 									/>
 								</div>
 								<div className='mobile-event-row2'>
 									<Card
 										id={events[6].id}
-										eventName={events[6].eventName}
+										eventName={events[6].eventNickName}
 										icon={events[6].icon}
 									/>
 									<Card
 										id={events[7].id}
-										eventName={events[7].eventName}
+										eventName={events[7].eventNickName}
 										icon={events[7].icon}
 									/>
 								</div>
@@ -176,19 +177,19 @@ function Events() {
 								<div className='mobile-event-row1'>
 									<Card
 										id={events[8].id}
-										eventName={events[8].eventName}
+										eventName={events[8].eventNickName}
 										icon={events[8].icon}
 									/>
 									<Card
 										id={events[9].id}
-										eventName={events[9].eventName}
+										eventName={events[9].eventNickName}
 										icon={events[9].icon}
 									/>
 								</div>
 								<div className='mobile-event-row2'>
 									<Card
 										id={events[10].id}
-										eventName={events[10].eventName}
+										eventName={events[10].eventNickName}
 										icon={events[10].icon}
 									/>
 								</div>
@@ -204,34 +205,34 @@ function Events() {
 							<div className='tab-event-row1'>
 								<Card
 									id={events[0].id}
-									eventName={events[0].eventName}
+									eventName={events[0].eventNickName}
 									icon={events[0].icon}
 								/>
 								<Card
 									id={events[1].id}
-									eventName={events[1].eventName}
+									eventName={events[1].eventNickName}
 									icon={events[1].icon}
 								/>
 								<Card
 									id={events[2].id}
-									eventName={events[2].eventName}
+									eventName={events[2].eventNickName}
 									icon={events[2].icon}
 								/>
 							</div>
 							<div className='tab-event-row2'>
 								<Card
 									id={events[3].id}
-									eventName={events[3].eventName}
+									eventName={events[3].eventNickName}
 									icon={events[3].icon}
 								/>
 								<Card
 									id={events[4].id}
-									eventName={events[4].eventName}
+									eventName={events[4].eventNickName}
 									icon={events[4].icon}
 								/>
 								<Card
 									id={events[5].id}
-									eventName={events[5].eventName}
+									eventName={events[5].eventNickName}
 									icon={events[5].icon}
 								/>
 							</div>
@@ -242,29 +243,29 @@ function Events() {
 							<div className='tab-event-row1'>
 								<Card
 									id={events[6].id}
-									eventName={events[6].eventName}
+									eventName={events[6].eventNickName}
 									icon={events[6].icon}
 								/>
 								<Card
 									id={events[7].id}
-									eventName={events[7].eventName}
+									eventName={events[7].eventNickName}
 									icon={events[7].icon}
 								/>
 								<Card
 									id={events[8].id}
-									eventName={events[8].eventName}
+									eventName={events[8].eventNickName}
 									icon={events[8].icon}
 								/>
 							</div>
 							<div className='tab-event-row2'>
 								<Card
 									id={events[9].id}
-									eventName={events[9].eventName}
+									eventName={events[9].eventNickName}
 									icon={events[9].icon}
 								/>
 								<Card
 									id={events[10].id}
-									eventName={events[10].eventName}
+									eventName={events[10].eventNickName}
 									icon={events[10].icon}
 								/>
 							</div>

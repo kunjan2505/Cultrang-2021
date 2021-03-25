@@ -9,8 +9,8 @@ a {
 }
 .Card {
 	position: relative;
-	width: max(10vw,160px);
-	height: max(13vw, 200px);
+	width: max(11vw,160px);
+	height: max(14vw, 200px);
 	margin: 10px;
 }
 .card-corner{
@@ -29,9 +29,10 @@ a {
 	align-items: center;
 }
 .poster {
-	height: 85%;
+	height: 75%;
 	width: 70%;
 	background-color: #b7b7b7;
+	
 }
 
 .poster-img {
@@ -41,7 +42,7 @@ a {
 }
 
 .event-name {
-	text-align: left;
+	text-align: center;
 	font-family: 'Montserrat';
 }
 .events-content {
@@ -69,7 +70,7 @@ a {
 	width: 100vw;
 }
 .event-name {
-	font-size: 0.7vw;
+	font-size: 0.6vw;
 }
 
 .mobile-card {
@@ -98,7 +99,7 @@ a {
 @media only screen and (max-width: 1220px) {
 	.Card{
 		height: 250px;
-		width: 180px;
+		width: 190px;
 	}
 	.tab-card {
 		height: 100%;
@@ -113,7 +114,7 @@ a {
 		justify-content: center;
 	}
 	.event-name {
-		font-size: 12px;
+		font-size: 10px;
 	}
 	
 	.events-content {
