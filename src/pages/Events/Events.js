@@ -23,17 +23,17 @@ function Events() {
 		infinite: false,
 		speed: 500,
 		slidesToShow: 1,
-		slidesToScroll: 1
-	  };
+		slidesToScroll: 1,
+	};
 	const Card = ({ id, eventName, icon }) => {
 		return (
 			<div className='Card'>
-				<img src={cardCorner} alt="card" className='card-corner' />
+				<img src={cardCorner} alt='card' className='card-corner' />
 				<div className='card-content'>
 					<div className='poster'>
 						<Link to={`/event/${id}`}>
 							<img
-								src={icon}								
+								src={icon}
 								alt={eventName}
 								className='poster-img'
 								objectFit='contain'
@@ -54,23 +54,23 @@ function Events() {
 	};
 	return (
 		<div className='events' id='events'>
-			<img src={eventTopPng} alt="cloud" className='events-vector-top' />
+			<img src={eventTopPng} alt='cloud' className='events-vector-top' />
 
 			<img
 				src={cloud1}
-				alt="cloud"
+				alt='cloud'
 				className='mobile-event-vector'
 				style={{ top: '0px', left: '0px', width: '100vw' }}
 			/>
 			<img
 				src={cloud2}
-				alt="cloud"
+				alt='cloud'
 				className='mobile-event-vector'
 				style={{ top: '0px', right: '0px', width: '100vw' }}
 			/>
 			<img
 				src={mobileBottom}
-				alt="wheel-building"
+				alt='wheel-building'
 				className='mobile-event-vector'
 				style={{ bottom: '0px', width: '100vw' }}
 			/>
@@ -93,7 +93,6 @@ function Events() {
 				<div className='events-content'>
 					<div className='row-1'>
 						{events.map((event, index) => {
-							
 							if (index < 6) {
 								return (
 									<Card id={event.id} eventName={event.eventNickName} icon={event.icon} />
@@ -116,7 +115,7 @@ function Events() {
 			)}
 			{mobile && (
 				<div className='mobile-card'>
-					<div className='mobile-slider' style={{width: '80%', height: '50%'}}>
+					<div className='mobile-slider' style={{ width: '80%', height: '50%' }}>
 						<Slider {...settings}>
 							<div className='mobile-event'>
 								<div className='mobile-event-row1'>
@@ -144,8 +143,7 @@ function Events() {
 									/>
 								</div>
 							</div>
-						
-					
+
 							<div className='mobile-event'>
 								<div className='mobile-event-row1'>
 									<Card
@@ -172,7 +170,7 @@ function Events() {
 									/>
 								</div>
 							</div>
-						
+
 							<div className='mobile-event'>
 								<div className='mobile-event-row1'>
 									<Card
@@ -276,10 +274,9 @@ function Events() {
 
 			<img
 				src={eventBottomPng}
-				alt="wheel-building"
+				alt='wheel-building'
 				className='events-vector-bottom'
 			/>
-
 		</div>
 	);
 }

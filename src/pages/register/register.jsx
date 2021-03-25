@@ -23,10 +23,23 @@ const Register = () => {
 		};
 		try {
 			if (validator.isEmail(email)) {
-				const res = await axios.post(
-					`http://cultrangbackend-env.eba-mpa8r9nr.us-east-2.elasticbeanstalk.com/comps/${id}`,
-					newUser
-				);//server post request
+				// if (
+				// 	id === 'comedyNight' ||
+				// 	id === 'melodiousAuRevoir' ||
+				// 	id === 'melodiousAuRevoir' ||
+				// 	id === 'melodiousAuRevoir' ||
+				// 	id === 'melodiousAuRevoir'
+				// ) {
+					const res = await axios.post(
+						`http://cultrangbackend-env.eba-mpa8r9nr.us-east-2.elasticbeanstalk.com/events/${id}`,
+						newUser
+					);
+				// }else{
+				// 	const res = await axios.post(
+				// 		`http://cultrangbackend-env.eba-mpa8r9nr.us-east-2.elasticbeanstalk.com/comps/${id}`,
+				// 		newUser
+				// 	);
+				 //server post request `http://cultrangbackend-env.eba-mpa8r9nr.us-east-2.elasticbeanstalk.com/comps/${id}`
 				if (res.data.success) {
 					console.log(res.data.success);
 					message.success('Registration Successful!');

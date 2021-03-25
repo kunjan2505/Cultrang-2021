@@ -4,15 +4,21 @@
 .App {
 	text-align: center;
 	overflow-x: hidden;
-	overflow-y: scroll;
-	height: 100vh;
-
+	/* overflow-y: scroll; */
+	height: 100%;
 	position: relative;
 	will-change: transform;
 }
-@media only screen and (max-width: 800px) {
-	.App {
-		scroll-snap-type: y mandatory;
-		will-change: unset;
-	}
+.mobileApp {
+	display: none;
+}
+::-webkit-scrollbar{
+	display: none;
+}
+/* .fp-scrollable {
+	height: 100% !important;
+} */
+
+.iScrollIndicator{
+	display: none !important;
 }

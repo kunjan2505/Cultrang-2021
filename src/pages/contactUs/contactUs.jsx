@@ -130,7 +130,7 @@ const ContactUs = () => {
 	});
 
 	return (
-		<div id='contact' className='contactUs'>
+		<div className='contactUs'>
 			<img src={clouds} />
 			<div className='container-1'>
 				<div className='designation'>
