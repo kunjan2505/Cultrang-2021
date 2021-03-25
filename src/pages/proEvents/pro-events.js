@@ -35,14 +35,6 @@ const Proevents = () => {
 							</div>
 						</Link>
 					</div>
-
-					<div className='pevents-r3'>
-						<Link to='/pro-events/hipHopWorkshop'>
-							<div className='ticket5-container-m'>
-								<img className='ticket5' src={ticket5} alt='ticet'></img>
-							</div>
-						</Link>
-					</div>
 					<div className='pevents-r1'>
 						<Link to='/pro-events/comedyNight'>
 							<div className='ticket1-container'>
@@ -52,6 +44,13 @@ const Proevents = () => {
 						<Link to='/pro-events/melodiousAuRevoir'>
 							<div className='ticket2-container'>
 								<img className='ticket' src={ticket2} alt='ticet'></img>
+							</div>
+						</Link>
+					</div>
+					<div className='pevents-r3'>
+						<Link to='/pro-events/hipHopWorkshop'>
+							<div className='ticket5-container-m'>
+								<img className='ticket5' src={ticket5} alt='ticet'></img>
 							</div>
 						</Link>
 					</div>

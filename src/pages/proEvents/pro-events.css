@@ -90,7 +90,7 @@
 	font-family: 'Montserrat';
 	color: white;
 	position: absolute;
-	top: 12vh;
+	top: 11vh;
 	width: 100vw;
 	display: flex;
 	justify-content: center;
@@ -147,11 +147,11 @@
 
 	.pevents-r1 {
 		flex-direction: row;
-		height: 25vh;
+		height: 18vh;
 	}
 	.pevents-r2 {
 		flex-direction: row;
-		height: 25vh;
+		height: 18vh;
 	}
 	.pevents-r3 {
 		display: flex;
