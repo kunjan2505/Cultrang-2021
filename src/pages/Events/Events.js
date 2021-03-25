@@ -3,12 +3,12 @@ import './Events.css';
 import mobileBottom from './Event_vector/mobile-bottom.png';
 import cloud1 from './Event_vector/cloud1.png';
 import cloud2 from './Event_vector/cloud2.png';
-import eventTop from './Event-SVG/events cloud.svg';
-import eventBottom from './Event-SVG/events bottom.svg';
+import eventTopPng from './Events_PNG/events cloud.png';
+import eventBottomPng from './Events_PNG/events bottom.png';
 import { Link } from 'react-router-dom';
 import events from './Data/Data';
 import cardCorner from './Event_vector/card_corner.png';
-import { Carousel } from 'react-bootstrap';
+import Slider from 'react-slick';
 
 function Events() {
 	const mediaMatch = window.matchMedia('(max-width: 720px)');
@@ -18,10 +18,17 @@ function Events() {
 		mediaMatch.addListener(handler);
 		return () => mediaMatch.removeListener(handler);
 	});
+	var settings = {
+		dots: true,
+		infinite: false,
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+	};
 	const Card = ({ id, eventName, icon }) => {
 		return (
 			<div className='Card'>
-				<img src={cardCorner} className='card-corner' />
+				<img src={cardCorner} alt='card' className='card-corner' />
 				<div className='card-content'>
 					<div className='poster'>
 						<Link to={`/event/${id}`}>
@@ -45,26 +52,24 @@ function Events() {
 		);
 	};
 	return (
-		<div className='events'>
-			<img src={eventTop} className='event-vector' style={{ left: '0px' }} />
-			<img
-				src={eventBottom}
-				className='event-vector'
-				style={{ bottom: '0px', left: '0px' }}
-			/>
+		<div className='events' id='events'>
+			<img src={eventTopPng} alt='cloud' className='events-vector-top' />
 
 			<img
 				src={cloud1}
+				alt='cloud'
 				className='mobile-event-vector'
 				style={{ top: '0px', left: '0px', width: '100vw' }}
 			/>
 			<img
 				src={cloud2}
+				alt='cloud'
 				className='mobile-event-vector'
 				style={{ top: '0px', right: '0px', width: '100vw' }}
 			/>
 			<img
 				src={mobileBottom}
+				alt='wheel-building'
 				className='mobile-event-vector'
 				style={{ bottom: '0px', width: '100vw' }}
 			/>
@@ -92,6 +97,7 @@ function Events() {
 									<Card id={event.id} eventName={event.eventName} icon={event.icon} />
 								);
 							}
+							return null;
 						})}
 					</div>
 					<div className='row-2'>
@@ -101,20 +107,15 @@ function Events() {
 									<Card id={event.id} eventName={event.eventName} icon={event.icon} />
 								);
 							}
+							return null;
 						})}
 					</div>
 				</div>
 			)}
 			{mobile && (
 				<div className='mobile-card'>
-					<Carousel
-						interval={null}
-						indicators={false}
-						wrap={false}
-						prevLabel=''
-						nextLabel=''
-					>
-						<Carousel.Item>
+					<div className='mobile-slider' style={{ width: '80%', height: '50%' }}>
+						<Slider {...settings}>
 							<div className='mobile-event'>
 								<div className='mobile-event-row1'>
 									<Card
@@ -141,8 +142,7 @@ function Events() {
 									/>
 								</div>
 							</div>
-						</Carousel.Item>
-						<Carousel.Item>
+
 							<div className='mobile-event'>
 								<div className='mobile-event-row1'>
 									<Card
@@ -169,8 +169,7 @@ function Events() {
 									/>
 								</div>
 							</div>
-						</Carousel.Item>
-						<Carousel.Item>
+
 							<div className='mobile-event'>
 								<div className='mobile-event-row1'>
 									<Card
@@ -192,85 +191,87 @@ function Events() {
 									/>
 								</div>
 							</div>
-						</Carousel.Item>
-					</Carousel>
+						</Slider>
+					</div>
 				</div>
 			)}
-			<div className='tab-card'>
-				<Carousel interval={null} indicators={false} wrap={false}>
-					<Carousel.Item>
-						<div className='tab-event'>
-							<div className='tab-event-row1'>
-								<Card
-									id={events[0].id}
-									eventName={events[0].eventName}
-									icon={events[0].icon}
-								/>
-								<Card
-									id={events[1].id}
-									eventName={events[1].eventName}
-									icon={events[1].icon}
-								/>
-								<Card
-									id={events[2].id}
-									eventName={events[2].eventName}
-									icon={events[2].icon}
-								/>
-							</div>
-							<div className='tab-event-row2'>
-								<Card
-									id={events[3].id}
-									eventName={events[3].eventName}
-									icon={events[3].icon}
-								/>
-								<Card
-									id={events[4].id}
-									eventName={events[4].eventName}
-									icon={events[4].icon}
-								/>
-								<Card
-									id={events[5].id}
-									eventName={events[5].eventName}
-									icon={events[5].icon}
-								/>
-							</div>
-						</div>
-					</Carousel.Item>
-					<Carousel.Item>
-						<div className='tab-event'>
-							<div className='mobile-event-row1'>
-								<Card
-									id={events[6].id}
-									eventName={events[6].eventName}
-									icon={events[6].icon}
-								/>
-								<Card
-									id={events[7].id}
-									eventName={events[7].eventName}
-									icon={events[7].icon}
-								/>
-								<Card
-									id={events[8].id}
-									eventName={events[8].eventName}
-									icon={events[8].icon}
-								/>
-							</div>
-							<div className='tab-event-row2'>
-								<Card
-									id={events[9].id}
-									eventName={events[9].eventName}
-									icon={events[9].icon}
-								/>
-								<Card
-									id={events[10].id}
-									eventName={events[10].eventName}
-									icon={events[10].icon}
-								/>
-							</div>
-						</div>
-					</Carousel.Item>
-				</Carousel>
-			</div>
+
+			<Slider {...settings} className='tab-card'>
+				<div className='tab-event'>
+					<div className='tab-event-row1'>
+						<Card
+							id={events[0].id}
+							eventName={events[0].eventName}
+							icon={events[0].icon}
+						/>
+						<Card
+							id={events[1].id}
+							eventName={events[1].eventName}
+							icon={events[1].icon}
+						/>
+						<Card
+							id={events[2].id}
+							eventName={events[2].eventName}
+							icon={events[2].icon}
+						/>
+					</div>
+					<div className='tab-event-row2'>
+						<Card
+							id={events[3].id}
+							eventName={events[3].eventName}
+							icon={events[3].icon}
+						/>
+						<Card
+							id={events[4].id}
+							eventName={events[4].eventName}
+							icon={events[4].icon}
+						/>
+						<Card
+							id={events[5].id}
+							eventName={events[5].eventName}
+							icon={events[5].icon}
+						/>
+					</div>
+				</div>
+
+				<div className='tab-event'>
+					<div className='tab-event-row1'>
+						<Card
+							id={events[6].id}
+							eventName={events[6].eventName}
+							icon={events[6].icon}
+						/>
+						<Card
+							id={events[7].id}
+							eventName={events[7].eventName}
+							icon={events[7].icon}
+						/>
+						<Card
+							id={events[8].id}
+							eventName={events[8].eventName}
+							icon={events[8].icon}
+						/>
+					</div>
+					<div className='tab-event-row2'>
+						<Card
+							id={events[9].id}
+							eventName={events[9].eventName}
+							icon={events[9].icon}
+						/>
+						<Card
+							id={events[10].id}
+							eventName={events[10].eventName}
+							icon={events[10].icon}
+						/>
+					</div>
+				</div>
+			</Slider>
+
+			<img
+				src={eventBottomPng}
+				alt='wheel-building'
+				className='events-vector-bottom'
+			/>
 		</div>
 	);
 }

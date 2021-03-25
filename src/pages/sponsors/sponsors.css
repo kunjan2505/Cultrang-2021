@@ -25,6 +25,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	
 }
 
 .column3 {
@@ -73,10 +74,13 @@
 	border-style: none;
 }
 #spons-image {
-	opacity: 0.7;
+	opacity: 1;
+	z-index: 1;
+	transition: all 0.25s ease-in-out;
 }
 #spons-image:hover {
-	opacity: 1;
+	z-index: 99;
+	transform: scale(1.15);
 	cursor: pointer;
 }
 .spons-card-label {
@@ -93,6 +97,15 @@
 }
 .heading-container-sponsor {
 	display: none;
+}
+
+.card{
+	display: flex; 
+	align-items: center;
+}
+
+.row2 h5{
+	font-size: 32px !important;
 }
 @media only screen and (max-width: 760px) {
 	.sponsor_main {
@@ -132,10 +145,29 @@
 	#bottomVector {
 		margin-top: -115vw;
 	}
+
+	#t2{
+		display: flex;
+		justify-content: center;
+	}
+
+	#t1{
+		display: flex;
+		justify-content: center;
+	}
+
+	#t3{
+		display: flex;
+		justify-content: center;
+	}
+
+	.row2 h5{
+		font-size: 12px !important;
+	}
 }
 
 @media only screen and (max-width: 400px) {
 	.card-title {
-		font-size: 8px;
+		font-size: 9px;
 	}
 }
