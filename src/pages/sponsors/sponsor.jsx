@@ -23,7 +23,7 @@ class Sponsor extends React.Component {
 	render(){
 
 		return (
-			<div id='sponsor' className='sponsor_main'>
+			<div className='sponsor_main'>
 				<img className='cloudVector' src={cloudVect} />
 				<div className='box_01'>
 					<div className='heading-container-sponsor'>

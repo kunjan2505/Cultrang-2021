@@ -8,7 +8,7 @@ import mobilebottom from './mobile-bottom.png'
 
 const Proevents = () => {
     return (
-        <div className="pro-events-container" id="pro-events">
+        <div className="pro-events-container" >
             <div className="events-context">
                 <div className="pevnts-top">
                     <img src={clouds} alt="clouds"></img>

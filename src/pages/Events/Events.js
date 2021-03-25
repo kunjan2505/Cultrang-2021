@@ -45,7 +45,7 @@ function Events() {
 		);
 	};
 	return (
-		<div className='events' id='events'>
+		<div className='events'>
 			<img src={eventTop} className='event-vector' style={{ left: '0px' }} />
 			<img
 				src={eventBottom}
