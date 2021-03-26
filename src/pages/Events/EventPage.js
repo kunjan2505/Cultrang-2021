@@ -25,44 +25,51 @@ function EventPage() {
 	});
 	return (
 		<div className='event'>
-			
-			<img src={eventTopPng} alt="wheel-cloud"  className='event-vector-top'/>
-			
-			
+			<img src={eventTopPng} alt='wheel-cloud' className='event-vector-top' />
+
 			<img
 				src={cloud1}
-				alt="cloud"
+				alt='cloud'
 				className='mobileEventVector'
 				style={{ top: '0px', left: '0px', width: '100vw' }}
 			/>
 			<img
 				src={cloud2}
-				alt="cloud"
+				alt='cloud'
 				className='mobileEventVector'
 				style={{ top: '0px', right: '0px', width: '100vw' }}
 			/>
 			<img
 				src={mobileBottom}
-				alt="cloud"
+				alt='cloud'
 				className='mobileEventVector'
 				style={{ bottom: '0px', width: '100vw' }}
 			/>
 			{!mobile && (
 				<div className='event-info'>
+					<Link to='/'>
+						<i className='event-back fa fa-chevron-left'></i>
+					</Link>
 					<div className='event-poster'>
-						<img src={bigcardCorner} alt="card" className='bigcard-corner' />
+						<img src={bigcardCorner} alt='card' className='bigcard-corner' />
 						<div className='posterClass'>
-							<img src={event.poster} alt={event.eventNickName} className='posterImg'  />
+							<img
+								src={event.poster}
+								alt={event.eventNickName}
+								className='posterImg'
+							/>
 						</div>
 					</div>
 					<div style={{ height: '100vh', width: '6vw' }}></div>
 					<div className='event-register'>
 						<p className='eventName'> {event.eventNickName.toUpperCase()}</p>
 						<div className='event-details'>
-							<div className='event-details-box'>								
+							<div className='event-details-box'>
 								<p className='eventDetailText'>{event.eventDetails}</p>
-								<p className='eventDeadlineText'>Deadline for submission of entries: {event.deadline}</p>		
-							</div>							
+								<p className='eventDeadlineText'>
+									Deadline for submission of entries: {event.deadline}
+								</p>
+							</div>
 						</div>
 						<div className='register-button'>
 							<Link to={`/registeration/${id}`}>
@@ -75,6 +82,9 @@ function EventPage() {
 
 			{mobile && (
 				<div className='mobile-event-info'>
+					<Link to='/'>
+						<i className='event-back fa fa-chevron-left'></i>
+					</Link>
 					<div className='mobile-event-register'>
 						<p
 							style={{
@@ -89,7 +99,7 @@ function EventPage() {
 							{event.eventName.toUpperCase()}
 						</p>
 						<div className='mobile-event-poster'>
-							<img src={smallCardCorner} alt="card" className='smallCard-corner' />
+							<img src={smallCardCorner} alt='card' className='smallCard-corner' />
 							<div className='mobile-posterClass'>
 								<img
 									src={event.poster}
@@ -115,9 +125,12 @@ function EventPage() {
 					</div>
 				</div>
 			)}
-			
-			<img src={eventBottomPng} alt="wheel-building" className='event-vector-bottom'/>
-			
+
+			<img
+				src={eventBottomPng}
+				alt='wheel-building'
+				className='event-vector-bottom'
+			/>
 		</div>
 	);
 }

@@ -1,5 +1,5 @@
 .pro-event-container {
-	height: 120vh;
+	height: 110vh;
 	background-color: rgb(251, 123, 175);
 	position: relative;
 }
@@ -74,11 +74,13 @@
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     padding-bottom: 20px;
     border-radius: 49px;
     font-size: 1.1em;
     font-weight: bold;
+    display: flex;
+    align-items: center;
     font-family: 'Roboto', 'sans-serif';
 }
 
@@ -149,9 +151,9 @@
 
 
 @media only screen and (max-width: 800px) {
-    .pro-event-container{
+    /* .pro-event-container{
         height: 125vh;
-    }
+    } */
     .pevent-tickets{
         display: none;
     }
@@ -185,9 +187,9 @@
 }
 
 @media only screen and (max-width: 420px){
-    .pro-event-container{
+    /* .pro-event-container{
         height: 125vh;
-    }
+    } */
     .pevent-tickets{
         display: none;
     }
@@ -195,7 +197,7 @@
         font-size: 1em;
     }
     .pevent-tickets-m{
-        top: 10vh;
+        top: 14vh;
     }
 	.pevent-poster {
 		height: min(35vh, 300px);
