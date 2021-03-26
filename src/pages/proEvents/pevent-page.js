@@ -31,7 +31,8 @@ const Event = () => {
 	} else if (id === 'musicWorkshop') {
 		title = titles[2];
 		ticket = ticket3;
-		discription = '';
+		discription =
+			'Want to know the perfect chords which strike all your emotions? Join the Talk by Adil Rashid, the Lead Guitarist of Underground Authority on the 10th of April, 6 PM. The talk is open to all, so get ready with your Keys and Strings and log into our event, and learn how to express Vivid Forms of Music.';
 	} else if (id === 'theaterWorkshop') {
 		title = titles[3];
 		ticket = ticket4;

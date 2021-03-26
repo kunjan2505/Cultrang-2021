@@ -20,8 +20,8 @@
 	position: absolute;
 	left: 5vw;
 	top: 12vw !important;
-    transform: translate(1px);
-    z-index: 99;
+	transform: translate(1px);
+	z-index: 99;
 	/* margin-left: -2rem; */
 }
 .event-poster {
@@ -88,7 +88,7 @@
 	font-weight: bold;
 	font-family: 'Roboto', 'sans-serif';
 	position: relative;
-	margin-top: 5%;
+	/* margin-top: 5%; */
 }
 .eventDeadlineText {
 	font-size: 1em;
@@ -113,6 +113,7 @@
 }
 .register-button {
 	display: flex;
+	width: 15vw;
 	justify-content: center;
 	align-items: center;
 	border-radius: 49px;
@@ -125,7 +126,7 @@
 .register-text {
 	margin: 0px;
 	font-weight: bold;
-	font-size: 26px;
+	font-size: 20px;
 	font-family: 'Montserrat';
 }
 
@@ -266,6 +267,9 @@
 		background: radial-gradient(farthest-side, #d9605c, #c05930);
 		height: 100vh;
 		position: relative;
+	}
+	.register-button {
+		width: 45vw;
 	}
 	.event-vector-top,
 	.event-vector-bottom {

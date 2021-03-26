@@ -6,7 +6,7 @@ import Bottom from './SVG/register bottom.svg';
 
 function RegistrationSuccess() {
 	const calculateTimeLeft = () => {
-		var countDownDate = new Date('April 2, 2021 00:00:00').getTime();
+		var countDownDate = new Date('April 9, 2021 00:00:00').getTime();
 		var now = new Date().getTime();
 
 		const difference = countDownDate - now;
