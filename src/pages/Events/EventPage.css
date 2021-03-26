@@ -2,288 +2,277 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 .event {
-    background: radial-gradient(farthest-side, #d9605c, #c05930);
-    height: 100vh;
-    position: relative;
-    
+	background: radial-gradient(farthest-side, #d9605c, #c05930);
+	height: 100vh;
+	position: relative;
 }
-.event-vector-top{
-    top: 0px;
-    width: 100vw;
+.event-vector-top {
+	top: 0px;
+	width: 100vw;
 }
-.event-vector-bottom{
-    margin-top: -55vw;
-    width: 100vw;
+.event-vector-bottom {
+	margin-top: -55vw;
+	width: 100vw;
 }
-
+.event-back {
+	font-size: 3rem;
+	color: white;
+	position: absolute;
+	left: 5vw;
+	top: 12vw !important;
+	transform: translate(1px);
+	z-index: 99;
+	/* margin-left: -2rem; */
+}
 .event-poster {
-    position: relative;
-    width: 24vw;
-    height: 25vw;    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	position: relative;
+	width: 24vw;
+	height: 25vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.bigcard-corner{
-    height: 100%;
-    width: 100%;
+.bigcard-corner {
+	height: 100%;
+	width: 100%;
 }
 .posterClass {
-    width: 90%;
-    height: 90%;
-    padding: 10px 25px 20px 15px;
-    text-align: center;
-    position: absolute;
-    
+	width: 90%;
+	height: 90%;
+	padding: 10px 25px 20px 15px;
+	text-align: center;
+	position: absolute;
 }
 .posterImg {
-    height: 100%;
-    width: 100%;
+	height: 100%;
+	width: 100%;
 }
 
-.eventName{
-    font-size: 3vw;
-    font-weight: bold;
-    color: white;
-    text-shadow: 4px 4px #000000;
-    font-family: 'Montserrat';
-    margin: 10px 0px;
+.eventName {
+	font-size: 3vw;
+	font-weight: bold;
+	color: white;
+	text-shadow: 4px 4px #000000;
+	font-family: 'Montserrat';
+	margin: 10px 0px;
 }
 .event-details {
-    border-radius: 49px;
-    background-color: white;
-    height: 15vw;
-    min-height: 25vh;
-    min-width: 40vw;
-    width: 40vw;
-    box-shadow: 1px 3px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	border-radius: 49px;
+	background-color: white;
+	height: 15vw;
+	min-height: 25vh;
+	min-width: 40vw;
+	width: 40vw;
+	box-shadow: 1px 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-.event-details-box{
-    width: 95%;
-    height: 95%;
-    border-radius: 49px;
-    margin: 0px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow-y: scroll;
+.event-details-box {
+	width: 95%;
+	height: 95%;
+	border-radius: 49px;
+	margin: 0px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow-y: scroll;
 }
 
 .event-details-box::-webkit-scrollbar {
-    display: none;
-  }
-.eventDetailText{
-    font-size: 1vw;
-    font-weight: bold;
-    font-family: 'Roboto', 'sans-serif';
-    position: relative;
-    margin-top: 5%;
+	display: none;
 }
-.eventDeadlineText{
-    font-size: 1em;
-    font-family: 'Roboto', 'sans-serif';
-    margin: 0px;
-    position: relative;
-    
+.eventDetailText {
+	font-size: 1vw;
+	font-weight: bold;
+	font-family: 'Roboto', 'sans-serif';
+	position: relative;
+	/* margin-top: 5%; */
+}
+.eventDeadlineText {
+	font-size: 1em;
+	font-family: 'Roboto', 'sans-serif';
+	margin: 0px;
+	position: relative;
 }
 .event-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin-top: -55vw;
-    
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	margin-top: -55vw;
 }
 .event-register {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    height: 60%;
-    
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	height: 60%;
 }
 .register-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 49px;
-    background-color: white;
-    padding: 5px 20px;
-    box-shadow: 1px 3px;
-    margin-top: 15px;
-    cursor: pointer;
+	display: flex;
+	width: 15vw;
+	justify-content: center;
+	align-items: center;
+	border-radius: 49px;
+	background-color: white;
+	padding: 5px 20px;
+	box-shadow: 1px 3px;
+	margin-top: 15px;
+	cursor: pointer;
 }
-.register-text{
-    margin: 0px;
-    font-weight: bold;
-    font-size: 26px;
-    font-family: 'Montserrat';
+.register-text {
+	margin: 0px;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: 'Montserrat';
 }
 
-
-.mobile-event-poster {    
-    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.mobile-event-poster {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .mobile-posterClass {
-    left: 26px;
-    padding: 0px 10px 10px 0px;
-    height: 80%;
-    width: 70%;
-    position: absolute;
+	left: 26px;
+	padding: 0px 10px 10px 0px;
+	height: 80%;
+	width: 70%;
+	position: absolute;
 }
 .mobile-posterImg {
-    height: 100%;
-    width: 100%;
+	height: 100%;
+	width: 100%;
 }
 
-.mobile-event-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 90%;
-    top: 10px;
-    position: relative;
+.mobile-event-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 90%;
+	top: 10px;
+	position: relative;
 }
-.mobile-event-details{
-    border-radius: 40px;
-    background-color: white;
-    height: 23vh;
-   
-    width: 90vw;
-    box-shadow: 1px 3px;   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.mobile-event-details-content-box{
-    width: 90%;
-    height: 90%;
-    overflow-y: scroll;
-    margin: 0px;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.mobile-event-details {
+	border-radius: 40px;
+	background-color: white;
+	height: 23vh;
 
-    
+	width: 90vw;
+	box-shadow: 1px 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.mobile-event-details-content-box {
+	width: 90%;
+	height: 90%;
+	overflow-y: scroll;
+	margin: 0px;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 .mobile-event-details-content-box::-webkit-scrollbar {
-    display: none;
-  }
-.mobileEvent-details-text{
-    font-size: 14px;
-    font-family: "Roboto", 'sans-serif';
-    text-align: center;
+	display: none;
 }
-.mobileEvent-deadline-text{
-    font-size: 12px;
-    font-family: "Roboto", 'sans-serif';
-    text-align: center;
-    
+.mobileEvent-details-text {
+	font-size: 14px;
+	font-family: 'Roboto', 'sans-serif';
+	text-align: center;
+}
+.mobileEvent-deadline-text {
+	font-size: 12px;
+	font-family: 'Roboto', 'sans-serif';
+	text-align: center;
 }
 .mobile-event-register {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.mobileEventVector{
-    display: none;
+.mobileEventVector {
+	display: none;
 }
-
 
 @media only screen and (max-width: 1220px) {
-   
-    .event-poster {
-        position: relative;
-        width: 30vw;
-        height: 32vw;    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .eventDetailText{
-        font-size: 1em;
-        font-weight: bold;
-        font-family: 'Roboto', 'sans-serif';
-        
-    }
-    .eventDeadlineText{
-        font-size: 1em;
-        font-family: 'Roboto', 'sans-serif';
-        margin: 0px;
-    }
-    
+	.event-poster {
+		position: relative;
+		width: 30vw;
+		height: 32vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.eventDetailText {
+		font-size: 1em;
+		font-weight: bold;
+		font-family: 'Roboto', 'sans-serif';
+	}
+	.eventDeadlineText {
+		font-size: 1em;
+		font-family: 'Roboto', 'sans-serif';
+		margin: 0px;
+	}
 }
 @media only screen and (max-width: 1024px) {
-    .eventDetailText{
-        font-size: 1.1em;
-        font-weight: bold;
-        font-family: 'Roboto', 'sans-serif';
-        
-    }
-    .eventDeadlineText{
-        font-size: 0.8em;
-        font-family: 'Roboto', 'sans-serif';
-        margin: 0px;
-    }
-    
-    
-
+	.eventDetailText {
+		font-size: 1.1em;
+		font-weight: bold;
+		font-family: 'Roboto', 'sans-serif';
+	}
+	.eventDeadlineText {
+		font-size: 0.8em;
+		font-family: 'Roboto', 'sans-serif';
+		margin: 0px;
+	}
 }
 
 @media only screen and (max-width: 920px) {
-    
-    .event-poster {
-        position: relative;
-        width: 34vw;
-        height: 36vw;    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .eventDetailText{
-        font-size: 14px;
-        font-family: 'Montserrat';
-        margin: 0px;
-    }
-    .eventDeadlineText{
-        font-size: 13px;
-        font-family: 'Roboto', 'sans-serif';
-        margin: 0px;
-    }
+	.event-poster {
+		position: relative;
+		width: 34vw;
+		height: 36vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.eventDetailText {
+		font-size: 14px;
+		font-family: 'Montserrat';
+		margin: 0px;
+	}
+	.eventDeadlineText {
+		font-size: 13px;
+		font-family: 'Roboto', 'sans-serif';
+		margin: 0px;
+	}
 }
 
-
-
-
-  @media only screen and (max-width: 720px) {
-    
-    .mobileEventVector{
-        display: block;
-        position: absolute;
-    }
-    .event {
-        background: radial-gradient(farthest-side, #d9605c, #c05930);
-        height: 100vh;
-        position: relative;
-    }
-    .event-vector-top, .event-vector-bottom {
-        display: none;
-    }
-}  
-
+@media only screen and (max-width: 720px) {
+	.mobileEventVector {
+		display: block;
+		position: absolute;
+	}
+	.event {
+		background: radial-gradient(farthest-side, #d9605c, #c05930);
+		height: 100vh;
+		position: relative;
+	}
+	.register-button {
+		width: 45vw;
+	}
+	.event-vector-top,
+	.event-vector-bottom {
+		display: none;
+	}
+}

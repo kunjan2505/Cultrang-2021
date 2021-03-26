@@ -13,6 +13,10 @@ export const IMAGE_URL = {
 			url: 'images/3.jpg',
 		},
 		{
+			id: 6,
+			url: 'images/6.jpg',
+		},
+		{
 			id: 4,
 			url: 'images/4.jpg',
 		},
@@ -20,10 +24,7 @@ export const IMAGE_URL = {
 		// 	id: 5,
 		// 	url: 'images/5.jpg',
 		// },
-		{
-			id: 6,
-			url: 'images/6.jpg',
-		},
+
 		// {
 		// 	id: 7,
 		// 	url: 'images/7.jpg',
