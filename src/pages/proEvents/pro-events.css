@@ -1,5 +1,5 @@
 .pro-events-container {
-	height: 109vh;
+	height: 100vh;
 	background-color: rgb(251, 123, 175);
 	scroll-snap-align: start;
 	position: relative;
@@ -16,59 +16,81 @@
 	overflow: hidden;
 }
 
-
-.pevents-tickets{
-    z-index: 10;
-    height: 30vh;
-    width: 100vw;
-    position: absolute;
-    top: 25vh;
+.pevents-tickets {
+	z-index: 10;
+	height: 30vh;
+	width: 100vw;
+	position: absolute;
+	top: 30vh;
 }
 
-.pevents-r1{
+.pevents-r1 {
 	display: flex;
 	width: 100vw;
 	justify-content: center;
 }
 
-.pevents-r2{
+.pevents-r2 {
 	display: flex;
 	width: 100vw;
 	justify-content: center;
 }
 
-.pevents-r3{
+.pevents-r3 {
 	display: none;
 }
 
-
 .ticket {
 	width: min(29vw, 290px);
-	height: min(19vw, 190px);
+	/* height: min(19vw, 190px); */
+	z-index: 1;
+	transition: all 0.25s ease-in-out;
 }
-
+.ticket:hover{
+	z-index: 99;
+	transform: scale(1.15);
+	cursor: pointer;
+}
 .ticket3 {
 	width: min(32vw, 320px);
-	height: min(20vw, 200px);
+	/* height: min(20vw, 200px); */
 	margin-top: -5px;
+	z-index: 1;
+	transition: all 0.25s ease-in-out;
 }
-
+.ticket3:hover{
+	z-index: 99;
+	transform: scale(1.15);
+	cursor: pointer;
+}
 .ticket4 {
 	width: min(31vw, 310px);
-	height: min(19vw, 190px);
+	/* height: min(19vw, 190px); */
+	z-index: 1;
+	transition: all 0.25s ease-in-out;
 }
-
+.ticket4:hover{
+	z-index: 99;
+	transform: scale(1.15);
+	cursor: pointer;
+}
 .ticket5 {
 	width: min(32vw, 320px);
-	height: min(20vw, 200px);
+	/* height: min(20vw, 200px); */
 	margin-top: -15px;
+	z-index: 1;
+	transition: all 0.25s ease-in-out;
 }
-
+.ticket5:hover{
+	z-index: 99;
+	transform: scale(1.15);
+	cursor: pointer;
+}
 .pevents-title {
 	font-family: 'Montserrat';
 	color: white;
 	position: absolute;
-	top: 13vh;
+	top: 11vh;
 	width: 100vw;
 	display: flex;
 	justify-content: center;
@@ -96,7 +118,6 @@
 	bottom: 0vh;
 }
 
-
 @media only screen and (max-width: 800px) {
 	.pro-events-container {
 		scroll-snap-align: start;
@@ -115,24 +136,24 @@
 	}
 }
 
-@media only screen and (max-width: 500px){
-	.pro-events-container{
+@media only screen and (max-width: 500px) {
+	.pro-events-container {
 		scroll-snap-align: start;
-		height: 130vh;
+		height: 100vh;
 	}
-    .pevents-tickets{
-        top: 25vh;
-    }
+	.pevents-tickets {
+		top: 20vh;
+	}
 
-	.pevents-r1{
+	.pevents-r1 {
 		flex-direction: row;
-		height: 25vh;
+		height: 18vh;
 	}
-	.pevents-r2{
+	.pevents-r2 {
 		flex-direction: row;
-		height: 25vh;
+		height: 18vh;
 	}
-	.pevents-r3{
+	.pevents-r3 {
 		display: flex;
 		width: 100vw;
 		justify-content: center;
@@ -140,25 +161,25 @@
 
 	.ticket {
 		width: min(50vw, 400px);
-		height: min(23vh, 250px);
+		height: unset;
 	}
 	.ticket3 {
 		width: min(55vw, 415px);
-		height: min(25vh, 260px);
+		height: unset;
 		position: absolute;
 		left: -1vw;
 	}
 	.ticket4 {
 		width: min(53vw, 410px);
-		height: min(23vh, 250px);
+		height: unset;
 		position: absolute;
 		right: -2vw;
 	}
-	.ticket5-container{
+	.ticket5-container {
 		display: none;
 	}
 	.ticket5 {
 		width: min(59vw, 440px);
-		height: min(44vw, 270px);
+		height: unset;
 	}
 }

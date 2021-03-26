@@ -23,10 +23,10 @@ const Register = () => {
 		};
 		try {
 			if (validator.isEmail(email)) {
-				const res = await axios.post(
-					`http://cultrangbackend-env.eba-mpa8r9nr.us-east-2.elasticbeanstalk.com/comps/${id}`,
-					newUser
-				);//server post request
+					const res = await axios.post(
+						`https://cultrangbackend.herokuapp.com/events/${id}`,
+						newUser
+					);
 				if (res.data.success) {
 					console.log(res.data.success);
 					message.success('Registration Successful!');

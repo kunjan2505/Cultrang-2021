@@ -3,14 +3,14 @@ import Homedesktop from './home-desktop';
 import Homemobile from './home-mobile';
 import './home.css';
 
-const Home = () => {
+const Home = ({ fullpageApi }) => {
 	return (
 		<>
 			<div className='home-desktop'>
-				<Homedesktop></Homedesktop>
+				<Homedesktop fullpageApi={fullpageApi}></Homedesktop>
 			</div>
 			<div className='home-mobile'>
-				<Homemobile></Homemobile>
+				<Homemobile fullpageApi={fullpageApi}></Homemobile>
 			</div>
 		</>
 	);
