@@ -101,12 +101,13 @@ class Sponsor extends React.Component {
 								</div>
 							</a>
 
+							<a href='https://www.sociana.com/' target='_blank'>
 							<div className='card' style={{ width: '10vw' }} id='spons-image'>
 								<img src={sociana} class='card-img-top' alt='...' />
 								<div class='card-body'>
 									<h5 class='card-title'>Registration Partner</h5>
 								</div>
-							</div>
+							</div></a>
 							
 							<a href='https://www.inmovidutech.com/' target='_blank'>
 								<div className='card' style={{ width: '10vw' }} id='spons-image'>
