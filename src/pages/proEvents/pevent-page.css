@@ -1,5 +1,5 @@
 .pro-event-container {
-	height: 111vh;
+	height: 120vh;
 	background-color: rgb(251, 123, 175);
 	position: relative;
 }
@@ -28,7 +28,7 @@
     height: 50vh;
     width: 100vw;
     position: absolute;
-    top: 28vh;
+    top: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,8 +36,8 @@
 
 .ticket-container{
     background-image: url('./poster-container.png');
-    width: calc(min(25vw, 230px) + 40px);
-    height: calc(min(40vh,300px) + 40px);
+    width: calc(min(32vw, 330px) + 40px);
+    height: calc(min(35vw, 360px) + 40px);
     background-size: 100% 100%;
     display: flex;
     justify-content: center;
@@ -45,16 +45,17 @@
 }
 
 .pevent-poster {
-	height: min(40vh, 300px);
-	width: min(25vw, 230px);
-    padding-left: 3px;
-    padding-right: 10px;
+	height: min(35vw, 360px);
+	width: min(32vw, 330px);
+    padding: 10px 25px 20px 15px;
 }
 
 .pevent-title {
 	font-family: 'Montserrat';
 	color: white;
-    font-size: min(45px, 4vw);
+    font-weight: bold;
+    font-size: min(45px, 3vw);
+    text-shadow: 4px 4px #000000;
 } 
 
 .pevent-register{
@@ -66,13 +67,17 @@
 }
 
 .detail-container{
-    width: 35vw;
+    width: 40vw;
     height: auto;
+    min-height: 25vh;
     background-color: white;
     margin: auto;
-    padding: 15px 15px 15px;
-    border-radius: 15px 15px;
-    font-size: 1em;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 49px;
+    font-size: 1.1em;
     font-weight: bold;
     font-family: 'Roboto', 'sans-serif';
 }
@@ -110,11 +115,10 @@
     width: min(90vw,500px);
     height: auto;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 49px;
     margin-top: 2vh;
     padding: 15px 15px 15px;
     font-size: 1em;
-    font-weight: bold;
     font-family: 'Roboto', 'sans-serif';
 }
 
@@ -159,8 +163,8 @@
     }
     .ticket-container{
         background-image: url('./poster-container.png');
-        width: calc(min(30vw, 300px) + 40px);
-        height: calc(min(30vh,300px) + 40px);
+        width: calc(min(50vw, 270px) + 25px);
+        height: calc(min(40vh, 320px) + 25px);
         background-size: 100% 100%;
         background-repeat: no-repeat;
     }
@@ -175,8 +179,8 @@
 		height: 100vh;
 	}
     .pevent-poster {
-		height: min(30vh, 300px);
-		width: min(30vw, 300px);
+		height: min(40vh, 320px);
+		width: min(50vw, 270px);
 	}
 }
 
@@ -194,13 +198,13 @@
         top: 10vh;
     }
 	.pevent-poster {
-		height: min(30vh, 300px);
-		width: min(40vw, 300px);
+		height: min(35vh, 300px);
+		width: min(55vw, 200px);
 	}
     .ticket-container{
         background-image: url('./poster-container.png');
-        width: calc(min(40vw, 300px) + 30px);
-        height: calc(min(30vh,300px) + 30px);
+        width: calc(min(55vw, 200px) + 15px);
+        height: calc(min(35vh, 300px) + 15px);
         background-size: 100% 100%;
         background-repeat: no-repeat;
     }
