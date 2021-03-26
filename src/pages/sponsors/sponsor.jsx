@@ -12,7 +12,6 @@ import nomobo from './logos/nomobo.jpg';
 import skillIndia from './logos/skillindia.jpg';
 import sociana from './logos/sociana.jpeg';
 import sponsorBull from './logos/sponsor_bull.png';
-import town from './logos/town.jpg';
 import yi from './logos/yi.png';
 import cloudVect from './sponsor_cloud.svg';
 import bottomVect from './sponsor_bottom.png';
@@ -20,9 +19,7 @@ import cb from './logos/cb.png';
 import nBard from './logos/nbard.png';
 
 class Sponsor extends React.Component {
-	
 	render(){
-
 		return (
 			<div className='sponsor_main'>
 				<img className='cloudVector' src={cloudVect} />
@@ -30,7 +27,6 @@ class Sponsor extends React.Component {
 					<div className='heading-container-sponsor'>
 						<h1 className='heading'>SPONSORS</h1>
 					</div>
-
 					<div className='row2'>
 						<a
 							href='https://www.deltastore.in/'
@@ -134,12 +130,14 @@ class Sponsor extends React.Component {
 								</div>
 							</a>
 
-							<div className='card' style={{ width: '10vw' }} id='spons-image'>
-								<img src={sociana} class='card-img-top' alt='...' />
-								<div class='card-body'>
-									<h5 class='card-title'>Registration Partner</h5>
+							<a href='https://www.sociana.com/' target='_blank'>
+								<div className='card' style={{ width: '10vw' }} id='spons-image'>
+									<img src={sociana} class='card-img-top' alt='...' />
+									<div class='card-body'>
+										<h5 class='card-title'>Registration Partner</h5>
+									</div>
 								</div>
-							</div>
+							</a>
 
 							<a href='https://www.inmovidutech.com/' target='_blank' rel='noreferrer'>
 								<div className='card' style={{ width: '10vw' }} id='spons-image'>
