@@ -5,10 +5,8 @@ import events from './Data/Data';
 import mobileBottom from './Event_vector/mobile-bottom.png';
 import cloud1 from './Event_vector/cloud1.png';
 import cloud2 from './Event_vector/cloud2.png';
-import eventTop from './Event-SVG/events cloud.svg';
 import eventTopPng from './Events_PNG/events cloud.png';
 import eventBottomPng from './Events_PNG/bottom.png';
-import eventBottom from './Event-SVG/bottom.svg';
 import bigcardCorner from './Event_vector/bigcard_corner.png';
 import smallCardCorner from './Event_vector/card_corner.png';
 

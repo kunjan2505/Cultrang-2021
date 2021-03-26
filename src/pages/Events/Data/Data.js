@@ -27,7 +27,7 @@ const events = [
         eventName:"SOLO DANCE",
         eventNickName: "Dance Till Dawn ",
         eventDetails : "Dancing is so much more than just grooving on the dance floor to your favorite tunes. Dance is art in motion, it’s the embodiment of rhythm. If you’re someone who brings the fire to the dance floor, we have got the perfect event for you! Come along and dance to your own rhythm.",
-        deadline : "1st April, 2021",
+        deadline : "7st April, 2021",
         icon: danceIcon,
         poster: dancePoster
     },
