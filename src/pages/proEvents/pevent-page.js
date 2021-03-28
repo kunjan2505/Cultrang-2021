@@ -2,11 +2,6 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import clouds from './peventsTop.svg';
 import pevntsbottom from './peventsBottom.svg';
-import ticett1 from './standup.jpg';
-import ticket2 from './Melodious.jpg';
-import ticket3 from './Music.jpg';
-import ticket4 from './theatre.jpg';
-import ticket5 from './dance.jpg';
 import mobilebottom from './mobile-bottom.png';
 import './pevent-page.css';
 
@@ -20,27 +15,32 @@ const Event = () => {
 		'HIP HOP WORKSHOP BY KUNAL SRIVASTAVA',
 	];
 	var title = titles[0];
-	var ticket = ticett1;
+	var ticket =
+		'https://res.cloudinary.com/dmsa1uerl/image/upload/v1616941398/CultRang%20pro-events/standup_comedy-min_dsn9rn.jpg';
 	var discription =
 		'Comedic performance in front of a live audience on an online platform, by the esteemed satirist, Appurv Gupta. A pro-event involving humorous instances, jokes, one-liners and much more, to entertain the crowd and tickle some funny bones.';
 	if (id === 'melodiousAuRevoir') {
 		title = titles[1];
-		ticket = ticket2;
+		ticket =
+			'https://res.cloudinary.com/dmsa1uerl/image/upload/v1616941399/CultRang%20pro-events/Melodious_au_Revoir-min_nerd6r.jpg';
 		discription =
 			'An evening filled with soulful melodies, dedicated to resonant musical performances by a virtuoso coupled with a live performance by a ‘pomedian’ which is sure to drive you nuts! Prepare yourselves to laugh and cry, all at the same time as you join us for this melodious au revoir!';
 	} else if (id === 'musicWorkshop') {
 		title = titles[2];
-		ticket = ticket3;
+		ticket =
+			'https://res.cloudinary.com/dmsa1uerl/image/upload/v1616941821/CultRang%20pro-events/Music_drbzki.jpg';
 		discription =
 			'Want to know the perfect chords which strike all your emotions? Join the Talk by Adil Rashid, the Lead Guitarist of Underground Authority on the 10th of April, 6 PM. The talk is open to all, so get ready with your Keys and Strings and log into our event, and learn how to express Vivid Forms of Music.';
 	} else if (id === 'theaterWorkshop') {
 		title = titles[3];
-		ticket = ticket4;
+		ticket =
+			'https://res.cloudinary.com/dmsa1uerl/image/upload/v1616941398/CultRang%20pro-events/theatre_workshop-min_iw8gsd.jpg';
 		discription =
 			'Want to be a superstar? Join our virtual workshop on 9th of April to learn and get some tips to boost your acting skills with Actor and Director, Mr Pradeep Bajpai. The webinar is open to all, so set up your acting faces and learn something new and fun. Register for Workshop here';
 	} else if (id === 'hipHopWorkshop') {
 		title = titles[4];
-		ticket = ticket5;
+		ticket =
+			'https://res.cloudinary.com/dmsa1uerl/image/upload/v1616941399/CultRang%20pro-events/DanceWorkshop-min_e7froo.jpg';
 		discription =
 			'Yearning to learn and have fun with street dance styles? Join our virtual workshop on 10th April to learn Hip Hop from Dancer and Choreographer, Kunal Srivastava. The workshop is open to all, so put on your dancing shoes and join other dancers like yourself to learn something new and fun. No prerequisites, because Anybody Can Dance!';
 	}
