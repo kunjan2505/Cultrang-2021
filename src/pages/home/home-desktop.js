@@ -77,7 +77,7 @@ const Home = ({ fullpageApi }) => {
 							</a>
 						</div>
 						<div className='item item7'>
-							<a href='https://drive.google.com/uc?export=download&id=1qG5HKNXfs7-jVbuPeJcDrJPwuVm0alSs'>
+							<a href='https://drive.google.com/uc?export=download&id=1qotLJYFWenibQfYfn0nHnApl_EG7_iKP'>
 								RULEBOOK
 							</a>
 						</div>
