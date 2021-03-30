@@ -62,6 +62,7 @@ function App() {
 							scrollBar={false}
 							onLeave={onLeave}
 							afterLoad={afterLoad}
+							normalScrollElements: '.content11'
 							render={({ state, fullpageApi }) => {
 								return (
 									<div id='fullpage-wrapper'>

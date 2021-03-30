@@ -2,23 +2,28 @@ export const IMAGE_URL = {
 	photos: [
 		{
 			id: 1,
-			url: 'images/1.jpg',
+			url:
+				'https://res.cloudinary.com/dmsa1uerl/image/upload/v1616936789/CultRang%20imges/1_ohwy4r.jpg',
 		},
 		{
 			id: 2,
-			url: 'images/2.jpg',
+			url:
+				'https://res.cloudinary.com/dmsa1uerl/image/upload/v1616936789/CultRang%20imges/2_qcs9le.jpg',
 		},
 		{
 			id: 3,
-			url: 'images/3.jpg',
+			url:
+				'https://res.cloudinary.com/dmsa1uerl/image/upload/v1616936790/CultRang%20imges/3_rr6pkp.jpg',
 		},
 		{
 			id: 6,
-			url: 'images/6.jpg',
+			url:
+				'https://res.cloudinary.com/dmsa1uerl/image/upload/v1616936790/CultRang%20imges/6_zgjvmv.jpg',
 		},
 		{
 			id: 4,
-			url: 'images/4.jpg',
+			url:
+				'https://res.cloudinary.com/dmsa1uerl/image/upload/v1616936790/CultRang%20imges/4_g2mw50.jpg',
 		},
 		// {
 		// 	id: 5,
@@ -31,23 +36,28 @@ export const IMAGE_URL = {
 		// },
 		{
 			id: 8,
-			url: 'images/8.jpg',
+			url:
+				'https://res.cloudinary.com/dmsa1uerl/image/upload/v1616936790/CultRang%20imges/8_cwdnl5.jpg',
 		},
 		{
 			id: 9,
-			url: 'images/9.jpg',
+			url:
+				'https://res.cloudinary.com/dmsa1uerl/image/upload/v1616936791/CultRang%20imges/9_z7mc3k.jpg',
 		},
 		{
 			id: 10,
-			url: 'images/10.jpg',
+			url:
+				'https://res.cloudinary.com/dmsa1uerl/image/upload/v1616936791/CultRang%20imges/10_quhq05.jpg',
 		},
 		{
 			id: 11,
-			url: 'images/11.jpg',
+			url:
+				'https://res.cloudinary.com/dmsa1uerl/image/upload/v1616936791/CultRang%20imges/11_w1qeli.jpg',
 		},
 		{
 			id: 12,
-			url: 'images/12.jpg',
+			url:
+				'https://res.cloudinary.com/dmsa1uerl/image/upload/v1616936791/CultRang%20imges/12_uu8glv.jpg',
 		},
 		// {
 		// 	id: 13,
@@ -55,11 +65,13 @@ export const IMAGE_URL = {
 		// },
 		{
 			id: 14,
-			url: 'images/14.jpg',
+			url:
+				'https://res.cloudinary.com/dmsa1uerl/image/upload/v1616936791/CultRang%20imges/14_zarfof.jpg',
 		},
 		{
 			id: 15,
-			url: 'images/15.jpg',
+			url:
+				'https://res.cloudinary.com/dmsa1uerl/image/upload/v1616936791/CultRang%20imges/15_xfhyxj.jpg',
 		},
 		// {
 		// 	id: 16,
@@ -68,6 +80,6 @@ export const IMAGE_URL = {
 	],
 	about: {
 		content:
-			'IIT Goa, into its 5th year of existence only has already grown to be a much sought-after institution for engineering students and a melting-pot of ideas.We are nestled into the vast and beautiful expanse of GEC campus in Farmagudi, Goa with a vibrant population of over three thousand students and five hundred faculty members and staffs. While we strive to achieve excellence in academic endeavors, we are certainly touched and influenced by the rich and unique culture of Goa which is exactly what we want to celebrate through the Cultural fest of IIT Goa, Cult Rang. CultRang is a celebration of the massive diversity that characterises our country. sIt aims at instilling a sense of collective engagement by encouraging participation from several institutes all across the country. It consists of exciting events, competitions and workshops featuring experts in related fields, focusing on domains of performing arts that recognise the role of various cultures in our everyday indulgences.',
+			'IIT Goa, into its 5th year of existence only has already grown to be a much sought-after institution for engineering students and a melting-pot of ideas.We are nestled into the vast and beautiful expanse of GEC campus in Farmagudi, Goa with a vibrant population of over three thousand students and five hundred faculty members and staffs. While we strive to achieve excellence in academic endeavors, we are certainly touched and influenced by the rich and unique culture of Goa which is exactly what we want to celebrate through the Cultural fest of IIT Goa, Cult Rang. CultRang is a celebration of the massive diversity that characterises our country. It aims at instilling a sense of collective engagement by encouraging participation from several institutes all across the country. It consists of exciting events, competitions and workshops featuring experts in related fields, focusing on domains of performing arts that recognise the role of various cultures in our everyday indulgences.',
 	},
 };

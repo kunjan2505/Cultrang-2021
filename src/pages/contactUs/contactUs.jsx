@@ -151,7 +151,7 @@ const ContactUs = () => {
 							setCard({ studentAdvCard: true });
 						}}
 					>
-						Student Adviser
+						Student Advisor
 					</span>
 					<span
 						className='individualDesignation'
