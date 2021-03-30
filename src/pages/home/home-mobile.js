@@ -71,7 +71,7 @@ const Home = ({ fullpageApi }) => {
 					>
 						CONTACT US
 					</a>
-					<a href='https://drive.google.com/uc?export=download&id=1qG5HKNXfs7-jVbuPeJcDrJPwuVm0alSs'>
+					<a href='https://drive.google.com/uc?export=download&id=1qotLJYFWenibQfYfn0nHnApl_EG7_iKP'>
 						RULEBOOK
 					</a>
 				</Menu>
